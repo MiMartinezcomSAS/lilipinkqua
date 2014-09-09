@@ -212,8 +212,7 @@ h3,
 h4,
 h5,.font,.font > *
 {
-letter-spacing:1px;
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'Nunito', sans-serif;
   color:#595959;
 
 }
@@ -986,22 +985,22 @@ height: 6px;
 display: block;
 left: 0;
 bottom: 0px;
-background-color: #34a992;
 position: absolute;
 }
 .top-menu{
 min-height:48px;
     position:relative;
-    border-bottom:6px solid #34a994;
+    border-top: 1px solid #d3d3d3;
+    border-bottom:1px solid #d3d3d3;
 }
 .top-menu > ul{
 list-style:none;
     text-align:center;
     text-transform:uppercase;
     font-weight:bold;
-    letter-spacing:1px;
-    font-size:16px;
-    padding:6px 0 0 0;
+    font-size:13px;
+    padding:14px 0 14px 0;
+
 
 }
 .top-menu > ul > li{
@@ -1010,11 +1009,21 @@ display:inline-block;
 }
 .top-menu > ul > li > a{
 
-    padding: 24px 24px;
+    padding: 8px 8px;
 z-index: 999;	
 position: relative;
 
 }
+
+.top-menu > ul > li > a:hover{
+
+border-bottom: 2px solid #ba087e;
+border-top: 2px solid #ba087e;
+color: #ba087e;
+padding-top: 13px;
+padding-bottom: 14px;
+}
+
 
 .mega-menu > a:after{
 content:"";
