@@ -45,7 +45,7 @@ text-transform: uppercase;
 }
 .wrapper{
 background-color: #FBFBFB;
-margin: 0px 25px;
+margin: 0px 0px;
 }
 #middle,.section-footer {
 background-color: #FBFBFB;
@@ -618,14 +618,14 @@ padding:42px 0 0 0;
 }
 
 .lang-bar{
-padding: 20px 0;
+padding: 0px 0;
+height: 38px; 
 
-    background-color:#fff;
+    background-color:#dedede;
 
 }
 .lang-bar ul {
     list-style:none;
-    text-transform:uppercase;
 
 
 }
@@ -898,7 +898,7 @@ color:#34a994;
 }
 
 .search-holder,.top-area #searchform {
-margin:13px 7px 0 0;
+margin:4px 7px 0 0;
     display:inline-block;
     float:right;
     z-index:1000;
