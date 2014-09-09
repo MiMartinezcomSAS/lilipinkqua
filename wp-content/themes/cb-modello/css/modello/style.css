@@ -2583,7 +2583,6 @@ font-size: 16px;
 .md-input, #content .md-input{
     border:1px solid #DCDCDC;
     color:#8d8d8d;
-    letter-spacing: 1px;
     padding: 8px 19px;
 
     outline: none;
