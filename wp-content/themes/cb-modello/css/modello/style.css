@@ -903,7 +903,8 @@ margin:13px 7px 0 0;
     float:right;
     z-index:1000;
      position:relative;
-    min-width:276px;
+    min-width:190px;
+    font-size: 13px;
 margin-right: 0;	
 }
 
@@ -925,8 +926,8 @@ content:"";
     width:27px;
     height:27px;
     position:absolute;
-    top:7px;
-    right:9px;
+    top:-2px;
+    right:4px;
 }
 .top-area .submit_search i {
     display:none;
@@ -934,8 +935,9 @@ content:"";
 .search-holder input,.top-area #searchform input{
 border:1px solid #dddddd;
 
-    padding:10px 10px 10px 20px;
+    padding-left:20px;
     width:100%;
+    height: 24px;
 
 }
 .search-holder input:focus,.top-area #searchform input:focus{
@@ -944,32 +946,32 @@ border:1px solid #34A994;
 }
 
 .search-holder ::-webkit-input-placeholder,.top-area #searchform ::-webkit-input-placeholder,.top-area #searchform input  {
-   font-weight:bold;
+   font-weight:200;
     color:#8D8D8D;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing:1px;
+    font-family: 'Source Sans Pro', sans-serif; 
+    border-radius: 50px 0px 0 50px;
 }
 
 .search-holder :-moz-placeholder,.top-area #searchform :-moz-placeholder { /* Firefox 18- */
-   font-weight:bold;
+   font-weight:200;
     color:#8D8D8D;
      font-family: 'Source Sans Pro', sans-serif;
-     letter-spacing:1px;
+     border-radius: 50px 0px 0 50px;
 }
 
 .search-holder ::-moz-placeholder,.top-area #searchform ::-moz-placeholder {  /* Firefox 19+ */
-   font-weight:bold;
+   font-weight:200;
 
     color:#8D8D8D;
      font-family: 'Source Sans Pro', sans-serif;
-     letter-spacing:1px;
+     border-radius: 50px 0px 0 50px;
 }
 
 .search-holder :-ms-input-placeholder,.top-area #searchform :-ms-input-placeholder  {
-  font-weight:bold;
+  font-weight:200;
     color:#8D8D8D;
      font-family: 'Source Sans Pro', sans-serif;
-     letter-spacing:1px;
+     border-radius: 50px 0px 0 50px;
 }
 
 
@@ -993,16 +995,14 @@ min-height:48px;
     border-top: 1px solid #d3d3d3;
     border-bottom:1px solid #d3d3d3;
 }
+
 .top-menu > ul{
 list-style:none;
     text-align:center;
     text-transform:uppercase;
-    font-weight:bold;
-    font-size:13px;
     padding:14px 0 14px 0;
-
-
 }
+
 .top-menu > ul > li{
    margin: 0px;
 display:inline-block;
@@ -1012,14 +1012,14 @@ display:inline-block;
     padding: 8px 8px;
 z-index: 999;	
 position: relative;
-
+color: #666666   !important;
 }
 
 .top-menu > ul > li > a:hover{
 
 border-bottom: 2px solid #ba087e;
 border-top: 2px solid #ba087e;
-color: #ba087e;
+color: #ba087e !important;
 padding-top: 13px;
 padding-bottom: 14px;
 width:100%;
