@@ -5299,7 +5299,7 @@ msgstr "El stock del artículo se ha reducido con éxito."
 #: includes/class-wc-post-types.php:55 includes/class-wc-post-types.php:57
 #: includes/widgets/class-wc-widget-product-categories.php:30
 msgid "Product Categories"
-msgstr "Categorias de los productos"
+msgstr "Categorias los productos"
 
 #: includes/class-wc-post-types.php:58
 msgid "Product Category"
