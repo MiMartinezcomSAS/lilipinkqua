@@ -1081,12 +1081,12 @@ class cbwootop extends WP_Widget {
 <?php if(in_array('yith-woocommerce-wishlist/init.php',apply_filters('active_plugins',get_option('active_plugins')))) {if($wish=='yes') {?>
 <div class="wishlist-holder ic-sm-heart"><a href="<?php echo get_permalink( get_option( 'yith_wcwl_wishlist_page_id' ) ); ?>" class="link_wishlist">
 <?php _e('wishlist','cb-modello');?>: <span><?php echo $wish_count;?></span></a>
-</div><?php }}?> 
-       
-       
-<?php if($cart=='yes') {?>
- <div class="top-cart-holder ic-sm-basket">
-<div class="cart-aja"> 
+</div><?php }}?>
+
+
+<?php  if($cart=='yes') {?>
+ <div class="top-cart-holder ic-sm-basket">ccc
+<div class="cart-aja">
 <a class="cart-contentsy <?php if($woocommerce->cart->cart_contents_count>9) echo 'v2'; ?>" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Shopping cart', 'cb-modello'); ?>">
 <?php _e('shopping cart','cb-modello')?>:
 </a>
@@ -1186,7 +1186,7 @@ if($ccc<6) {
 					<?php } 
 				}$ccc++;
 			} 
-		}else { $rpt=0; echo '<li class="empty_shop">'.__('Your shopping cart is empty.','cb-cosmetico').'</li>'; $isempty='true';}
+		}else { $rpt=0; echo '<li class="empty_shop">'.__('TU CARRITO ESTA VACIO.','cb-cosmetico').'</li>'; $isempty='true';}
 global $woocommerce;
 $cart_url = $woocommerce->cart->get_cart_url();
 
@@ -1310,7 +1310,7 @@ class cbwoolog extends WP_Widget {
  	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
  <?php } 
  else { ?>
- 	, <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a>
+ 	, <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Iniciar sesión  / Crear cuenta','woothemes'); ?>"><?php _e('Iniciar sesión / Crear cuenta','woothemes'); ?></a>
  <?php } ?>
  
 </div>
