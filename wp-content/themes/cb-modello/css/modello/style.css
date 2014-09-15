@@ -14,7 +14,39 @@ Content Tabel
 ...
 */
 
+@font-face {
+    font-family: 'lili';
+    src: url('font-lili/lili.eot?32388186');
+    src: url('font-lili/lili.eot?32388186#iefix') format('embedded-opentype'),
+    url('font-lili/lili.woff?32388186') format('woff'),
+    url('font-lili/lili.ttf?32388186') format('truetype'),
+    url('font-lili/lili.svg?32388186#lili') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "lili";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
 
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+}
+
+.icon-plus:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-twitter-bird:before { content: '\e802'; } /* '' */
+.icon-youtube:before { content: '\e803'; } /* '' */
+.icon-pinterest:before { content: '\e804'; } /* '' */
+.icon-intima:before { content: '\e805'; } /* '' */
+.icon-lilipink:before { content: '\e806'; } /* '' */
 /*  General classes  */
 a:hover,a:focus,a:active{
     color:#34a994;
@@ -155,7 +187,7 @@ opacity:1;
 /*Icons*/
 
 
-.ic-sm-user:before,
+
 .ic-sm-phone:before,
 .ic-sm-basket:before,
 .ic-sm-heart:before
@@ -167,7 +199,13 @@ opacity:1;
  vertical-align:middle;
       background:url('../../img/modello/icons.png')  no-repeat;
 }
-
+.ic-sm-user:before{
+    position:relative;
+    width:27px;
+    height:27px;
+    display:inline-block;
+    vertical-align:middle;
+}
 .ic-sm-heart:before
 {
 background: url('../../img/modello/icons.png') left top no-repeat;
@@ -4200,4 +4238,33 @@ padding: 19px 0;
 }.section-banners .container {
 padding: 0;
 margin-left: -16px;
+}
+ .contend-logos{
+     line-height: 40px;
+     font-size: 16px;
+     margin-left: 10px;
+ }
+.contend-logos .icon-lilipink{
+    background: #e80e8a;
+    color: white;
+    display: inline-block !important;
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+.contend-logos  span{
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 8px solid #e80e8a;
+    z-index: 1000;
+    position: absolute;
+    left: 150px;
+    top: 38px;
+
+}
+
+.contend-logos  span:hover{
+   color:red;
 }

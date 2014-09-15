@@ -83,7 +83,7 @@ msgstr ""
 
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/functions.php:882
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/inc/cb-widgets.php:1189
-msgid "Your shopping cart is empty."
+msgid "TU CARRITO ESTA VACIO."
 msgstr ""
 
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/functions.php:886
