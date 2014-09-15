@@ -4188,7 +4188,8 @@ color: #333!important;
 .tax-product_cat .select2-container-active .select2-choice,.tax-product_cat .select2-container-active .select2-choices {
 	box-shadow:none!important;
 }.product-categories li a {
-	font-size:17px;
+	font-size:13px;
+  font-weight: 100;
 }#sidebar_l .price_slider_amount .button {
 margin-top: 25px;
 }
