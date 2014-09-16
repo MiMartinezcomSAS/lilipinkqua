@@ -974,6 +974,7 @@ border:1px solid #dddddd;
     padding-left:20px;
     width:100%;
     height: 24px;
+    line-height: 1px;
 
 }
 .search-holder input:focus,.top-area #searchform input:focus{
