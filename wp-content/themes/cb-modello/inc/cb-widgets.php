@@ -1085,7 +1085,7 @@ class cbwootop extends WP_Widget {
 
 
 <?php  if($cart=='yes') {?>
- <div class="top-cart-holder ic-sm-basket">ccc
+ <div class="top-cart-holder ic-sm-basket">
 <div class="cart-aja">
 <a class="cart-contentsy <?php if($woocommerce->cart->cart_contents_count>9) echo 'v2'; ?>" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Shopping cart', 'cb-modello'); ?>">
 <?php _e('shopping cart','cb-modello')?>:
@@ -1095,8 +1095,8 @@ class cbwootop extends WP_Widget {
                             <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
                         </div>
 
-                    
-                   
+
+
 
                         <div class="hover-holder">
                         

@@ -13,6 +13,74 @@ Content Tabel
 5-Preloader
 ...
 */
+@font-face {
+    font-family: 'icomoon';
+    src:url('icomoon/icomoon.eot?18weos');
+    src:url('icomoon/icomoon.eot?#iefix18weos') format('embedded-opentype'),
+    url('icomoon/icomoon.woff?18weos') format('woff'),
+    url('icomoon/icomoon.ttf?18weos') format('truetype'),
+    url('icomoon/icomoon.svg?18weos#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="iconmoon-"], [class*=" iconmoon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconmoon-user_female:before {
+    content: "\e604";
+}
+.iconmoon-uniE603:before {
+    content: "\e603";
+}
+.iconmoon-cart:before {
+    content: "\e605";
+}
+.iconmoon-cart2:before {
+    content: "\e606";
+}
+.iconmoon-cart3:before {
+    content: "\e607";
+}
+.iconmoon-phone:before {
+    content: "\e608";
+}
+.iconmoon-envelope:before {
+    content: "\e609";
+}
+.iconmoon-location:before {
+    content: "\e60a";
+}
+.iconmoon-mail:before {
+    content: "\e60b";
+}
+.iconmoon-googleplus:before {
+    content: "\e600";
+}
+.iconmoon-facebook:before {
+    content: "\e601";
+}
+.iconmoon-twitter:before {
+    content: "\e602";
+}
+.iconmoon-location2:before {
+    content: "\e60c";
+}
+.iconmoon-mail2:before {
+    content: "\e60d";
+}
+
 
 @font-face {
     font-family: 'lili';
@@ -667,6 +735,7 @@ height: 38px;
 }
 .lang-bar ul li{
     display:inline-block;
+    vertical-align: top;
 }
 .lang-bar ul li a{
 
@@ -974,6 +1043,7 @@ border:1px solid #dddddd;
     padding-left:20px;
     width:100%;
     height: 24px;
+    line-height: 1px;
 
 }
 .search-holder input:focus,.top-area #searchform input:focus{
@@ -4267,4 +4337,42 @@ margin-left: -16px;
 
 .contend-logos  span:hover{
    color:red;
+}
+#user-top{
+    cursor: pointer;
+     height: 38px;
+     padding: 7px 10px;
+     font-size: 1.4rem;
+     border-left: 1px rgb(206, 206, 206) solid;
+     border-right: 1px rgb(206, 206, 206) solid;
+    position: relative;
+    z-index: 10000;
+ }
+#user-top {
+    text-align: left;
+}
+#user-top li{
+    background: white;
+    border-bottom: 1px solid #e3e4e5;
+    font-size: .8rem;
+    font-weight: 100;
+    padding: 10px ;
+    width: 200px;
+}
+#user-top:hover{
+    color:#e80e8a;
+}
+ #user-top ul{
+     top: 100%;
+     right: -100%;
+    display: none;
+     border: 1px solid #dddddd;
+     position: absolute;
+}
+
+#user-top:hover ul {
+    display: block;
+}
+.login-menu-holder {
+    padding-top: 6px;
 }
