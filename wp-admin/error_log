@@ -1,0 +1,2 @@
+[26-Sep-2014 23:14:01 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipinkqua/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
+[26-Sep-2014 23:16:14 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipinkqua/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
