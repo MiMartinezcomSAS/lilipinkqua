@@ -1080,7 +1080,42 @@ border:1px solid #ba087a !important;
      font-family: 'Source Sans Pro', sans-serif;
      border-radius: 50px 0px 0 50px;
 }
+@media (max-width: 992px){
+  .search-holder,.top-area #searchform {
+display: none;
+}
 
+.search-holder:after{
+content:"";
+display: none;
+}
+.top-area .submit_search {
+display: none;
+}
+.search-holder input,.top-area #searchform input{
+display:none;
+
+}
+.search-holder input:focus,.top-area #searchform input:focus{
+display:none;
+}
+
+.search-holder ::-webkit-input-placeholder,.top-area #searchform ::-webkit-input-placeholder,.top-area #searchform input  {
+display:none;
+}
+
+.search-holder :-moz-placeholder,.top-area #searchform :-moz-placeholder { /* Firefox 18- */
+display:none;
+}
+
+.search-holder ::-moz-placeholder,.top-area #searchform ::-moz-placeholder {  /* Firefox 19+ */
+display:none;
+}
+
+.search-holder :-ms-input-placeholder,.top-area #searchform :-ms-input-placeholder  {
+display:none;
+}
+}
 
 /*Top Menu*/
 header {
@@ -4314,14 +4349,25 @@ margin-left: -16px;
      line-height: 40px;
      font-size: 16px;
      margin-left: 10px;
+     margin-top: -2px;
  }
 .contend-logos .icon-lilipink{
-    background: #e80e8a;
-    color: white;
+    background: #fff;
+    color: #616161;
     display: inline-block !important;
     position: relative;
     text-align: center;
-    width: 80px;
+    width: 100px;
+}
+.contend-logos .icon-intima{
+    color: #616161;
+    display: inline-block !important;
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    font-size: 18px;
+    padding-top: 2px;
+    margin-left: 104px;
 }
 .contend-logos  span{
     width: 0;
@@ -4374,6 +4420,33 @@ margin-left: -16px;
 #user-top:hover ul {
     display: block;
 }
+@media (max-width: 700px){
+#user-top{
+  display: none;
+}
+}
+@media (max-width: 590px){
+  .wish-cart-holder{
+    display: none !important;
+  }
+  .colh2 .top-logo{
+    margin-top: 60px !important;
+  }
+}
+@media (max-width: 549px){
+  .colh2 .top-logo{
+    margin-top: 0px !important;
+  }
+  .top-logo-holder{
+    height: 0px !important;
+  }
+  .nav-mobile{
+    margin-top: -154px;
+    margin-left: 80%;
+  }
+}
+
+
 .login-menu-holder {
     padding-top: 6px;
 }
@@ -4381,6 +4454,12 @@ margin-left: -16px;
   padding-top: 12px;
   padding-right: 10px;
   font-size: 12px;
+}
+@media (max-width: 900px){
+#bienv{
+  display: none;
+}
+
 }
 
 @-webkit-keyframes wobble-vertical {
