@@ -4342,7 +4342,7 @@ margin-left: -16px;
 #user-top{
     cursor: pointer;
      height: 38px;
-     padding: 7px 10px;
+     padding: 10px 12px;
      font-size: 1.4rem;
      border-left: 1px rgb(206, 206, 206) solid;
      border-right: 1px rgb(206, 206, 206) solid;
@@ -4382,3 +4382,4 @@ margin-left: -16px;
   padding-right: 10px;
   font-size: 12px;
 }
+
