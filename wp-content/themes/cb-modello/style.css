@@ -1870,10 +1870,13 @@ a:hover i,a i:hover,i:hover,.list_style .col1:hover,.list_style .col1
     margin-bottom: 20px;
 }
 #sidebar_r .widget > h3, #sidebar_l .widget > h3,.testimonials-container > h3.tit {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 25px!important;
-    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    margin-bottom: 20px!important;
+    padding-bottom: 10px;
     position: relative;
+    font-size: 14px !important;
+    font-weight: 400px;
+    padding-left: 12px;
 }
 #sidebar_r .testimonial_content, #sidebar_l .testimonial_content {
     font-size: 12px;
@@ -3323,8 +3326,8 @@ background: url(../assets/bullet.png) no-repeat top left;
 display: inline-block;
 background: url(img/modello/slider-btns.png) no-repeat 1px 0;
 cursor: pointer;
-width: 40px;
-height: 40px;
+width: 15px;
+height: 15px;
 color: #fff;
 font-size: 11px;
 padding: 11px 0 0px 0;

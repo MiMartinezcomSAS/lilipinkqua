@@ -779,8 +779,8 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 	?>
 <div class="cart-aja"> 
-<a class="cart-contentsy <?php if($woocommerce->cart->cart_contents_count>9) echo 'v2'; ?>" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Shopping cart', 'cb-modello'); ?>">
-<?php _e('shopping cart','cb-modello')?>:
+<a class="cart-contentsy <?php if($woocommerce->cart->cart_contents_count>9) echo 'v2'; ?>" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Carrito de compras', 'cb-modello'); ?>">
+<?php _e('Carrito de compras','cb-modello')?>:
 </a>
                        <span class="top-cart-price"><?php echo $woocommerce->cart->get_cart_total(); ?></span>
                         <div class="total-buble">
@@ -879,7 +879,7 @@ if($ccc<6) {
 					<?php } 
 				}$ccc++;
 			} 
-		}else { $rpt=0; echo '<li class="empty_shop">'.__('Your shopping cart is empty.','cb-cosmetico').'</li>'; $isempty='true';}
+		}else { $rpt=0; echo '<li class="empty_shop">'.__('Tu carrito de compras esta vacio','cb-cosmetico').'</li>'; $isempty='true';}
 global $woocommerce;
 $cart_url = $woocommerce->cart->get_cart_url();
 

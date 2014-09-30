@@ -742,7 +742,7 @@ if ( ! class_exists( 'YITH_WCWL_Init' ) ) {
                 'icon-chevron-up'         => 'Chevron up',
                 'icon-chevron-down'       => 'Chevron down',
                 'icon-retweet'            => 'Retweet',
-                'icon-shopping-cart'      => 'Shopping cart',
+                'icon-shopping-cart'      => 'Carrito de compras',
                 'icon-folder-close'       => 'Folder close',
                 'icon-folder-open'        => 'Folder open',
                 'icon-resize-vertical'    => 'Resize vertical',

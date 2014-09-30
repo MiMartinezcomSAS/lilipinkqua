@@ -67,7 +67,7 @@ msgstr ""
 
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/functions.php:782
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/inc/cb-widgets.php:1090
-msgid "Shopping cart"
+msgid "Carrito de compras"
 msgstr ""
 
 #: /Users/mac/Desktop/cb-theme/Modello/cb-modello/functions.php:783
