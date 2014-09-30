@@ -4333,7 +4333,7 @@ margin-left: -16px;
     position: absolute;
     left: 150px;
     top: 38px;
-
+    display: none;
 }
 
 .contend-logos  span:hover{
@@ -4383,3 +4383,41 @@ margin-left: -16px;
   font-size: 12px;
 }
 
+@-webkit-keyframes wobble-vertical {
+ 16.65% {
+  transform: translateY(8px);
+ }
+
+ 33.3% {
+  transform: translateY(-6px);
+ }
+
+ 49.95% {
+  transform: translateY(4px);
+ }
+
+ 66.6% {
+  transform: translateY(-2px);
+ }
+
+ 83.25% {
+  transform: translateY(1px);
+ }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contend-logos i:hover {
+  -webkit-animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+}
+.contend-logos i:hover span {
+  -webkit-animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+}
