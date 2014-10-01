@@ -4358,6 +4358,8 @@ margin-left: -16px;
     position: relative;
     text-align: center;
     width: 100px;
+    height: 46px;
+    padding-top: 2px;
 }
 .contend-logos .icon-intima{
     color: #616161;
