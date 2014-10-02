@@ -2375,7 +2375,7 @@ margin-top:10px!important;
 }.woo_step {
 overflow: hidden;
 }.select2-container {
-display: none;
+display: ;
 }.chosen-container-single .chosen-single {
 margin-top: 0;
 }.chosen-container-single .chosen-single {
@@ -2402,8 +2402,8 @@ text-indent: 16px;
 }textarea {
 border: 1px solid #DCDCDC;
 text-indent: 10px;
-}.place_order .woo_step_in {display:none;}.select2-container {
-display: none;
+}.place_order .woo_step_in {display:;}.select2-container {
+display: ;
 }.chosen-container {
 width: 100%!important;
 }.woocommerce-account .slider_top h1 {
