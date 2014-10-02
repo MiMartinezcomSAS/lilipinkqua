@@ -2624,7 +2624,7 @@ line-height: 18px;
 }.woocommerce-ordering,.woocommerce-ordering .select2-container {
 width: auto!important;
 	text-transform:uppercase;	
-display: inline-block!important;	
+display: none!important;	
 	
 }.woocommerce-ordering .select2-container .select2-choice {
 height: 41px;
@@ -2856,7 +2856,8 @@ text-transform: capitalize;
 margin-bottom: 5px;
 padding: 0!important;
 }.product-categories li {
-padding: 9px 0px;
+padding: 6px 0px;
+padding-left: 15px;
 }.list_view .product-grid .product-item {
 height: 286px;
 max-height: inherit!important;

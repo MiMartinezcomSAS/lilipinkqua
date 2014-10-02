@@ -23,7 +23,6 @@ get_header('shop'); ?>
 do_action('woocommerce_before_main_content');
 
 if ( have_posts() ) : ?>
-
 <div class="row">
                             <div class="col-xs-6">
                             </div>

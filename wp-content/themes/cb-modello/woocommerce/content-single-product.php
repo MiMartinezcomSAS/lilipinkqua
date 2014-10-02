@@ -34,7 +34,6 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                                 <div class="row">
                                     <div class="col-xs-5">
 
-
                                         <div class="star-holder">
                                             <a href="#reviews" title="<?php _e('check reviews', 'cb-modello'); ?>">
                                                 <?php

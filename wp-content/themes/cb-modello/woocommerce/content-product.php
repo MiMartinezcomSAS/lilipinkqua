@@ -63,16 +63,19 @@ $cb_woo=cb_get_woo_options($post->ID);
         /* modello_added*/
 		?>
 
-        <hr>
+        
         <?php
         $brand_id  = get_post_meta($post->ID,'_cb5_brand',true);
         if($brand_id!=''){
        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($brand_id),'full');
 $url = $thumb['0'];
             ?>
+<!--
         <div class="brand">
             <img alt="" src="<?php echo $url;?>" />
         </div>
+-->
+
         <?php }?>
         <div class="title uppercase bold">
             <a href="<?php the_permalink(); ?>" itemprop="name"><?php the_title(); ?></a>
