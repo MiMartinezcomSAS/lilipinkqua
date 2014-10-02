@@ -7,7 +7,6 @@ if (($cb_footer_options['full_slider'] == 'yes' && ($cb_footer_options['home_sli
     <a href="#" class="scrollup">Scroll up</a>
     <div class="cl"></div>
 
-
     <?php if ($cb_footer_options['show_above_footer'] == 'everywhere') {
         if (is_active_sidebar('above-footer')) {
             ?>

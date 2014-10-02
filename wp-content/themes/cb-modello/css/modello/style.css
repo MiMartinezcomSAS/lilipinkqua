@@ -1951,9 +1951,7 @@ content:"";
 
 .footer-column h4 {
     text-transform:uppercase;
-    letter-spacing:1px;
-    font-size:17px;
-
+    font-size:15px;
     border-bottom:1px solid #D6D6D6;
     padding-bottom:13px;
 
@@ -2037,9 +2035,9 @@ content:"-";
 
 .footer-payment-icons {
     text-align:center;
-    background-color:#fff;
-    margin:50px 0 30px 0;
-    padding:20px 0 0 0;
+    background-color:#909090;
+    margin:50px 0 0px 0;
+    padding:10px 0 10px 0;
 }
 .footer-payment-icons li{
 margin: 0 -8px;
@@ -4352,8 +4350,8 @@ margin-left: -16px;
      margin-top: -2px;
  }
 .contend-logos .icon-lilipink{
-    background: #fff;
-    color: #616161;
+    background: #e80e8a;
+    color: #fff;
     display: inline-block !important;
     position: relative;
     text-align: center;
@@ -4501,4 +4499,7 @@ margin-left: -16px;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
+}
+.wrapme, .footer_contact > .wrapper_p, .navi_full .wrapme, .above-footer .wrapme, .footer .wrapme, .og-expander, #middle, .section-footer{
+  margin: 0 0 !important
 }
