@@ -1287,6 +1287,13 @@ img {
   height: auto;
   max-width: 100%;
 }
+.wpb_single_image img:hover {
+    border: 0px solid #fff;
+    box-shadow: 0px 10px 15px rgba(136, 136, 136, 0.47);
+    transform: scale(0.97) rotate(1deg);
+    transition: width 0.3s, height 0.3s, transform 0.3s;
+}
+
 .wpb_single_image.vc_align_center {
   text-align: center;
 }
