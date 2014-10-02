@@ -31,6 +31,15 @@ if (($cb_footer_options['full_slider'] == 'yes' && ($cb_footer_options['home_sli
     }
 }
 ?>
+<div class="contend-network">
+    <span>Siguenos en nuestras Redes Sociales</span>
+    <nav id="network">
+        <li><a href="#"><span class="iconmoon-facebook"></span></a></li>
+        <li><a href="#"><span class="iconmoon-googleplus"></span></a></li>
+        <li><a href="#"><span class="iconmoon-twitter"></span></a></li>
+        <li><a href="#"><span class="iconmoon-uniE603"></span></a></li>
+    </nav>
+</div>
 
 <section class="section-footer"  <?php if ($cb_footer_options['footer_background'] != '') {
         echo 'style="background:' . $cb_footer_options['footer_background'] . ';"';
