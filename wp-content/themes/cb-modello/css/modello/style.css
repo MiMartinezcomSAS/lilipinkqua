@@ -4503,3 +4503,28 @@ margin-left: -16px;
 .wrapme, .footer_contact > .wrapper_p, .navi_full .wrapme, .above-footer .wrapme, .footer .wrapme, .og-expander, #middle, .section-footer{
   margin: 0 0 !important
 }
+/*====Redes sociales=====*/
+.contend-network{
+    background: #f8f8f8;
+    text-align: center;
+    width: 100%;
+    padding: 6px;
+
+}
+.contend-network span,.contend-network #network, .contend-network li{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+
+}
+.contend-network a{
+    color:#595959;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid;
+    line-height: 1px;
+    padding: 6px;
+    text-align: center;
+
+    font-size: 13px;
+}
