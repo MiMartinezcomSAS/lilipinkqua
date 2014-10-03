@@ -565,6 +565,7 @@ text-transform: uppercase;
 .price ins {
    border: 0;
    text-decoration: none;
+   color: #e80e8a;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs,.woocommerce-page div.product .woocommerce-tabs ul.tabs,.woocommerce #content div.product .woocommerce-tabs ul.tabs,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs

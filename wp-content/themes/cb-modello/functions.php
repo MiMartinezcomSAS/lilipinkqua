@@ -1341,13 +1341,13 @@ global $post, $woocommerce, $product;
 			if(get_option('cb5_clicka')=='yes') echo '<a href="'.get_permalink().'">';
 			echo '<div class="image "><div class="product-mini-gallery">
 
-			<img src="'.bfi_thumb($image_link, array('width' => '212','height'=>'281', 'crop' => true)).'"  width="212" height="281" alt="product"/>';
+			<img src="'.bfi_thumb($image_link, array('width' => '278','height'=>'382', 'crop' => true)).'"  width="278" height="382" alt="product"/>';
 			if($attachment_count>0){foreach($product->get_gallery_attachment_ids() as $im_url){
 			$image_extra=wp_get_attachment_url($im_url);
-			if($image_extra!='')echo '<img src="'.bfi_thumb($image_extra, array('width' => '212','height'=>'281', 'crop' => true)).'" width="212" height="281" alt="product"/>';
+			if($image_extra!='')echo '<img src="'.bfi_thumb($image_extra, array('width' => '278','height'=>'382', 'crop' => true)).'" width="278" height="382" alt="product"/>';
 			}
             }
-			//echo '<img src="'.bfi_thumb(WP_THEME_URL.'/img/blank.jpg', array('width' => '212','height'=>'281', 'crop' => true)).'"  alt="product"/>';
+			//echo '<img src="'.bfi_thumb(WP_THEME_URL.'/img/blank.jpg', array('width' => '278','height'=>'382', 'crop' => true)).'"  alt="product"/>';
 			echo '</div></div>';
 			if(get_option('cb5_clicka')=='yes') echo '</a>';
 

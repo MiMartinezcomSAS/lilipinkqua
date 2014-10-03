@@ -32,7 +32,7 @@ if (($cb_footer_options['full_slider'] == 'yes' && ($cb_footer_options['home_sli
 }
 ?>
 <div class="contend-network">
-    <span>Siguenos en nuestras Redes Sociales</span>
+    <span>Siguenos en nuestras Redes Sociales  </span>
     <nav id="network">
         <li><a href="#"><span class="iconmoon-facebook"></span></a></li>
         <li><a href="#"><span class="iconmoon-googleplus"></span></a></li>
