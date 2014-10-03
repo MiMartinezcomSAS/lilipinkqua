@@ -1275,6 +1275,7 @@ width: 49%!important;
 width: 75%!important;
 }#sidebar_l, #sidebar_r {
 width: 100%!important;
+display: none;
 }#sidebar_r .cb-twitter .tweet, #sidebar_l .cb-twitter .tweet {
 width: 88%!important;
 }.col4 {

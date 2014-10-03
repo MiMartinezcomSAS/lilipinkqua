@@ -4857,7 +4857,7 @@ msgstr "CVV"
 #: includes/class-wc-product-simple.php:48
 #: includes/class-wc-product-variation.php:201
 msgid "Add to cart"
-msgstr "Añadir al carrito"
+msgstr "Agregar a mis compras"
 
 #: includes/abstracts/abstract-wc-product.php:481
 msgid "Read more"
@@ -9146,7 +9146,7 @@ msgstr "Mostrando los %d resultados"
 
 #: templates/loop/sale-flash.php:16 templates/single-product/sale-flash.php:16
 msgid "Sale!"
-msgstr "Rebajado!"
+msgstr "Promo!"
 
 #: templates/myaccount/form-add-payment-method.php:40
 msgid ""

@@ -3578,7 +3578,18 @@ margin-bottom: 30px;
 text-align: center;
 }.product-grid.no-move-down {
 clear: both;
-}body#modello_body {
+}
+@media (max-width: 549px){
+.product-grid.no-move-down {
+width: 95%;
+}
+.no-move-down .product-holder{
+height: 430px !important;
+margin-left: 0px;
+margin-bottom: 80px !important;   
+}
+}
+body#modello_body {
 margin: 0 auto;
 }.awpcp-category-dropdown {
 display: block!important;

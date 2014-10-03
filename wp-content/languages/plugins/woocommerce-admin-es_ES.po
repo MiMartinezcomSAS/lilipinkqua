@@ -4407,7 +4407,7 @@ msgstr "Ordenar por precio (desc)"
 
 #: includes/admin/settings/class-wc-settings-products.php:267
 msgid "Add to cart"
-msgstr "Añadir al carrito"
+msgstr "Agregar a mis compras"
 
 #: includes/admin/settings/class-wc-settings-products.php:268
 msgid "Redirect to the cart page after successful addition"
