@@ -107,7 +107,8 @@ Content Tabel
     line-height: 1em;
     margin-left: .2em;
 }
-
+.icon-phone:before { content: '\68'; } /* 'h' */
+.icon-home:before { content: '\e80b'; } /* '' */
 .icon-plus:before { content: '\e800'; } /* '' */
 .icon-facebook:before { content: '\e801'; } /* '' */
 .icon-twitter-bird:before { content: '\e802'; } /* '' */
