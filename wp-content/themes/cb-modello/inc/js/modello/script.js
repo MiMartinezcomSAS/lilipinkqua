@@ -15,8 +15,17 @@ jQuery(window).bind("load", function () {
 jQuery(window).load(function () {
 
 //Checkbox custom CSS
+jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
+    capa = jQuery('.mspc-clearfix');
+    jQuery('.mspc-clearfix').find('img').hover(function(){
+        //jQuery(this)
+        });
+        capa.each(function(i){
+            imgSrc = jQuery( this ).find('img').attr('src');
+            jQuery( this ).append( "<div class='imageHover'><img src='"+ imgSrc +"' data-zoom-image= 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image1.jpg' ></div>" )
 
-
+        }); 
+    
     if (jQuery('.md-check').length > 0) {
         jQuery('.md-check').iCheck({
             checkboxClass: 'md-check'

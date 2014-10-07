@@ -50,15 +50,15 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                                 ?>
                                 <li>
                                     <a class="vertical-gallery-item" href="#slide<?php echo $i; ?>">
-                                        <img class="lazy" alt="product"
+                                        <img class="lazy1"  alt="product"
                                              src="<?php echo bfi_thumb($image_extra, array('width' => '113', 'height' => '146', 'crop' => true)) ?>"
                                              width="113" height="146"/>
                                     </a>
                                 </li>
                                 <?php
                                 $more_images .= '<div class="single-product-gallery-item" id="slide' . $i . '">
-                           <a data-rel="prettyphoto" href="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '">
-                                <img class="lazy"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
+                           <a  data-rel="prettyphoto" href="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '">
+                                <img class="lazy2"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
 
                             </a>
                         </div>';
@@ -89,7 +89,7 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                         <div class="single-product-gallery-item" id="slide1">
                             <a data-rel="prettyphoto"
                                href="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>">
-                                <img class="lazy" alt=""
+                                <img class="lazy3" alt=""
                                      src="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>"/>
 
                             </a>
@@ -143,14 +143,14 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                $attach_photos.='
                 <li>
                     <a class="horizontal-gallery-item" href="#slide'.$i.'">
-                        <img class="lazy" alt="product"
+                        <img class="lazy4" alt="product"
                              src="'.bfi_thumb($image_extra, array('width' => '113', 'height' => '146', 'crop' => true)) .'"
                              width="113" height="146"/>
                     </a>
                 </li>';
                 $more_images .= '<div class="single-product-gallery-item" id="slide' . $i . '">
                            <a data-rel="prettyphoto" href="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '">
-                                <img class="lazy"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
+                                <img class="lazy5"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
 
                             </a>
                         </div>';
@@ -165,7 +165,7 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
             <div class="single-product-gallery-item" id="slide1">
                 <a data-rel="prettyphoto"
                    href="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>">
-                    <img class="lazy" alt=""
+                    <img  data-zoom-image="<?php echo bfi_thumb($image_link, array('width' => '812', 'height' => '983', 'crop' => true)); ?>" class="lazy6" alt=""
                          src="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>"/>
 
                 </a>
@@ -184,7 +184,7 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                 <ul>
                     <li>
                         <a class="horizontal-gallery-item" href="#slide1">
-                            <img class="lazy" alt="product"
+                            <img class="lazy7" alt="product"
                                  src="<?php echo bfi_thumb($image_link, array('width' => '113', 'height' => '146', 'crop' => true)) ?>"
                                  width="113" height="146"/>
                         </a>

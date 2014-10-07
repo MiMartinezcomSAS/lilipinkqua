@@ -4534,3 +4534,20 @@ margin-left: -16px;
     margin-left: 3px;
     font-size: 13px;
 }
+.mspc-clearfix{
+  position: relative;
+}
+
+.mspc-variation:hover .imageHover{
+  display: block;
+}
+.imageHover{
+  display: none;
+  position: absolute;
+  top: -100px;
+  right: 100px;
+  width: 200px
+}
+.imageHover img{
+  width: 200px
+}

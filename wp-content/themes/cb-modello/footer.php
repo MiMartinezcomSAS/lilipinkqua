@@ -119,5 +119,7 @@ if ($ana != '') { ?>
 }
 wp_footer(); 
 ?>
+<script src="http://www.elevateweb.co.uk/wp-content/themes/radial/jquery.elevatezoom.min.js"></script>
+
 </body>
 </html>
