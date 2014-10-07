@@ -15,7 +15,7 @@ jQuery(window).bind("load", function () {
 jQuery(window).load(function () {
 
 //Checkbox custom CSS
-jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
+jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
     capa = jQuery('.mspc-clearfix');
     jQuery('.mspc-clearfix').find('img').hover(function(){
         //jQuery(this)
