@@ -29,7 +29,7 @@
 
 .mspc-wrapper .mspc-content .mspc-variations {
 	display: none;
-	padding-top: 10px;
+	padding-top: 0px;
 }
 
 .mspc-content .mspc-variation {
@@ -53,14 +53,16 @@
 }
 
 .mspc-content .mspc-variation.active {
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
      -moz-transform: scale(0.9);
 	-webkit-transform: scale(0.9);
 	-o-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
+	border: 2px solid #e80e8a;
+	background: rgba(232, 14, 138, 0.08);
 }
 
 .mspc-variation img {
@@ -106,10 +108,14 @@
 
 .mspc-vertical.mspc-variation .mspc-text-wrapper > strong {
 	text-align: center;
+	font-weight: 200;
+	font-size: 12px;
+	margin-top: -8px;
 }
 
 .mspc-vertical.mspc-variation .mspc-text-wrapper > p {
 	margin-top: 10px;
+	display: none;
 }
 
 

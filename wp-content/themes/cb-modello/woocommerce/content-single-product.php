@@ -326,10 +326,10 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
 
 
                                             if ($prev_product_id != -1) {
-                                                ShowLinkToProduct($prev_product_id, $cats_array, "next-product", '<span>previous</span> /');
+                                                ShowLinkToProduct($prev_product_id, $cats_array, "next-product", '<span>Anterior</span> /');
                                             }
                                             if ($next_product_id != -1) {
-                                                ShowLinkToProduct($next_product_id, $cats_array, "prev-product", ' <span>next</span>');
+                                                ShowLinkToProduct($next_product_id, $cats_array, "prev-product", ' <span>Siguiente</span>');
                                             }
 
                                             if ($prev_product_id != -1) {

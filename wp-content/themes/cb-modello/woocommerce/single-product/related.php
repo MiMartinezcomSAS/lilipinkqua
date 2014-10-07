@@ -39,7 +39,7 @@ if ( $products->have_posts() ) : ?>
 
 	<h2>
 			<span class="divider_h"></span>
-	<?php _e( 'Related Products', 'cb-modello' ); ?>
+	<?php _e( 'Tambien te podria gustar', 'cb-modello' ); ?>
 	</h2>
 <div class="product-grid no-move-down"><div class="tab-pane active">
 	<?php woocommerce_product_loop_start(); ?>
