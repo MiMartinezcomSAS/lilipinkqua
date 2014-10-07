@@ -1962,7 +1962,7 @@ content:"";
 .footer-column h4 {
     text-transform:uppercase;
     font-size:15px;
-    border-bottom:1px solid #D6D6D6;
+    border-bottom:0px solid #D6D6D6;
     padding-bottom:13px;
 
 }
@@ -4550,4 +4550,20 @@ margin-left: -16px;
 }
 .imageHover img{
   width: 200px
+}
+
+#foot2 {
+  font-size: 10px;
+  margin-top: -15px;
+  text-align: justify;
+}
+ #foot2 td{
+  padding-left: 10px;
+ }
+#foot2 i {
+  font-size: 20px;
+}
+#foot2 table {
+  max-width:90%;
+  margin-top: 15px;
 }
