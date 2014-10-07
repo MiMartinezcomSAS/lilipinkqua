@@ -2027,26 +2027,26 @@ width:60px;
 }
 .footer-column
 .menu li {
-    text-transform:capitalize;
     color:#595959;
-    line-height:25px;
-    font-size:15px;
+    line-height:30px;
+    font-size:14px;
     list-style: none;
 }
 .footer-column
 .menu{
-margin:0 0 0 4px;
+margin:0 0 0 10px;
+margin-top: -22px;
 }
 .footer-column
 .menu li:before{
-content:"-";
+content:"";
      color:#595959;
 }
 
 .footer-payment-icons {
     text-align:center;
     background-color:#909090;
-    margin:50px 0 0px 0;
+    margin:-5px 0 0px 0;
     padding:10px 0 10px 0;
 }
 .footer-payment-icons li{
