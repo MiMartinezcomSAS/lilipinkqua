@@ -148,9 +148,10 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                              width="113" height="146"/>
                     </a>
                 </li>';
+                
                 $more_images .= '<div class="single-product-gallery-item" id="slide' . $i . '">
                            <a data-rel="prettyphoto" href="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '">
-                                <img class="lazy5"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
+                                <img  data-zoom-image="'. bfi_thumb($image_extra, array('width' => '812', 'height' => '1083', 'crop' => true)) .'" class="lazy5"  alt="" src="' . bfi_thumb($image_extra, array('width' => '512', 'height' => '683', 'crop' => true)) . '" />
 
                             </a>
                         </div>';
