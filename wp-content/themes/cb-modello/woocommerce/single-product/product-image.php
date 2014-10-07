@@ -165,7 +165,7 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
             <div class="single-product-gallery-item" id="slide1">
                 <a data-rel="prettyphoto"
                    href="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>">
-                    <img  data-zoom-image="<?php echo bfi_thumb($image_link, array('width' => '812', 'height' => '983', 'crop' => true)); ?>" class="lazy6" alt=""
+                    <img  data-zoom-image="<?php echo bfi_thumb($image_link, array('width' => '812', 'height' => '1083', 'crop' => true)); ?>" class="lazy6" alt=""
                          src="<?php echo bfi_thumb($image_link, array('width' => '512', 'height' => '683', 'crop' => true)); ?>"/>
 
                 </a>
