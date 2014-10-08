@@ -4604,3 +4604,7 @@ margin-bottom: -14px;
 right: -55px;
 }
 }
+
+.woocommerce-message {
+  border-top: 3px solid #595957!important;
+}
