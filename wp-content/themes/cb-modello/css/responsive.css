@@ -191,6 +191,7 @@ font-size: 17px;
 padding: 0px 7px;
 }#content {
 padding: 0px 2%;
+margin-top: -30px;
 }.head_title h1.title {
 width: 97%;
 margin: 0 auto;
@@ -567,6 +568,7 @@ margin-top: 20px!important;
 margin-bottom: 10px;
 }.side, .side .wrapme {
 width: 96%;
+margin-top: -30px;
 }
 .side {
 float: none;
@@ -599,6 +601,7 @@ border: 0;
 margin-top: 20px;
 width: 94%;
 margin-left:0;margin-right:0;
+display: none;
 }#sidebar_r .cb-twitter .tweet, #sidebar_l .cb-twitter .tweet {
 width: 70%!important;
 }#sidebar_r .cb-twitter .user, #sidebar_l .cb-twitter .user {
@@ -816,6 +819,7 @@ border: 0;
 margin-top: 20px;
 width: 94%;
 margin-left:0;margin-right:0;
+display: none;
 }#sidebar_r .cb-twitter .tweet, #sidebar_l .cb-twitter .tweet {
 width: 70%!important;
 }#sidebar_r .cb-twitter .user, #sidebar_l .cb-twitter .user {
@@ -1264,7 +1268,7 @@ top: -68px!important;
 }.nav-mobile {
 right: 38px!important;
 left: auto!important;
-margin-top: -72px!important;
+margin-top: -96px!important;
 }.container, .wrapon {
 width: 100%!important;
 }#middle .container, #middle .wrapon {
@@ -1281,7 +1285,7 @@ width: 88%!important;
 }.col4 {
 width: 47%!important;
 }.single-product-page.section-related-products {
-margin: 50px 20px -48px 72px!important;
+margin: 50px 20px -20px 20px!important;
 }.diamond-sha.blog .featured_image {
 width: 30%!important;
 float: left!important;	

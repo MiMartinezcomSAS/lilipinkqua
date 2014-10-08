@@ -1453,6 +1453,7 @@ text-decoration:line-through;
 }
 .product-grid .product-item .price {
 font-size:17px;
+font-weight: 100 !important;
 
 }
 
@@ -3722,7 +3723,7 @@ position: absolute;
 }
 .single-product-gallery
 .nav-holder a:hover{
-color:#34a992;
+color:#e80e8a;
 }
 .single-product-gallery
 .nav-holder .prev-btn{
@@ -4030,7 +4031,7 @@ margin: 10px 0 0 0;
 
 .single-product-gallery:after {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     top:12px;
     right: 14px;
@@ -4151,7 +4152,9 @@ left: -15px;
 }
 .buttons-holder .add_to_cart_button {
     padding: 9px 43px;
-font-size: 14px;	
+font-size: 14px;
+letter-spacing: 0px;
+font-weight: 100;	
 }
 .added_to_cart{
     display: block;
@@ -4452,7 +4455,7 @@ margin-left: -16px;
     height: 0px !important;
   }
   .nav-mobile{
-    margin-top: -154px;
+    margin-top: -174px;
     margin-left: 80%;
   }
 }
@@ -4586,4 +4589,18 @@ box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.43);
 .zoomWindowContainer{
   cursor: crosshair;  
 
+}
+
+@media (max-width: 850px) {
+.ui.six.column.doubling.grid>.column{
+  width: 16.5%;
+}
+.ui.image{
+  margin-top: -18px;
+margin-bottom: -14px;
+}
+.imageHover {
+  top: -246px;
+right: -55px;
+}
 }
