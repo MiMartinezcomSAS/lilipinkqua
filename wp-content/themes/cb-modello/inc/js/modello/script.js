@@ -16,7 +16,7 @@ jQuery(window).load(function () {
 
 //Checkbox custom CSS
 jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
-jQuery('.single-product-slider  img').elevateZoom({zoomType:"inner"});
+jQuery('.single-product-slider:eq(1)  img').elevateZoom({zoomType:"inner"});
 
 jQuery('.zoomContainer').addClass('zoom');
     capa = jQuery('.mspc-clearfix');
@@ -35,8 +35,8 @@ jQuery('.zoomContainer').addClass('zoom');
 
         });
     }
-
-
+v = document.querySelectorAll('.zoomContainer');
+console.log(v);
     //Featured, Arrival Tab controller
 
 
@@ -374,6 +374,7 @@ jQuery('.zoomContainer').addClass('zoom');
                 jQuery('.zoomContainer').each(function(){
                     jQuery(this).removeClass('zoom');
                 });
+                jQuery('.single-product-slider  img').elevateZoom({zoomType:"inner"});
                 jQuery('.zoomContainer:eq('+j[1]+')').addClass('zoom');
                 
             });
