@@ -20,7 +20,7 @@ jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
 jQuery('.single-product-slider:eq(1) img').elevateZoom({zoomType:"inner"});
 
 jQuery('.zoomContainer').addClass('zoom');
-    capa = jQuery('.mspc-clearfix');
+    capa = jQuery('.mspc-pa_colores .mspc-clearfix');
     jQuery('.mspc-clearfix').find('img').hover(function(){
         //jQuery(this)
         });
