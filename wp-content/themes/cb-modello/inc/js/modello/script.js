@@ -1,6 +1,7 @@
 var zoom = 16;
 var latitude = 41.040585;
 var longitude = 28.970257;
+var temp = 0;
 
 
 jQuery(window).bind("load", function () {
@@ -16,7 +17,7 @@ jQuery(window).load(function () {
 
 //Checkbox custom CSS
 jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
-jQuery('.single-product-slider:eq(1)  img').elevateZoom({zoomType:"inner"});
+jQuery('.single-product-slider:eq(1) img').elevateZoom({zoomType:"inner"});
 
 jQuery('.zoomContainer').addClass('zoom');
     capa = jQuery('.mspc-clearfix');
@@ -374,8 +375,12 @@ console.log(v);
                 jQuery('.zoomContainer').each(function(){
                     jQuery(this).removeClass('zoom');
                 });
-                jQuery('.single-product-slider  img').elevateZoom({zoomType:"inner"});
                 jQuery('.zoomContainer:eq('+j[1]+')').addClass('zoom');
+                if (temp == 0){
+                    jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
+                }
+                temp = 1
+
                 
             });
 
