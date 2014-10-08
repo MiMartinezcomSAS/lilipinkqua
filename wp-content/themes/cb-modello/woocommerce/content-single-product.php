@@ -360,7 +360,9 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                         <?php } ?>
                     </div>
                     <h1 itemprop="name" class="product_title entry-title">
+                        <p class="preTitle">brasieer</p>
                         <?php the_title(); ?>
+                        <p class="postTitle">brasieer 90210</p>
                     </h1>
                             <?php $skus=get_option('cb5_skus'); 
                             if($skus=='yes') { 
@@ -384,7 +386,9 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                      * @hooked woocommerce_template_single_meta - 40
                      * @hooked woocommerce_template_single_sharing - 50
                      */
-                    do_action('woocommerce_single_product_summary');
+                    //do_action('woocommerce_single_product_summary');
+                    do_action('woocommerce_single_product_summary','woocommerce_template_single_title',41);
+
                     ?>
 
                 </div>
