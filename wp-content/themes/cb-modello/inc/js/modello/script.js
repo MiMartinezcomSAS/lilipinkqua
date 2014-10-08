@@ -16,9 +16,9 @@ jQuery(window).load(function () {
 
 //Checkbox custom CSS
 jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
-jQuery('.single-product-gallery-item img').elevateZoom({zoomType:"inner"});
+jQuery('.single-product-slider  img').elevateZoom({zoomType:"inner"});
 
-
+jQuery('.zoomContainer').addClass('zoom');
     capa = jQuery('.mspc-clearfix');
     jQuery('.mspc-clearfix').find('img').hover(function(){
         //jQuery(this)
@@ -368,9 +368,14 @@ jQuery('.single-product-gallery-item img').elevateZoom({zoomType:"inner"});
                 event.preventDefault();
                 tid = jQuery(this).attr('href');
                 targetSlide = jQuery(".single-product-gallery-item" + tid);
-
+                jQuery(this).attr('data-zoom-image',tid)
                 singlePSlider.trigger('slideTo', targetSlide);
-
+                j = tid.split("slide");
+                jQuery('.zoomContainer').each(function(){
+                    jQuery(this).removeClass('zoom');
+                });
+                jQuery('.zoomContainer:eq('+j[1]+')').addClass('zoom');
+                
             });
 
         }

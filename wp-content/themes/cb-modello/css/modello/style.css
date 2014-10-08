@@ -4576,3 +4576,14 @@ box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.43);
   max-width:90%;
   margin-top: 15px;
 }
+.zoomContainer{
+  cursor: crosshair;
+  opacity: 0
+}
+.zoom{
+  opacity: 1;
+}
+.zoomWindowContainer{
+  cursor: crosshair;  
+
+}
