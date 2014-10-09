@@ -147,8 +147,8 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                                     </div>
                                 </div>
                             </div>
-                            <div class="brand">
-                                <?php
+                             <div class="brand">
+                               <?php
                                 $brand_id = get_post_meta(get_the_ID(), '_cb5_brand', true);
                                 if ($brand_id != '') {
                                     $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($brand_id), 'full');
@@ -158,7 +158,7 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                                     <img alt="" src="<?php echo $url; ?>"/>
 
                                 <?php } ?>
-                            </div>
+                            </div> 
                             <h1 itemprop="name" class="product_title entry-title">
                                 <?php the_title(); ?>
                             </h1>
@@ -347,7 +347,7 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                             </div>
                         </div>
                     </div>
-                    <div class="brand">
+ <!--                  <div class="brand">
                         <?php
                         $brand_id = get_post_meta(get_the_ID(), '_cb5_brand', true);
                         if ($brand_id != '') {
@@ -359,6 +359,7 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
 
                         <?php } ?>
                     </div>
+                    -->
                     <h1 itemprop="name" class="product_title entry-title">
                         <p class="preTitle">brasieer</p>
                         <?php the_title(); ?>
@@ -368,7 +369,6 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                             if($skus=='yes') { 
                             	echo '<span class="sku_li">'.__('SKU:','cb-modello').$product->get_sku().'</span>';
                             }?>
-
 
                     <?php if ($product->is_type(array('simple', 'variable')) && get_option('woocommerce_enable_sku') == 'yes' && $product->get_sku()) : ?>
                         <span itemprop="productID"
