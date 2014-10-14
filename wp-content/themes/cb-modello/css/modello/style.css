@@ -1414,9 +1414,9 @@ text-align:center;
     margin:7px 0 0 0;
 }
 .product-grid .product-item{
-background-color:#fff;
+background-color: transparent;
     padding: 5px 5px 0px 5px;
-    height: 500px;
+    height: 435px;
 
 }
 .product-grid .product-item .star-rating{
@@ -1426,7 +1426,7 @@ display: none;
 
 
 .product-grid .product-item hr{
-border: 1px solid #CECECE;
+border: 0px solid #CECECE;
     width:40px;
     margin:24px auto 12px auto;
 }
@@ -1471,8 +1471,8 @@ display:inline-block;
 margin:40px 0 0 0;
 }
 .no-move-down .product-holder{
-    height: 475px;
-margin-bottom: 20px;
+    height: 435px;
+margin-bottom: 30px;
 margin-left: 9px;
 }
 @media (max-width: 850px){
@@ -1522,6 +1522,7 @@ position:relative;
      opacity:1;
 
 }
+/*
 .product-grid .product-holder.small .product-item:hover {
 
 
@@ -1568,9 +1569,10 @@ z-index: 400;
 
 .product-item:hover{
 box-shadow: 0px 0px 0px 10px  #f5f5f5;
-    /*overflow:hidden;*/
-}
+
+} */
 .product-item .add-cart-holder{
+display: none;
 position:relative;
 
    z-index:100;
@@ -3339,9 +3341,12 @@ display: block;
 }
 .section-related-products h2{
 font-weight: 100;
-    font-size: 37px;
-    text-align: center;
-    margin-bottom: 35px;
+font-size: 22px;
+margin-bottom: 20px;
+text-transform: initial;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+line-height: 48px;
+padding-left: 12px;
 
 }
 .product-holder{
@@ -3921,6 +3926,7 @@ color:#FAFAFA;
 
 
 .section-review-comment {
+    display: none;
     margin: 35px 0 0 0;
 }
 
@@ -4025,7 +4031,7 @@ margin: 10px 0 0 0;
 }
 
 .single-product-page.section-related-products {
-    margin: 50px 0 -48px 0;
+    margin: 50px 0 0px 0;
 }
 
 
@@ -4231,6 +4237,7 @@ a{
     -moz-border-radius: 50%;
     width: 46px;
     font-size: 12px;
+    display: none;
 }
 .sale-product label, .new-product label {
     color: #fff;
@@ -4387,6 +4394,10 @@ margin-left: -16px;
     padding-top: 2px;
     margin-left: 104px;
 }
+.contend-logos .icon-intima:hover {
+    color: #fff;
+    background: #1b1c7c;
+}
 .contend-logos  span{
     width: 0;
     height: 0;
@@ -4475,7 +4486,7 @@ margin-left: -16px;
 }
 
 }
-
+/*
 @-webkit-keyframes wobble-vertical {
  16.65% {
   transform: translateY(8px);
@@ -4514,6 +4525,7 @@ margin-left: -16px;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
 }
+*/
 .wrapme, .footer_contact > .wrapper_p, .navi_full .wrapme, .above-footer .wrapme, .footer .wrapme, .og-expander, #middle, .section-footer{
   margin: 0 0 !important
 }
