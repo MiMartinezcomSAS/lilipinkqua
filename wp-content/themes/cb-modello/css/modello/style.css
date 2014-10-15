@@ -4672,3 +4672,6 @@ color: #2F2F2F;
 .padd-r{
     margin-right: 25px;
 }
+.hidden{
+    display: none;
+}
