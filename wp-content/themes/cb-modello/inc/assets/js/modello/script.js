@@ -412,7 +412,7 @@ if(jQuery('.single-product-horizontal-gallery').length>0){
             singlePSlider.trigger('slideTo', targetSlide);
         });
 
-    jQuery(".mspc-clearfix img").click(function(event) {
+    jQuery(".mspc-pa_colores .mspc-clearfix img").click(function(event) {
         event.preventDefault();
         var alt = jQuery(this).attr('alt').split(" ");
         tid = '#slide'+ alt[0];
