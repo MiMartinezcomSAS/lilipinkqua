@@ -19,7 +19,7 @@ global $post, $woocommerce, $product;
 
             $image_title = esc_attr( get_the_title( get_post_thumbnail_id() ) );
             $image_link  = wp_get_attachment_url( get_post_thumbnail_id() );
-            $image       = get_the_post_thumbnail( $post->ID, array(512, 683), array(
+            $image       = get_the_post_thumbnail( $post->ID, array(512 , 683), array(
                 'title' => $image_title
             ) );
 

@@ -186,7 +186,7 @@ border-top: 3px solid <?php echo $color_master;?>!important;
 .section-contact-page .contact-info-holder .contact-info-holder p a,.content-holder.about-us p a,.content-holder.about-us p a {
 border-bottom:1px solid  <?php echo $color_master;?>!important;
 }.quantity input.qty:hover, .quantity input.qty:focus, input:focus {
-border:1px solid  <?php echo $color_master;?>!important;
+border:1px solid #C2C2C2!important;
 }
 .mega-icon > ul::after{
 background: none!important;
@@ -200,7 +200,7 @@ background: url(<?php echo WP_THEME_URL; ?>/img/modello/paginations-btns-grey.pn
 background-image: url(<?php echo WP_THEME_URL; ?>/img/contactus-middle-holder-grey.png);
 }
 textarea:focus, input:focus {
-border: 1px solid <?php echo $color_master;?>!important;
+border: 0px solid #ccc!important;
 }
 .footer.black a i,.footer.green a i,.footer.red a i,.footer.blue a i{
 color:#FFF!important;

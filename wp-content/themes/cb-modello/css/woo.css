@@ -565,7 +565,7 @@ text-transform: uppercase;
 .price ins {
    border: 0;
    text-decoration: none;
-   color: #e80e8a;
+   color: #696969;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs,.woocommerce-page div.product .woocommerce-tabs ul.tabs,.woocommerce #content div.product .woocommerce-tabs ul.tabs,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs
@@ -2258,14 +2258,14 @@ padding: 0;
 width: 28px!important;
 height: 30px;
 line-height: 30px;
-margin-top: 5px;
+margin-top: 3px;
 display: block;
 float: left;
 text-align: center;
 z-index: 2;
 position: absolute;
 }input.input-text.qty.text {
-text-indent: 30px;
+text-indent: 70px;
 }.quantity.buttons_added {
 position: relative;
 }#content input.plus {

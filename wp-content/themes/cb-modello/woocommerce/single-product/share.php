@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 ?>
 <div class="social-buttons">
-    <span>share with your friends</span>
+    <span>Comparte</span>
     <ul class="inline list-inline square-icons">
         <?php do_action('woocommerce_share'); // Sharing plugins can hook into here ?>
         <li class="facebook"><a
