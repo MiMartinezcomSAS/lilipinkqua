@@ -116,6 +116,7 @@ Content Tabel
 .icon-pinterest:before { content: '\e804'; } /* '' */
 .icon-intima:before { content: '\e805'; } /* '' */
 .icon-lilipink:before { content: '\e806'; } /* '' */
+.icon-logoblanco:before { content: '\e80c'; } /* '' */
 /*  General classes  */
 a:hover,a:focus,a:active{
     color:#34a994;
@@ -1416,7 +1417,7 @@ text-align:center;
 .product-grid .product-item{
 background-color: transparent;
     padding: 5px 5px 0px 5px;
-    height: 435px;
+    height: 375px;
 
 }
 .product-grid .product-item .star-rating{
@@ -1477,7 +1478,7 @@ margin-left: 9px;
 }
 @media (max-width: 850px){
 .no-move-down .product-holder{
-    height: 490px;
+    height: 430px;
     margin-left: 0px;
 }
 }
@@ -2053,7 +2054,11 @@ content:"";
     padding:10px 0 10px 0;
 }
 .footer-payment-icons li{
-margin: 0 -8px;
+margin: -1px -8px;
+margin: -1px -8px;
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
 }
 
 
@@ -4638,15 +4643,29 @@ font-weight: 400;
 margin-bottom: 10px;
 }
 .postTitle{
-<<<<<<< HEAD
-
-=======
 font-size: 18px;
 text-transform: uppercase;
 margin-top: 1px;
 margin-left: 0px;
 font-family: 'Open Sans', sans-serif;
 font-weight: 600;
->>>>>>> accd7ec8a635df8a890b257091984e569e020977
 }
 
+.icon-logoblanco {
+font-size: 18px;
+margin-top: -3px;
+margin-left: 0px;
+color: #4A4A4A;
+vertical-align: middle;
+}
+.icon-logoblanco:hover {
+color: #2F2F2F;
+}
+.pagos {
+  margin-top: -25px;
+}
+@media (max-width: 850px){
+.icon-logoblanco{
+  position: inherit;
+}  
+}

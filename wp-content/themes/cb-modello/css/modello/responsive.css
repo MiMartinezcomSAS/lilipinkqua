@@ -485,7 +485,7 @@ to {
     height: 382px;
 }
 .product-holder:hover {
-    height: 430px!important;
+    height: 375px!important;
 }
 .product-item .add-cart-holder:after{
     left:-30%;
