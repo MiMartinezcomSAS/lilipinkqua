@@ -414,7 +414,8 @@ if(jQuery('.single-product-horizontal-gallery').length>0){
 
     jQuery(".mspc-clearfix img").click(function(event) {
         event.preventDefault();
-        tid = '#slide'+jQuery(this).attr('alt');
+        var alt = jQuery(this).attr('alt').split(" ");
+        tid = '#slide'+ alt[0];
         targetSlide = jQuery(".single-product-gallery-item" + tid);
         console.log(targetSlide)
         singlePSlider.trigger('slideTo', targetSlide);
