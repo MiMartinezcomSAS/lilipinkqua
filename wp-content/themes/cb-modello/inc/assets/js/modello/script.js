@@ -410,9 +410,15 @@ if(jQuery('.single-product-horizontal-gallery').length>0){
             targetSlide = jQuery(".single-product-gallery-item" + tid);
             console.log(targetSlide)
             singlePSlider.trigger('slideTo', targetSlide);
-
         });
 
+    jQuery(".mspc-clearfix img").click(function(event) {
+        event.preventDefault();
+        tid = '#slide'+jQuery(this).attr('alt');
+        targetSlide = jQuery(".single-product-gallery-item" + tid);
+        console.log(targetSlide)
+        singlePSlider.trigger('slideTo', targetSlide);
+    });
 }
     }
 
