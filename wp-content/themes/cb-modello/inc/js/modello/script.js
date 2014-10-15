@@ -363,10 +363,29 @@ console.log(v);
 
             });
 
+            jQuery(".mspc-pa_colores .mspc-clearfix img").click(function (event) {
+                event.preventDefault();
+                jQuery('.zoomContainer').each(function(){
+                    jQuery(this).removeClass('zoom');
+                });
+                var alt = jQuery(this).attr('alt').split(" ");
+                tid = alt[0];
+                tidN = Number(tid);
+                targetSlide = jQuery(".single-product-gallery-item" + '#slide'+tidN);
+                jQuery(this).attr('data-zoom-image','#slide'+tidN)
+                console.log(tidN)
+                jQuery('.zoomContainer:eq('+tidN+')').addClass('zoom');
+                if (temp == 0){
+                    jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
+                    console.log('asdasd')
+                }
+                temp = 1
+            });
 
             jQuery(".single-product-horizontal-gallery .horizontal-gallery-item").click(function (event) {
                 event.preventDefault();
                 tid = jQuery(this).attr('href');
+                console.log(tid)
                 targetSlide = jQuery(".single-product-gallery-item" + tid);
                 jQuery(this).attr('data-zoom-image',tid)
                 singlePSlider.trigger('slideTo', targetSlide);
