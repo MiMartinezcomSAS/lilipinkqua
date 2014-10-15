@@ -13,13 +13,13 @@ global $post, $woocommerce, $product;
 
 ?>
 <div class="images">
-<div class="col-lg-6 col-md-12">
+<div class="col-lg-7 padd-r">
     <?php
         if ( has_post_thumbnail() ) {
 
             $image_title = esc_attr( get_the_title( get_post_thumbnail_id() ) );
             $image_link  = wp_get_attachment_url( get_post_thumbnail_id() );
-            $image       = get_the_post_thumbnail( $post->ID, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
+                $image       = get_the_post_thumbnail( $post->ID, array(512, 683), array(
                 'title' => $image_title
                 ) );
 
