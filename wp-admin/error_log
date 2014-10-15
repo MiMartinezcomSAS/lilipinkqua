@@ -6,3 +6,6 @@
 [07-Oct-2014 19:27:58 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipinkqua/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
 [09-Oct-2014 15:15:41 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipinkqua/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
 [09-Oct-2014 15:15:57 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipinkqua/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
+[15-Oct-2014 02:29:00 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipink/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
+[15-Oct-2014 02:29:22 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipink/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
+[15-Oct-2014 02:30:40 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home2/mimarti1/public_html/experimental/lilipink/wp-content/themes/cb-modello/inc/cb-admin/cb-admin-template.php on line 289
