@@ -96,3 +96,5 @@ if ( is_user_logged_in() ) {
 }
 // Default status
 die( '0' );
+//define
+

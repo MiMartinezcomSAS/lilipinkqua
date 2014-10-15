@@ -3,7 +3,6 @@ var latitude = 41.040585;
 var longitude = 28.970257;
 var temp = 0;
 
-
 jQuery(window).bind("load", function () {
     var timeout = setTimeout(function () {
         //jQuery(".product-mini-gallery img").trigger("loadImagesNow");

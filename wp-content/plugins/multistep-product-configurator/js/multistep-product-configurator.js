@@ -143,8 +143,8 @@ jQuery(document).ready(function() {
 
 	}
 
-	$menuItems.first().click().addClass('active');
+	//$menuItems.first().click().addClass('active');
 
-	_menuItemsState();
+	//_menuItemsState();
 
 });
