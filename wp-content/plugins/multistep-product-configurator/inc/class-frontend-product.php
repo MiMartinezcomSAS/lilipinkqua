@@ -49,8 +49,8 @@ if(!class_exists('MSPC_Frontend_Product')) {
 				}
 				//position under product title
 				else if($product_image == 'under_title') {
-					remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
-					add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images', 5 );
+					remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 50 );
+					add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images', 50 );
 				}
 				//position under mspc
 				else if($product_image == 'under_mspc') {
@@ -86,11 +86,12 @@ if(!class_exists('MSPC_Frontend_Product')) {
 
 					<?php if( $module == 'accordion' ): ?>
 
-						<div class="mspc-accordion">
+						<div class="spc-accordion">
+                            poasdkpoaskdasdkpo laksmdlksmcakskdal asdknl
 							<?php foreach($attributes as $name => $options): $attribute_count++; ?>
 
-							<a href="#" class="mspc-menu-item" data-target=".mspc-<?php echo $name; ?>">
-								<i class="icon add"></i><span><?php echo wc_attribute_label( $name ); ?></span>
+							<a href="#" class="mspc-menu-item active" data-target=".mspc-<?php echo $name; ?>">
+								<span><?php echo wc_attribute_label( $name ); ?></span>
 							</a>
 							<div class="mspc-content">
 								<div class="mspc-variations mspc-clearfix ui column grid doubling mspc-<?php echo $name. ' '.$this->get_column_class($columns); ?>">

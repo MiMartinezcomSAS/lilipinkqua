@@ -158,12 +158,12 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                                     <img alt="" src="<?php echo $url; ?>"/>
 
                                 <?php } ?>
-                            </div> 
+                            </div>
                             <h1 itemprop="name" class="product_title entry-title">
                                 <?php the_title(); ?>
                             </h1>
-                            <?php $skus=get_option('cb5_skus'); 
-                            if($skus=='yes') { 
+                            <?php $skus=get_option('cb5_skus');
+                            if($skus=='yes') {
                             	echo '<span class="sku_li">'.__('SKU:','cb-modello').$product->get_sku().'</span>';
                             }?>
                             <?php if ($product->is_type(array('simple', 'variable')) && get_option('woocommerce_enable_sku') == 'yes' && $product->get_sku()) : ?>
@@ -365,8 +365,8 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                         <?php the_title(); ?>
                         <p class="postTitle">brasieer 90210</p>
                     </h1>
-                            <?php $skus=get_option('cb5_skus'); 
-                            if($skus=='yes') { 
+                            <?php $skus=get_option('cb5_skus');
+                            if($skus=='yes') {
                             	echo '<span class="sku_li">'.__('SKU:','cb-modello').$product->get_sku().'</span>';
                             }?>
 
