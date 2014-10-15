@@ -87,7 +87,8 @@ if(!class_exists('MSPC_Frontend_Product')) {
 					<?php if( $module == 'accordion' ): ?>
 
 						<div class="spc-accordion">
-                            <p>poasdkpoaskdasdkpo laksmdlksmcakskdal asdknl</p>
+                            <div class="textoprod"><p>Seleccione color y talla de su preferencia</p></div>
+                            </br>
 							<?php foreach($attributes as $name => $options): $attribute_count++; ?>
 
 							<a href="#" class="mspc-menu-item active" data-target=".mspc-<?php echo $name; ?>">

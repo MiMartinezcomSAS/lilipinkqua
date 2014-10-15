@@ -61,8 +61,9 @@
 	-o-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
-	border: 2px solid #e80e8a;
-	background: rgba(232, 14, 138, 0.08);
+	background: rgba(178, 178, 178, 1);
+	height: 60px;
+	width: 60px !important;
 }
 
 .mspc-variation img {
