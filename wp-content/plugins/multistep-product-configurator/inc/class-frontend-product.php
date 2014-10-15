@@ -11,7 +11,7 @@ if(!class_exists('MSPC_Frontend_Product')) {
 
 			add_filter( 'body_class', array( &$this, 'add_class') );
 			add_action( 'wp_head', array( &$this, 'head_handler') );
-			add_action( 'woocommerce_single_product_summary', array( &$this, 'add_mspc_form'), 6 );
+			add_action( 'woocommerce_single_product_summary', array( &$this, 'add_mspc_form'), 10 );
 
 		}
 
@@ -87,7 +87,7 @@ if(!class_exists('MSPC_Frontend_Product')) {
 					<?php if( $module == 'accordion' ): ?>
 
 						<div class="spc-accordion">
-                            poasdkpoaskdasdkpo laksmdlksmcakskdal asdknl
+                            <p>poasdkpoaskdasdkpo laksmdlksmcakskdal asdknl</p>
 							<?php foreach($attributes as $name => $options): $attribute_count++; ?>
 
 							<a href="#" class="mspc-menu-item active" data-target=".mspc-<?php echo $name; ?>">

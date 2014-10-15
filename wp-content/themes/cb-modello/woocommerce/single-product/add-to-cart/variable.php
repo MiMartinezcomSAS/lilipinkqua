@@ -14,7 +14,7 @@ global $woocommerce, $product, $post;
 
 <?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<form class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="<?php echo $post->ID; ?>" data-product_variations="<?php echo esc_attr( json_encode( $available_variations ) ) ?>">
+<form class="variations_form cart hidden" method="post" enctype='multipart/form-data' data-product_id="<?php echo $post->ID; ?>" data-product_variations="<?php echo esc_attr( json_encode( $available_variations ) ) ?>">
     <?php if ( ! empty( $available_variations ) ) : ?>
         <table class="variations" cellspacing="0">
             <tbody>
