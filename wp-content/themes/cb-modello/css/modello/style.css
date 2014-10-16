@@ -3867,11 +3867,12 @@ font-size: 12px;
     text-transform: uppercase;
 }
  .social-buttons span{
-  font-size: 12px;
-     color: #a0a0a0;
-  letter-spacing: 1px;
-  line-height: 12px;
-display: block; 	
+font-size: 12px;
+color: #a0a0a0;
+line-height: 12px;
+display: block;
+letter-spacing: 0px;
+text-transform: initial;
 }
  .social-buttons ul{
 margin: 0 0 0px 20px;
@@ -3910,6 +3911,9 @@ background-color: #D43D2F;
 }
 .social-buttons .dribbble a:hover{
 background-color: #EB4D88;
+}
+.social-buttons .lipinks a:hover{
+background-color: #e80e8a;
 }
 
  .social-buttons ul li i{
