@@ -28,7 +28,10 @@ display: block!important;
 margin-left: -10px!important;
 float: left!important;
 }.product-remove a {
-margin: 0!important;
+margin-left: 0px!important;
+float: right;
+margin-top: --168px;
+font-size: 30px !important;
 }.col-1, .col-2 {
 border-right: 0;
 margin-left: 0!important;

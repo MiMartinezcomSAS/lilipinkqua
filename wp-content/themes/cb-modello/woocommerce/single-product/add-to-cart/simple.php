@@ -39,7 +39,7 @@ endif;
 		<?php do_action('woocommerce_before_add_to_cart_button'); ?>
 		<div class="cart_options">
 			<div class="cl"></div>
-			<div class="opt_lab"><?php _e('Quantity','cb-modello');?></div>
+			<div class="opt_lab"><?php _e('Cantidad','cb-modello');?></div>
 			<?php
 			if ( ! $product->is_sold_individually() )
 			woocommerce_quantity_input( array(
