@@ -149,7 +149,7 @@ color:<?php echo $color_master;?>!important;
 background: <?php echo $color_master;?>!important;
 }
 .woocommerce-message {
-border-top: 3px solid <?php echo $color_master;?>!important;
+border-top: 1px solid rgba(0,0,0,0.1) !important;
 }
 .footer a,ul.cb-menu li:hover>a,ul.cb-menu li:hover,ul.cb-menu li a:hover,a:hover,.normal li a:hover, .widget_rss li a:hover, .widget_links li a:hover, .widget_categories li a:hover, .product-categories li a:hover,
 .widget_archive li a:hover, .widget_pages li a:hover, .widget_meta li a:hover, .widget_recent_comments li a:hover, .widget_recent_entries li a:hover,
