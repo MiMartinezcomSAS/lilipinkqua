@@ -123,12 +123,14 @@ echo get_post_meta($values['product_id'], "pretitle", $single = true);
 		do_action( 'woocommerce_cart_contents' );
 		?>
         </tbody>
-    </table>
+    </table><input type="submit"
+					name="update_cart"
+					value="<?php _e( 'Actualizar compra', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" />
         </div>
     <div class="col-md-12 col-lg-3">
         <div class="right-sidebar">
             <div class="widget shopping-cart-summary">
-                <h4 class="md-bordered-title">shopping cart summary</h4>
+                <h4 class="md-bordered-title">Resumen de compra</h4>
                 <?php woocommerce_cart_totals(); ?>
                 <div class="clearfix"></div>
                 <?php woocommerce_shipping_calculator(); ?>
@@ -137,9 +139,7 @@ echo get_post_meta($values['product_id'], "pretitle", $single = true);
             
             
             
-              <input type="submit"
-					name="update_cart"
-					value="<?php _e( 'Update', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" /> <input
+               <input
 					type="submit" name="proceed"
 					value="<?php _e( 'Checkout', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
             
