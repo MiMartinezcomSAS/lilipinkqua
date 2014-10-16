@@ -62,8 +62,7 @@
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
 	background: rgba(178, 178, 178, 1);
-	height: 60px;
-	width: 60px !important;
+	height: 57px;
 }
 
 .mspc-variation img {
@@ -246,4 +245,9 @@ and (max-width : 480px),
 		width: auto;
 		float: none;
 	}
+}
+@media (max-width: 850px){
+.mspc-content .mspc-variation.active{
+	height: 30%;
+}
 }
