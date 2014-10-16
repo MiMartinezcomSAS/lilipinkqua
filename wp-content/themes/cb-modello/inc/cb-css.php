@@ -146,7 +146,7 @@ color:<?php echo $color_master;?>!important;
 #sidebar_l .clients-container .clients-slide-controls img,.tagcloud a,img.testimonial-image:hover,
 .prod_icons a:hover,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
 .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,a.shipping-calculator-button{
-background: <?php echo $color_master;?>!important;
+background: #595959!important;
 }
 .woocommerce-message {
 border-top: 1px solid rgba(0,0,0,0.1) !important;
@@ -248,11 +248,11 @@ background-color: <?php echo $color_master;?>!important;
 .bttn:hover, .submit:hover, .bttn_big:hover, button:hover, input.bttn:hover, .submit:hover, a.more_cat:hover, .button:hover {
 background-color: <?php echo $color_master;?>;
 }.select2-drop-active {
-border: 1px solid <?php echo $color_master;?>!important;
+border: 0px solid <?php echo $color_master;?>!important;
 }.select2-container-active .select2-choice, .select2-container-active .select2-choices,.select2-drop-active,
 .select2-container-active .select2-choice, .select2-container-active .select2-choices,.select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
-border: 1px solid <?php echo $color_master;?>!important;
+border: 0px solid <?php echo $color_master;?>!important;
 }#sidebar_r .widget > h3::after, #sidebar_l .widget > h3::after, .testimonials-container > h3.tit::after {
 border-bottom: 1px solid <?php echo $color_master;?>!important;
 }.cart_container .alt:hover {

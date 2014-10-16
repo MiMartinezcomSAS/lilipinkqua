@@ -954,7 +954,7 @@ list-style:none;
 margin:0 0 18px 0;
 }
 .top-cart-holder .hover-holder .body{
-padding:0 0px 0 28px;
+padding:0 32px 0 28px;
 
 }
 .top-cart-holder .hover-holder .remove-item{
@@ -4695,4 +4695,12 @@ color: #2F2F2F;
   margin-bottom: -15px;
   margin-top: -10px;
 
+}
+.textoprod1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.mspc-menu-item span{
+ font-size: 10px;
 }
