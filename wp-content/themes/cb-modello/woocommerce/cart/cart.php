@@ -51,17 +51,10 @@ wc_print_notices();
 
 				<!-- Product Name -->
 				<td class="title">
-                    <div class="brand">
+                    <div class="preTitle2">
                         <?php
-                        $brand_id  = get_post_meta($values['product_id'],'_cb5_brand',true);
-                        if($brand_id!=''){
-                            $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($brand_id),'full');
-                            $url = $thumb['0'];
-                            ?>
-
-                            <img alt="" src="<?php echo $url;?>" />
-
-                        <?php }?>
+echo get_post_meta($values['product_id'], "pretitle", $single = true);
+                        ?>
                     </div>
                     <?php
 				if ( ! $_product->is_visible() || ( ! empty( $_product->variation_id ) && ! $_product->parent_is_visible() ) )
