@@ -18,6 +18,15 @@ jQuery(window).load(function () {
 jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
 jQuery('.single-product-slider:eq(1) img').elevateZoom({zoomType:"inner"});
 
+    jQuery("#selectMap").click(function() {
+        if(jQuery("#selectMap").val() != 0){
+            window.location.href = 'contactanos/?'+jQuery("#selectMap").val();
+        }
+
+
+    });
+
+
 jQuery('.zoomContainer').addClass('zoom');
     capa = jQuery('.mspc-pa_colores .mspc-clearfix');
     jQuery('.mspc-clearfix').find('img').hover(function(){

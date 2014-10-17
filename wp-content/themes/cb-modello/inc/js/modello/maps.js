@@ -1,8 +1,15 @@
 var map;
 jQuery(document).ready(function($){
+
+    var ciudad = $('#ciudadGetCi').val() != ''? $('#ciudadGetCi').val() : 'bogota' ;
+    var la = $('#ciudadGetLa').val() != ''? $('#ciudadGetLa').val() : '4.598056000000001' ;
+    var lo = $('#ciudadGetLo').val() != ''? $('#ciudadGetLo').val() : '-74.07583299999999' ;
+    $('#ciudades > li').addClass('hideLi');
+    console.log($('#ciudadGetCi').val())
+    $('#'+ciudad).removeClass('hideLi');
     //Parametros de google
-    var $latitude = 4.598056000000001,
-        $longitude = -74.07583299999999,
+    var $latitude = la,
+        $longitude = lo,
         $map_zoom = 14;
 
     //google map custom marker icon - .png fallback for IE11
@@ -10,7 +17,7 @@ jQuery(document).ready(function($){
     var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
 
     //define the basic color of your map, plus a value for saturation and brightness
-  
+
 
     //we define here the style of the map
     var style= [
@@ -191,6 +198,9 @@ jQuery(document).ready(function($){
 
     $("#select").click(function() {
         var coordenadas = $("#select").val().split(",");
+        console.log($("#select"))
+        $('#ciudades > li').addClass('hideLi');
+        $('#'+coordenadas[2]).removeClass('hideLi');
         map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]));
         console.log(this.options[this.selectedIndex].value);
         map.setZoom(15)
