@@ -361,9 +361,12 @@ if ($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] =
                     </div>
                     -->
                     <h1 itemprop="name" class="product_title entry-title">
-                        <p class="preTitle">brasieer</p>
+
+                        <p class="preTitle"><?php echo get_post_meta($post->ID, "pretitle", $single = true)?>
+                        </p>
                         <?php the_title(); ?>
-                        <p class="postTitle">brasieer 90210</p>
+                        <p class="postTitle"><?php echo get_post_meta($post->ID, "posttitle", $single = true)?>
+                        </p>
                     </h1>
                             <?php $skus=get_option('cb5_skus');
                             if($skus=='yes') {

@@ -578,7 +578,7 @@ ul.cb-menu li ul  li[class^="icon-"].small a,ul.cb-menu li ul  li[class*=" icon-
     padding: 0px !important;
     margin-right: 0px !important;
     background: none;
-    display: inline;
+    display: none;
     text-transform: uppercase!important;
    /* color: #fff!important;*/
     font-size: 10px!important;

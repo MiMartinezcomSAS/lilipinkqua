@@ -51,17 +51,10 @@ wc_print_notices();
 
 				<!-- Product Name -->
 				<td class="title">
-                    <div class="brand">
+                    <div class="preTitle2">
                         <?php
-                        $brand_id  = get_post_meta($values['product_id'],'_cb5_brand',true);
-                        if($brand_id!=''){
-                            $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($brand_id),'full');
-                            $url = $thumb['0'];
-                            ?>
-
-                            <img alt="" src="<?php echo $url;?>" />
-
-                        <?php }?>
+echo get_post_meta($values['product_id'], "pretitle", $single = true);
+                        ?>
                     </div>
                     <?php
 				if ( ! $_product->is_visible() || ( ! empty( $_product->variation_id ) && ! $_product->parent_is_visible() ) )
@@ -130,23 +123,32 @@ wc_print_notices();
 		do_action( 'woocommerce_cart_contents' );
 		?>
         </tbody>
-    </table>
+    </table><input type="submit"
+					name="update_cart"
+					value="<?php _e( 'Actualizar compra', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" />
         </div>
     <div class="col-md-12 col-lg-3">
         <div class="right-sidebar">
             <div class="widget shopping-cart-summary">
-                <h4 class="md-bordered-title">shopping cart summary</h4>
+                <h4 class="md-bordered-title">Resumen de compra</h4>
                 <?php woocommerce_cart_totals(); ?>
                 <div class="clearfix"></div>
                 <?php woocommerce_shipping_calculator(); ?>
 
             </div>
+<<<<<<< HEAD
 
 
 
               <input type="submit"
 					name="update_cart"
 					value="<?php _e( 'Update', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" /> <input
+=======
+
+
+
+               <input
+>>>>>>> 28a7be3fb3bdd0a6bcfba540064378b4bf2ffdc5
 					type="submit" name="proceed"
 					value="<?php _e( 'Checkout', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
 
@@ -178,11 +180,6 @@ wc_print_notices();
 <div class="cart-collaterals">
 
 <?php do_action('woocommerce_cart_collaterals'); ?>
-
-
-
-
-
 
 
 </div>
