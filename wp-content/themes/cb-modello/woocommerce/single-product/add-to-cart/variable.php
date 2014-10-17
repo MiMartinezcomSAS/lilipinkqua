@@ -79,7 +79,7 @@ global $woocommerce, $product, $post;
 
         <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-        <div class="single_variation_wrap" >
+        <div class="single_variation_wrap" style="display:block !important;">
          <div class="textoprod1">Seleccione la cantidad</div>
             <?php do_action( 'woocommerce_before_single_variation' ); ?>
 
