@@ -68,10 +68,10 @@ wc_print_notices();
 				echo apply_filters( 'woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key );
 				else{
 					printf('<a href="%s">%s</a>', esc_url( get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['product_id'] ) ) ), apply_filters('woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key ) );
-					
+
 				}
 
-					
+
 				if ( $_product->is_type( array( 'simple', 'variable' ) ) && get_option( 'woocommerce_enable_sku' ) == 'yes' && $_product->get_sku() ) : ?>
 					<span itemprop="productID" class="sku_wrapper"><?php _e( 'Product ID:', 'woocommerce' ); ?>
 						<span class="sku"><?php echo $_product->get_sku(); ?> </span> </span>
@@ -141,21 +141,21 @@ wc_print_notices();
                 <?php woocommerce_shipping_calculator(); ?>
 
             </div>
-            
-            
-            
+
+
+
               <input type="submit"
 					name="update_cart"
 					value="<?php _e( 'Update', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" /> <input
 					type="submit" name="proceed"
 					value="<?php _e( 'Checkout', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
-            
-            
-            
+
+
+
 
             <?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
             <div class="widget coupon-widget shopping-cart-summary">
-                        <h4 class="md-bordered-title">use coupon code</h4> 
+                        <h4 class="md-bordered-title">use coupon code</h4>
                                <p><?php _e('If you have your promotional coupon code, just rewrite it to form and apply.','cb-modello');?></p>
                             <input class="md-input col-xs-12 input-text" type="text" placeholder="enter coupon code" name="coupon_code" id="coupon_code">
                             <input class="md-button small" type="submit" name="apply_coupon" style="padding: 9px 29px!important;margin-top: 4px;font-size: 13px!important;" value="<?php _e( 'Apply Coupon', 'cb-modello' ); ?>"/>
@@ -164,7 +164,7 @@ wc_print_notices();
                             </div><?php } ?>
 
         </div></div>
-  
+
 					<?php do_action('woocommerce_proceed_to_checkout'); ?> <?php wp_nonce_field( 'woocommerce-cart' ); ?>
 
 

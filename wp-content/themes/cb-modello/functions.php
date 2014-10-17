@@ -1533,5 +1533,11 @@ function cb_brand_save($post_id)
 
 add_action('save_post', 'cb_brand_save');
 
+function showContentMap ($atts) {
+    include ( TEMPLATEPATH ."/woocommerce/map/map.php");
+    wp_enqueue_script( 'Mapas', get_template_directory_uri() . '/inc/js/modello/maps.js' );
+}
+add_shortcode ('contentMap', 'showContentMap');
+
 
 
