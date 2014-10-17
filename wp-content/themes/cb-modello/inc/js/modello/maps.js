@@ -10,177 +10,124 @@ jQuery(document).ready(function($){
     var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
 
     //define the basic color of your map, plus a value for saturation and brightness
-    var	$main_color = '#2d313f',
-        $saturation= -20,
-        $brightness= 5;
+  
 
     //we define here the style of the map
     var style= [
         {
-            //set saturation for the labels on the map
-            elementType: "labels",
-            stylers: [
-                {saturation: $saturation}
-            ]
-        },
-        {	//poi stands for point of interest - don't show these lables on the map
-            featureType: "poi",
-            elementType: "labels",
-            stylers: [
-                {visibility: "off"}
-            ]
-        },
-        {
-            //don't show highways lables on the map
-            featureType: 'road.highway',
-            elementType: 'labels',
-            stylers: [
-                {visibility: "off"}
+            "featureType": "landscape",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 65
+                },
+                {
+                    "visibility": "on"
+                }
             ]
         },
         {
-            //don't show local road lables on the map
-            featureType: "road.local",
-            elementType: "labels.icon",
-            stylers: [
-                {visibility: "off"}
+            "featureType": "poi",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 51
+                },
+                {
+                    "visibility": "simplified"
+                }
             ]
         },
         {
-            //don't show arterial road lables on the map
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [
-                {visibility: "off"}
+            "featureType": "road.highway",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "visibility": "simplified"
+                }
             ]
         },
         {
-            //don't show road lables on the map
-            featureType: "road",
-            elementType: "geometry.stroke",
-            stylers: [
-                {visibility: "off"}
-            ]
-        },
-        //style different elements on the map
-        {
-            featureType: "transit",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "road.arterial",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 30
+                },
+                {
+                    "visibility": "on"
+                }
             ]
         },
         {
-            featureType: "poi",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "road.local",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 40
+                },
+                {
+                    "visibility": "on"
+                }
             ]
         },
         {
-            featureType: "poi.government",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "transit",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "visibility": "simplified"
+                }
             ]
         },
         {
-            featureType: "poi.sport_complex",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "administrative.province",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
             ]
         },
         {
-            featureType: "poi.attraction",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "lightness": -25
+                },
+                {
+                    "saturation": -100
+                }
             ]
         },
         {
-            featureType: "poi.business",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-        },
-        {
-            featureType: "transit",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-        },
-        {
-            featureType: "transit.station",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-        },
-        {
-            featureType: "landscape",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-
-        },
-        {
-            featureType: "road",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-        },
-        {
-            featureType: "road.highway",
-            elementType: "geometry.fill",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
-            ]
-        },
-        {
-            featureType: "water",
-            elementType: "geometry",
-            stylers: [
-                { hue: $main_color },
-                { visibility: "on" },
-                { lightness: $brightness },
-                { saturation: $saturation }
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "hue": "#ffff00"
+                },
+                {
+                    "lightness": -25
+                },
+                {
+                    "saturation": -97
+                }
             ]
         }
     ];
@@ -212,7 +159,7 @@ jQuery(document).ready(function($){
         map: map,
         visible: true,
         animation: google.maps.Animation.DROP,
-        icon: $marker_url,
+        icon: $marker_url
     });
     google.maps.event.addListener(marker2, "click", function() {
         marker.setMap(null);
@@ -249,5 +196,25 @@ jQuery(document).ready(function($){
         map.setZoom(15)
 
     });
-});
 
+    var $coordenadas = $(".coordenadas");
+    $coordenadas.each(function() {
+        var coordenadas = $(this).data('coor').split(",");
+        $(this).on('click',function(){
+
+            map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]))
+            map.setZoom(17)
+        });
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(coordenadas[0], coordenadas[1]),
+            map: map,
+            visible: true,
+            animation: google.maps.Animation.DROP,
+            icon: $marker_url
+        });
+    });
+
+});
+function myFunction(elmnt,clr) {
+    alert(elmnt );
+}
