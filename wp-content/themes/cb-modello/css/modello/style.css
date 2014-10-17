@@ -4746,3 +4746,41 @@ color: #2F2F2F;
 #cd-zoom-out {
     background-position: 50% -32px;
 }
+.hideLi{
+    display: none;
+}
+#s2id_select{
+    width: 320px;
+    margin: 15px 0;
+    display: inline-block;
+    background: #eeeeee;
+    padding: 24px;
+}
+#s2id_select:before{
+    content: 'Encuentranos facilmente el punto más cercano';
+}
+#ciudades{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.tableMap table{
+    margin: 15px;
+}
+.tableMap tbody tr:hover{
+    background: #eeeeee;
+}
+.tableMap thead tr{
+    background: #eeeeee;
+}
+.tableMap tr{
+
+}
+.tableMap td{
+    padding: 10px 5px;
+    width: 33%;
+}
+.tableMap tbody tr{
+    cursor: pointer;
+    border-bottom: 1px solid #eeeeee;
+}
