@@ -4762,6 +4762,7 @@ color: #2F2F2F;
 #ciudades{
     display: inline-block;
     vertical-align: top;
+    width: 71%;
 
 }
 .tableMap table{
