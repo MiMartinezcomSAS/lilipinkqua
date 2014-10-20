@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
     //Parametros de google
     var $latitude = la,
         $longitude = lo,
-        $map_zoom = 14;
+        $map_zoom = 18;
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
@@ -187,7 +187,10 @@ jQuery(document).ready(function($){
         $('#'+coordenadas[2]).removeClass('hideLi');
         map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]));
         console.log(this.options[this.selectedIndex].value);
-        map.setZoom(15)
+        map.setZoom(15);
+        $('html, body').stop().animate({
+            scrollTop: 100
+        }, 500);
 
     });
 
