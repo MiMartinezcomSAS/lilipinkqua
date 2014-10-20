@@ -187,9 +187,9 @@ jQuery(document).ready(function($){
         $('#'+coordenadas[2]).removeClass('hideLi');
         map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]));
         console.log(this.options[this.selectedIndex].value);
-        map.setZoom(15);
+        map.setZoom(10);
         $('html, body').stop().animate({
-            scrollTop: 100
+            scrollTop: 250
         }, 500);
 
     });
@@ -200,7 +200,10 @@ jQuery(document).ready(function($){
         $(this).on('click',function(){
 
             map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]))
-            map.setZoom(17)
+            map.setZoom(17);
+            $('html, body').stop().animate({
+                scrollTop: 250
+            }, 500);
         });
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(coordenadas[0], coordenadas[1]),
