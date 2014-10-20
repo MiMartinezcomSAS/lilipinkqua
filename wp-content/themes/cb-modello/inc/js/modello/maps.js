@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
+    var $marker_url = 'http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/10/cd-icon-location_1.png';
 
     //define the basic color of your map, plus a value for saturation and brightness
 
@@ -154,24 +154,8 @@ jQuery(document).ready(function($){
     //inizialize the map
     map = new google.maps.Map(document.getElementById('google-container'), map_options);
     //add a custom marker to the map
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng($latitude, $longitude),
-        map: map,
-        visible: true,
-        icon: $marker_url,
-    });
 
-    var marker2 = new google.maps.Marker({
-        position: new google.maps.LatLng('4.5975576', '-74.1011196'),
-        map: map,
-        visible: true,
-        animation: google.maps.Animation.DROP,
-        icon: $marker_url
-    });
-    google.maps.event.addListener(marker2, "click", function() {
-        marker.setMap(null);
 
-    });
     //add custom buttons for the zoom-in/zoom-out on the map
     function CustomZoomControl(controlDiv, map) {
         //grap the zoom elements from the DOM and insert them in the map
