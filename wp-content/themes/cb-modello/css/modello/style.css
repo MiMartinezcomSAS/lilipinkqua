@@ -4756,7 +4756,7 @@ color: #2F2F2F;
     background: #eeeeee;
     padding: 24px;
 }
-@media (max-width: 800px){
+@media (max-width: 1200px){
 #s2id_select,#ciudades{
     width: 100% !important;
 
@@ -4764,13 +4764,16 @@ color: #2F2F2F;
 #ciudades table{
   margin:0
 }
-#ciudades table tr td:nth-child(3){
-  display: none;
-}
 
-#ciudades table tr td{
-  width:50%
 }
+@media (max-width: 600px){
+  #ciudades table tr td:nth-child(3){
+    display: none;
+  }
+
+  #ciudades table tr td{
+    width:50%
+  }
 }
 #s2id_select:before{
     content: 'Encuentranos facilmente el punto más cercano';
