@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
     //Parametros de google
     var $latitude = la,
         $longitude = lo,
-        $map_zoom = 18;
+        $map_zoom = 10;
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
