@@ -4756,13 +4756,20 @@ color: #2F2F2F;
     background: #eeeeee;
     padding: 24px;
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
 #s2id_select,#ciudades{
-    width: 100%;
+    width: 100% !important;
 
 }
 #ciudades table{
   margin:0
+}
+#ciudades table tr td:nth-child(3){
+  display: none;
+}
+
+#ciudades table tr td{
+  width:50%
 }
 }
 #s2id_select:before{
