@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 Plugin Name: WPBakery Visual Composer )
 Plugin URI: http://vc.wpbakery.com
