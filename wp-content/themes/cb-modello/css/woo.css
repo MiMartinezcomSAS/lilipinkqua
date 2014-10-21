@@ -2904,3 +2904,10 @@ box-shadow:none!important;
 #content .track-order input[type="text"],#content .track-order input[type="password"]{
     width: 100%!important;
 }
+.order-info{
+margin-bottom: 30px;
+text-align: center;
+background: rgba(190, 190, 190, 0.17);
+padding: 10px;
+border: 1px solid #D3D1D1;
+}
