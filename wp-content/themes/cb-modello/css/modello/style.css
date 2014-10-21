@@ -2747,7 +2747,25 @@ margin-top: -11px;
   border: 1px solid #DCDCDC;
 height: 40px;
 }
-
+@media (max-width: 1100px){
+  .coupon-widget p{
+    width: 100%;
+  }
+ #coupon_code, #content input#coupon_code{
+    display: block;
+    width: 100% !important;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    margin-left: 0px;
+  }
+.md-button{
+width: 100%!important;
+display: block;
+margin-bottom: 15px;
+display: block;
+margin-top: 15px;
+  }
+}
 .coupon-widget .md-input{
 
 }
