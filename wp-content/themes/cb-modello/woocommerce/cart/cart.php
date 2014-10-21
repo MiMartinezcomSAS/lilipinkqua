@@ -15,10 +15,10 @@ wc_print_notices();
 ?>
 <?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
 <div class="widget coupon-widget shopping-cart-summary">
-						<h4 class="md-bordered-title">use coupon code</h4>
-									<p><?php _e('If you have your promotional coupon code, just rewrite it to form and apply.','cb-modello');?></p>
-								<input class="md-input col-xs-12 input-text" type="text" placeholder="enter coupon code" name="coupon_code" id="coupon_code">
-								<input class="md-button small" type="submit" name="apply_coupon" style="padding: 9px 29px!important;margin-top: 4px;font-size: 13px!important;" value="<?php _e( 'Apply Coupon', 'cb-modello' ); ?>"/>
+						<h4 class="md-bordered-title">¿Tienes un cupón promocional Lilipink?</h4>
+									<p><?php _e('Ingresa el codigo promocional en la casilla y recibe descuentos especiales, solo Lilipink te da mas.','cb-modello');?></p>
+								<input class="coupon-input" type="text" placeholder="Ingresa aqui el codigo del cupón" name="coupon_code" id="coupon_code">
+								<input class="md-button small" type="submit" name="apply_coupon" style="padding: 9px 29px!important;margin-top:-34px;font-size: 13px!important; vertical-align: top; height: 41px; width: 20.9%;" value="<?php _e( 'Aplicar Promoción', 'cb-modello' ); ?>"/>
 
 	<?php do_action('woocommerce_cart_coupon'); ?>
 								</div><?php } ?>
@@ -149,15 +149,8 @@ echo get_post_meta($values['product_id'], "pretitle", $single = true);
 
 
 
-              <input type="submit"
-					name="update_cart"
-					value="<?php _e( 'Update', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" /> <input
-
-
-
-
                <input type="submit" name="proceed"
-					value="<?php _e( 'Checkout', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
+					value="<?php _e( 'Comprar', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
 
 
 
