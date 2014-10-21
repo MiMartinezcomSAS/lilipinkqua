@@ -13,7 +13,15 @@ global $woocommerce;
 
 wc_print_notices();
 ?>
+<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
+<div class="widget coupon-widget shopping-cart-summary">
+						<h4 class="md-bordered-title">use coupon code</h4>
+									<p><?php _e('If you have your promotional coupon code, just rewrite it to form and apply.','cb-modello');?></p>
+								<input class="md-input col-xs-12 input-text" type="text" placeholder="enter coupon code" name="coupon_code" id="coupon_code">
+								<input class="md-button small" type="submit" name="apply_coupon" style="padding: 9px 29px!important;margin-top: 4px;font-size: 13px!important;" value="<?php _e( 'Apply Coupon', 'cb-modello' ); ?>"/>
 
+	<?php do_action('woocommerce_cart_coupon'); ?>
+								</div><?php } ?>
 <?php do_action( 'woocommerce_before_cart' ); ?>
 
 <form
@@ -22,15 +30,6 @@ wc_print_notices();
 
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
     <div class="col-md-12 col-lg-9">
-			<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
-			<div class="widget coupon-widget shopping-cart-summary">
-									<h4 class="md-bordered-title">use coupon code</h4>
-												<p><?php _e('If you have your promotional coupon code, just rewrite it to form and apply.','cb-modello');?></p>
-											<input class="md-input col-xs-12 input-text" type="text" placeholder="enter coupon code" name="coupon_code" id="coupon_code">
-											<input class="md-button small" type="submit" name="apply_coupon" style="padding: 9px 29px!important;margin-top: 4px;font-size: 13px!important;" value="<?php _e( 'Apply Coupon', 'cb-modello' ); ?>"/>
-
-				<?php do_action('woocommerce_cart_coupon'); ?>
-											</div><?php } ?>
 	<table class="shop_table cart section-shopping-cart-page" cellspacing="0">
 		<tbody>
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
