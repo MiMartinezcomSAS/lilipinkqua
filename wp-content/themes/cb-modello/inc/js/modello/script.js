@@ -20,7 +20,7 @@ jQuery('.single-product-slider:eq(1) img').elevateZoom({zoomType:"inner"});
 
     jQuery("#selectMap").click(function() {
         if(jQuery("#selectMap").val() != 0){
-            window.location.href = 'contactanos/?'+jQuery("#selectMap").val();
+            window.location.href = 'encuentranos/?'+jQuery("#selectMap").val();
         }
 
 
