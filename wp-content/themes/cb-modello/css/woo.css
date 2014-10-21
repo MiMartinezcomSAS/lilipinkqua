@@ -2272,7 +2272,7 @@ position: relative;
 float: none;
 position: absolute;
 right: auto;
-top: 0;
+top: 3px;
 left: 137px;
 }
 .single-product-info-holder .yith-wcwl-add-to-wishlist {
@@ -2882,12 +2882,13 @@ padding: 0 25px;
 }#content input.md-button.large.col-xs-12.update.norad.bttn.skin {
 display: block;
 width: 100%!important;
-font-size: 19px!important;
+font-size: 16px!important;
 padding: 0px 10px!important;
 margin-bottom: 20px;
 letter-spacing: 0px;
-text-transform: none;
 height: 40px;
+text-transform: uppercase;
+font-weight: 100;
 }#content input.md-button.large.col-xs-12.checkout.norad.bttn.skin {
 width: 100%!important;
 }.woocommerce-account p#billing_state_field {
@@ -2903,4 +2904,11 @@ box-shadow:none!important;
 }
 #content .track-order input[type="text"],#content .track-order input[type="password"]{
     width: 100%!important;
+}
+.order-info{
+margin-bottom: 30px;
+text-align: center;
+background: rgba(190, 190, 190, 0.17);
+padding: 10px;
+border: 1px solid #D3D1D1;
 }

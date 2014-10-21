@@ -3421,6 +3421,10 @@ text-align: left;
 margin: 0!important;
 }p.myaccount_user {
 margin-bottom: 30px;
+text-align: center;
+background: rgba(190, 190, 190, 0.17);
+padding: 10px;
+border: 1px solid #D3D1D1;
 }div.col2-set.addresses {
 margin-top: 50px!important;
 	margin-bottom:0!important;
