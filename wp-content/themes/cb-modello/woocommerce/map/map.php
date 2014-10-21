@@ -9,14 +9,14 @@
 <option value='10.9642103,-74.79704349999997,barranquilla' <?php if($_GET['ci'] == 'barranquilla'){echo('selected');} ?>>Barranquilla</option>
 <option value='7.113309999999999,-73.12046800000002,bucaramanga' <?php if($_GET['ci'] == 'bucaramanga'){echo('selected');} ?>>Bucaramanga</option>
 <option value='3.886611,-77.07022899999998,buenaventura' <?php if($_GET['ci'] == 'buenaventura'){echo('selected');} ?>>Buenaventura</option>
-<option value='5.4815477, -75.21144079999999,caldas' <?php if($_GET['ci'] == 'caldas'){echo('selected');} ?>>Caldas</option>
+<option value='5.481884,-75.211462,caldas' <?php if($_GET['ci'] == 'caldas'){echo('selected');} ?>>Caldas</option>
 <option value='10.41373,-75.53357690000001,cartagena' <?php if($_GET['ci'] == 'cartagena'){echo('selected');} ?>>Cartagena</option>
 <option value='7.894167 ,-72.50388900000002,cucuta' <?php if($_GET['ci'] == 'cucuta'){echo('selected');} ?>>Cúcuta</option>
 <option value='5.825397,-73.04015400000003,duitama' <?php if($_GET['ci'] == 'duitama'){echo('selected');} ?>>Duitama</option>
 <option value='1.75 , -75.58333299999998,florencia' <?php if($_GET['ci'] == 'florencia'){echo('selected');} ?>>Florencia</option>
 <option value='4.440663,-75.24414100000001,ibague' <?php if($_GET['ci'] == 'ibague'){echo('selected');} ?>>Ibague</option>
 <option value='5.067132,-75.51828799999998,manizales' <?php if($_GET['ci'] == 'manizales'){echo('selected');} ?>>Manizales</option>
-<option value='5.067132,-75.51828799999998,monteria' <?php if($_GET['ci'] == 'monteria'){echo('selected');} ?>>Montería</option>
+<option value='8.809082,-75.869265,monteria' <?php if($_GET['ci'] == 'monteria'){echo('selected');} ?>>Montería</option>
 <option value='2.998611,-75.3044439999999,neiva' <?php if($_GET['ci'] == 'neiva'){echo('selected');} ?>>Neiva</option>
 <option value='1.207778,-77.277222,pasto' <?php if($_GET['ci'] == 'pasto'){echo('selected');} ?>>Pasto</option>
 <option value='4.814278,-75.69455800000003,pereira' <?php if($_GET['ci'] == 'pereira'){echo('selected');} ?>>Pereira</option>
@@ -29,14 +29,12 @@
 <option value='4.149999999999999,-73.633333,villavicencio' <?php if($_GET['ci'] == 'villavicencio'){echo('selected');} ?>>Villavicencio</option>
 <option value='5.346555,-72.40556300000003,yopal' <?php if($_GET['ci'] == 'yopal'){echo('selected');} ?>>Yopal</option>
 <option value='5.0273519,-74.0096889,zipaquira' <?php if($_GET['ci'] == 'zipaquira'){echo('selected');} ?>>Zipaquira</option>
-<option value=' 7.066667,73.85000,barrancabermeja' <?php if($_GET['ci'] == 'barrancabermeja'){echo('selected');} ?>>Barrancabermeja</option>
-
+<option value='7.103618,-73.847566,barrancabermeja'<?php if($_GET['ci'] == 'barrancabermeja'){echo('selected');} ?>>Barrancabermeja</option>
 </select>
 <ul id="ciudades">
 <?php
 global $post;
-$args = array('category_name' => 'mapaCiudades',
-    'posts_per_page' => 30,);
+$args = array('category_name' => 'mapaCiudades');
 $wp_query = new WP_Query( $args );
 while ($wp_query->have_posts()) : $wp_query->the_post();
 
