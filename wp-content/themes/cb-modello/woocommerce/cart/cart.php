@@ -136,20 +136,18 @@ echo get_post_meta($values['product_id'], "pretitle", $single = true);
                 <?php woocommerce_shipping_calculator(); ?>
 
             </div>
-<<<<<<< HEAD
+
 
 
 
               <input type="submit"
 					name="update_cart"
 					value="<?php _e( 'Update', 'cb-modello' ); ?>" class="md-button large col-xs-12 update norad" /> <input
-=======
 
 
 
-               <input
->>>>>>> 28a7be3fb3bdd0a6bcfba540064378b4bf2ffdc5
-					type="submit" name="proceed"
+
+               <input type="submit" name="proceed"
 					value="<?php _e( 'Checkout', 'cb-modello' ); ?>" class="md-button large col-xs-12 checkout norad"  />
 
 
