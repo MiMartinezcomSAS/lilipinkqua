@@ -35,7 +35,8 @@
 <ul id="ciudades">
 <?php
 global $post;
-$args = array('category_name' => 'mapaCiudades');
+$args = array('category_name' => 'mapaCiudades',
+    'posts_per_page' => 30,);
 $wp_query = new WP_Query( $args );
 while ($wp_query->have_posts()) : $wp_query->the_post();
 
