@@ -62,6 +62,7 @@ $cb_type = esc_attr(get_post_meta($post->ID, '_cb5_post_type', 'true'));
         <?php
         wp_head();
         ?>
+        <link rel="shortcut icon" href="http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/10/favicon.ico">
     </head>
 <?php $war = '';
 if (isset($cb_type)) {
