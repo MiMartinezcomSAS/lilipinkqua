@@ -390,6 +390,7 @@ console.log(v);
                 }
                 temp = 1
             });
+              ///single
 
             jQuery(".single-product-horizontal-gallery .horizontal-gallery-item").click(function (event) {
                 event.preventDefault();
