@@ -403,7 +403,6 @@ outline:none;
 
 
 
-
 .md-select{
 
     text-indent: 0.01px;
@@ -4901,7 +4900,31 @@ font-weight: 100;
 min-width: 99.9%;
 width: 99.9%;
 }
+.buttonS{
+margin-top: -13px!important;
+margin-bottom: 16px;
+
+}
 }
 .footq{
   font-size: 11px;
+}
+
+.buttonS{
+    text-align:center;
+   border: none;
+color:#fff;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background-color:#e80e8a;
+    font-weight:bold;
+    padding:9px 15px;
+    display:inline-block;
+height:auto;
+margin-top: -78px;
+float: right;
+font-size: 15px;
+}
+.buttonS:hover{
+  color: #fff;
 }
