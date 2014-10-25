@@ -20,7 +20,9 @@ div.wpcf7 .screen-reader-response {
 }
 
 div.wpcf7-mail-sent-ok {
-	border: 2px solid #398f14;
+	border: 2px solid #e80e8a;
+padding: 10px;
+text-align: center;
 }
 
 div.wpcf7-mail-sent-ng {

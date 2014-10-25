@@ -318,7 +318,7 @@ h3,
 h4,
 h5,.font,.font > *
 {
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Open Sans', sans-serif;
   color:#595959;
 
 }
@@ -3876,9 +3876,9 @@ margin: 0 10px 0 0px;
 .single-product-info-holder .add-cart-holder a , .single-product-info-holder .add-cart-holder button{
 padding: 15px 56px;
 font-size: 16px;
+font-weight: bold;
 height: 50px;
 width: 120%;
-font-weight: 100;
 letter-spacing: 0px;
 
 }
@@ -4901,4 +4901,7 @@ font-weight: 100;
 min-width: 99.9%;
 width: 99.9%;
 }
+}
+.footq{
+  font-size: 11px;
 }
