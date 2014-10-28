@@ -318,7 +318,7 @@ h3,
 h4,
 h5,.font,.font > *
 {
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Open Sans', sans-serif;
   color:#595959;
 
 }
@@ -399,7 +399,6 @@ outline:none;
     width: 100%;
     display: block;
 }
-
 
 
 
@@ -1288,11 +1287,12 @@ color: #333;
 white-space: nowrap;
 min-width: 160px;
 font-size:15px;
+display: none;
 }
 .top-menu .menu-item-has-children  .sub-menu li:hover a {
 color: #262626;
 text-decoration: none;
-background-color: #f5f5f5;
+background-color: #fff;
 }
 .top-menu .menu-item-has-children  .sub-menu li{
 border-bottom: 1px solid  #D9D9D9;
@@ -3876,9 +3876,9 @@ margin: 0 10px 0 0px;
 .single-product-info-holder .add-cart-holder a , .single-product-info-holder .add-cart-holder button{
 padding: 15px 56px;
 font-size: 16px;
+font-weight: bold;
 height: 50px;
 width: 120%;
-font-weight: 100;
 letter-spacing: 0px;
 
 }
@@ -4473,7 +4473,7 @@ margin-left: -16px;
 }
 #user-top li{
     background: white;
-    border-bottom: 1px solid #e3e4e5;
+    border-bottom: 0px solid #e3e4e5;
     font-size: .8rem;
     font-weight: 100;
     padding: 10px ;
@@ -4486,7 +4486,7 @@ margin-left: -16px;
      top: 100%;
      right: -100%;
     display: none;
-     border: 1px solid #dddddd;
+     border: 0px solid #dddddd;
      position: absolute;
 }
 
@@ -4705,7 +4705,6 @@ text-transform: uppercase;
 margin-top: 1px;
 margin-left: 0px;
 font-family: 'Open Sans', sans-serif;
-font-weight: 600;
 }
 
 .icon-logoblanco {
@@ -4838,6 +4837,9 @@ color: #2F2F2F;
   .issuuembed {
   display: none;
 }
+.footer-holder,.section-footer .container{
+  display: none;
+}
 }
 
 
@@ -4863,6 +4865,7 @@ height: 50px;
 font-weight: 100;
 text-transform: uppercase;
 text-align: center;
+display: none;
 }
 .pdf p {
 color: #fff;
@@ -4901,4 +4904,104 @@ font-weight: 100;
 min-width: 99.9%;
 width: 99.9%;
 }
+.pdf{
+  display: block;
+}
+.buttonS{
+margin-top: -13px!important;
+margin-bottom: 16px;
+
+}
+}
+.footq{
+  font-size: 11px;
+}
+
+.buttonS{
+    text-align:center;
+   border: none;
+color:#fff;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background-color:#e80e8a;
+    font-weight:bold;
+    padding:9px 15px;
+    display:inline-block;
+height:auto;
+margin-top: -78px;
+float: right;
+font-size: 15px;
+}
+.buttonS:hover{
+  color: #fff;
+}
+.content-sidebar, .checkout{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 20px
+}
+.checkout{
+    width: 67%;
+}
+.content-sidebar  form .form-row-last, .checkout form .form-row-last, form.checkout_coupon .form-row{
+    width: 100% !important;
+}
+.content-sidebar p, .checkout p{
+    width: 100% !important;
+}
+.woo_step {
+    border: 1px solid red;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.variation .inline{
+    vertical-align: top;
+}
+.inline dt, .inline dd{
+    float: none !important;
+    display: block !important;
+}
+.menustar{
+  width: 750px;
+}
+.menustar li {
+  padding-top:12px;
+  padding-left:20px;
+  text-transform: uppercase;
+}
+.menustar p{
+padding-left: 30px;
+padding-top: 16px;
+}
+.menusito {
+  float: right;
+  margin-top: -5px;
+}
+.titulomenu{
+  font-size:18px;
+  padding-top:40px;
+  padding-left:45px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.tg-031e{
+  padding-top:10px;
+  padding-left:50px;
+  padding-bottom: 10px;
+}
+.tg-031e a{
+display: initial !important;
+text-align: left;
+font-weight: lighter !important;
+line-height: 0px !important;
+padding:0px 0px !important;
+color: #333;
+white-space: nowrap;
+min-width: 160px;
+font-size: 13px !important;
+}
+
+.tg-031e:hover a{
+  color: #000 !important;
 }

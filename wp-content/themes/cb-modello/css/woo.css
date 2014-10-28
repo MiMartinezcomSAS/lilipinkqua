@@ -1394,13 +1394,12 @@ height: auto;
 }.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a, .woocommerce-page ul.cart_list li a, .woocommerce-page ul.product_list_widget li a {
 display: block;
 font-weight: normal;
-letter-spacing: 1px;
+letter-spacing: 0px;
 font-family: 'Source Sans Pro', sans-serif;
 color: #595959;
 line-height: 16px;
-font-weight: bold;
 font-size: 14px;
-margin-bottom: 8px;
+margin-bottom: 2px;
 }
 .woocommerce ul.cart_list li ins, .woocommerce ul.product_list_widget li ins, 
 .woocommerce-page ul.cart_list li ins, .woocommerce-page ul.product_list_widget li ins {
@@ -1410,7 +1409,7 @@ margin-bottom: 8px;
 float: left;
 margin-left: 0;
 margin-right: 17px;
-width: 50px;
+width: 80px;
 height: auto;
 box-shadow: none;
 -webkit-box-shadow: none;
@@ -2063,7 +2062,7 @@ width: 80px!important;
     outline:none;
     border: 1px solid #34a992!important;
 }header.title:after {
-height: 3px;
+height: 0px;
 }
 
 .woocommerce .woocommerce-message:before, .woocommerce-page .woocommerce-message:before {
@@ -2328,7 +2327,7 @@ position: relative;
 margin-right: 5px;
 }.top-cart-holder .thumb img {
 width: 45px;
-height: 45px;
+height: auto;
 }.top-cart-holder .hover-holder h5, .top-cart-holder .hover-holder h5 a {
 font-size: 12px!important;
 line-height: 14px;
@@ -2347,7 +2346,7 @@ border-bottom: 1px solid rgba(0,0,0,.1);
 padding: 32px 0 20px 0;
 }.woocommerce table.cart img, .woocommerce #content table.cart img, .woocommerce-page table.cart img, .woocommerce-page #content table.cart img {
 width: 60px!important;
-height: 60px!important;
+height: auto;!important;
 max-width: 60px!important;
 margin-right: 15px;
 }.section-shopping-cart-page .cart-item .title {
@@ -2355,7 +2354,9 @@ width: 50%;
 }.section-shopping-cart-page .cart_price {
 width: 10%;
 }ul#shipping_method label {
-margin-left: 25px;
+margin-left: 30px;
+margin-top: 6px;
+font-weight: bold;
 }div.cart_totals.calculated_shipping {
 text-transform: uppercase;
 }a.shipping-calculator-button {
@@ -2899,14 +2900,14 @@ margin-bottom: 40px;
 letter-spacing: 0px;
 height: 40px;
 text-transform: uppercase;
-font-weight: 100;
+font-weight: bold;
 line-height: 0px !important;
 }#content input.md-button.large.col-xs-12.checkout.norad.bttn.skin {
 width: 100%!important;
 font-size: 15px !important;
 letter-spacing: 0px;
 padding: 0px;
-font-weight: 100;
+font-weight: bold;
 margin-bottom: 20px;
 height: 45px;
 }.woocommerce-account p#billing_state_field {
@@ -2929,4 +2930,7 @@ text-align: center;
 background: rgba(190, 190, 190, 0.17);
 padding: 10px;
 border: 1px solid #D3D1D1;
+}
+.df{
+   margin-top: -95px;
 }

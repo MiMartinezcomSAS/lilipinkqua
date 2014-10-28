@@ -14,8 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<?php
 		foreach ( $item_data as $data ) :
 			$key = sanitize_text_field( $data['key'] );
-	?>
+	?><div class="inline">
 		<dt class="variation-<?php echo sanitize_html_class( $key ); ?>"><?php echo wp_kses_post( $data['key'] ); ?>:</dt>
-		<dd class="variation-<?php echo sanitize_html_class( $key ); ?>"><?php echo wp_kses_post( wpautop( $data['value'] ) ); ?></dd>
-	<?php endforeach; ?>
+		<dd class="variation-<?php echo sanitize_html_class( $key ); ?>"><?php echo deleteNumber(wp_kses_post( wpautop( $data['value'] ) )); ?></dd>
+            </div>
+        <?php endforeach; ?>
 </dl>

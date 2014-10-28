@@ -624,6 +624,7 @@ ul.cb-menu li ul  li[class^="icon-"].small a,ul.cb-menu li ul  li[class*=" icon-
     padding-left: 0!important;
 width: auto!important;
 padding-right: 10px!important;	
+margin-bottom: 25px;
 }
 
 .wp-pagenavi a:hover,.wp-pagenavi span.current {
@@ -1331,15 +1332,15 @@ h1.tit,h1.tit a,h2.tit,h2.tit a,h3.tit,h3.tit a,h4.tit,h4.tit a,h5.tit,h5.tit a,
     line-height:25px;
 }
 .medium{
-    font-size:30px!important;
+    font-size:16px!important;
     line-height:35px;
 }
 .large{
-    font-size:36px!important;
+    font-size:16px!important;
     line-height:40px;
 }
 .h_mid_large{
-    font-size:45px!important;
+    font-size:16px!important;
     line-height:55px;
 }
 .h_large{
@@ -1875,7 +1876,7 @@ a:hover i,a i:hover,i:hover,.list_style .col1:hover,.list_style .col1
     padding-bottom: 5px;
     position: relative;
     font-size: 14px !important;
-    font-weight: 400px;
+    font-weight: normal !important;
     padding-left: 12px;
 }
 #sidebar_r .testimonial_content, #sidebar_l .testimonial_content {
@@ -3461,7 +3462,7 @@ position: absolute;
 font-size: 12px;
 font-weight: normal;
 text-transform: none;
-padding: 0 20px;
+padding: 0 0px;
 }.sub-menu span.sub {
 position: relative;
 display: block;
@@ -3606,4 +3607,6 @@ width: auto;
 margin-top: 0px!important;
 padding-top: 30px;
 }
-
+.not_found{
+    width: 80%;
+}
