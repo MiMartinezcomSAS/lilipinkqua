@@ -3462,7 +3462,7 @@ position: absolute;
 font-size: 12px;
 font-weight: normal;
 text-transform: none;
-padding: 0 20px;
+padding: 0 0px;
 }.sub-menu span.sub {
 position: relative;
 display: block;

@@ -1287,11 +1287,12 @@ color: #333;
 white-space: nowrap;
 min-width: 160px;
 font-size:15px;
+display: none;
 }
 .top-menu .menu-item-has-children  .sub-menu li:hover a {
 color: #262626;
 text-decoration: none;
-background-color: #f5f5f5;
+background-color: #fff;
 }
 .top-menu .menu-item-has-children  .sub-menu li{
 border-bottom: 1px solid  #D9D9D9;
@@ -4960,4 +4961,47 @@ font-size: 15px;
 .inline dt, .inline dd{
     float: none !important;
     display: block !important;
+}
+.menustar{
+  width: 750px;
+}
+.menustar li {
+  padding-top:12px;
+  padding-left:20px;
+  text-transform: uppercase;
+}
+.menustar p{
+padding-left: 30px;
+padding-top: 16px;
+}
+.menusito {
+  float: right;
+  margin-top: -5px;
+}
+.titulomenu{
+  font-size:18px;
+  padding-top:40px;
+  padding-left:45px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.tg-031e{
+  padding-top:10px;
+  padding-left:50px;
+  padding-bottom: 10px;
+}
+.tg-031e a{
+display: initial !important;
+text-align: left;
+font-weight: lighter !important;
+line-height: 0px !important;
+padding:0px 0px !important;
+color: #333;
+white-space: nowrap;
+min-width: 160px;
+font-size: 13px !important;
+}
+
+.tg-031e:hover a{
+  color: #000 !important;
 }
