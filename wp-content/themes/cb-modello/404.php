@@ -5,11 +5,12 @@
 
 <div id="middle">
  <div class="wrapme" style="text-align:center;">
-<div class="not_found"><h1 class="nft">404</h1>
-<h1><?php echo get_option('cb5_not_error'); ?></h1> 
-<h2><?php echo get_option('cb5_not_desc'); ?></h2> 
-<br/><br/>
-<a class="bttn_big" href="javascript:history.back();"><?php _e('go back','cb-modello');?></a>
+<div class="not_found"><h1 class="nft"></h1>
+<div class="404m"><h4>Tu consulta no tiene resultados</h4></div>
+<br/>
+<p>Por favor intenta usar otras palabras en la busqueda. Ejemplo: Brassier, Panties, Trajes de baño..</p>
+<hr/>
+<a class="bttn_big" href="javascript:history.back();"><?php _e('Volver','cb-modello');?></a>
 
 </div>
 </div>

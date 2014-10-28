@@ -624,6 +624,7 @@ ul.cb-menu li ul  li[class^="icon-"].small a,ul.cb-menu li ul  li[class*=" icon-
     padding-left: 0!important;
 width: auto!important;
 padding-right: 10px!important;	
+margin-bottom: 25px;
 }
 
 .wp-pagenavi a:hover,.wp-pagenavi span.current {
@@ -3606,4 +3607,6 @@ width: auto;
 margin-top: 0px!important;
 padding-top: 30px;
 }
-
+.not_found{
+    width: 80%;
+}

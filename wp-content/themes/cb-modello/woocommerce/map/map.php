@@ -49,7 +49,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post();
         </li>
 
 <?php endwhile ?>
-</ul>º
+</ul>
 <input id="ciudadGetLa" type="hidden" value="<?php echo($_GET['la']) ?>"/>
 <input id="ciudadGetLo" type="hidden" value="<?php echo($_GET['lo']) ?>"/>
 <input id="ciudadGetCi" type="hidden" value="<?php echo($_GET['ci']) ?>"/>

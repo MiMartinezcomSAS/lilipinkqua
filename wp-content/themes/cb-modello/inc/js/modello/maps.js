@@ -202,7 +202,7 @@ jQuery(document).ready(function($){
             map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]))
             map.setZoom(17);
             $('html, body').stop().animate({
-                scrollTop: 250
+                scrollTop: 0
             }, 500);
         });
         var marker = new google.maps.Marker({

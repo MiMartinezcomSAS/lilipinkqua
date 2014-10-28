@@ -441,7 +441,7 @@ final class WooCommerce {
 		$shop_catalog	= wc_get_image_size( 'shop_catalog' );
 		$shop_single	= wc_get_image_size( 'shop_single' );
 
-		add_image_size( 'shop_thumbnail', $shop_thumbnail['width'], $shop_thumbnail['height'], $shop_thumbnail['crop'] );
+		add_image_size( 'shop_thumbnail', $shop_thumbnail['200'], $shop_thumbnail['400'], $shop_thumbnail['crop'] );
 		add_image_size( 'shop_catalog', $shop_catalog['width'], $shop_catalog['height'], $shop_catalog['crop'] );
 		add_image_size( 'shop_single', $shop_single['width'], $shop_single['height'], $shop_single['crop'] );
 

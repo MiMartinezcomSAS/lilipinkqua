@@ -15,7 +15,7 @@ if($cb_get_css_generate['skinimp']=='white'){?>
 .is_anim ul.cb-menu li a{color:#222;}
 <?php } 
 if($cb_get_css_generate['cap_bg']!=''){?>
-.featured_image .caption,.featured_image .contain{background:<?php echo $cb_get_css_generate['cap_bg'];?>!important;}
+.featured_image .caption,.featured_image .contain{background:#e80e8a!important;}
 <?php } 
 
 
@@ -1149,6 +1149,7 @@ height:85%;
 if($cb_get_css_generate['htb_background']!='') { ?>
 .slider_top{
 background:<?php echo $cb_get_css_generate['htb_background']; ?>!important;
+display: none;
 }
 <?php } 
 if($cb_get_css_generate['sloganpc']!='') { ?>
