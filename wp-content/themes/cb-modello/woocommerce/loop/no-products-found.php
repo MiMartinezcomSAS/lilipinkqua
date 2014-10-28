@@ -10,7 +10,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-?>
+?>a
 <p class="woocommerce-info">
 <?php _e( 'No existen productos para esta sección !!!.', 'woocommerce' ); ?>
 </p>

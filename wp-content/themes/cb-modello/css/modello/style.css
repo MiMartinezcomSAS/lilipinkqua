@@ -4928,3 +4928,30 @@ font-size: 15px;
 .buttonS:hover{
   color: #fff;
 }
+.content-sidebar, .checkout{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 20px
+}
+.checkout{
+    width: 67%;
+}
+.content-sidebar  form .form-row-last, .checkout form .form-row-last, form.checkout_coupon .form-row{
+    width: 100% !important;
+}
+.content-sidebar p, .checkout p{
+    width: 100% !important;
+}
+.woo_step {
+    border: 1px solid red;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.variation .inline{
+    vertical-align: top;
+}
+.inline dt, .inline dd{
+    float: none !important;
+    display: block !important;
+}

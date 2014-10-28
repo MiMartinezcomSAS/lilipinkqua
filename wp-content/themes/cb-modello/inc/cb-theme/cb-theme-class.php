@@ -980,7 +980,8 @@ if($wid=='fixed')$windw="'#bg'";?>
  * ================================================ */
 	public function block_content($con_lg=''){
 		global $post;
-		echo '<div class="content_block">';
+        $check = ($post->ID == 8)?"checkNew":"";
+		echo '<div class="content_block '. $check .' ">';
 		if(!isset($con_lg)||$con_lg=='') the_content();
 		else echo strip_cn(get_the_content(),$con_lg);
 		echo '</div><div class="cl"></div>';
