@@ -4472,7 +4472,7 @@ margin-left: -16px;
 }
 #user-top li{
     background: white;
-    border-bottom: 1px solid #e3e4e5;
+    border-bottom: 0px solid #e3e4e5;
     font-size: .8rem;
     font-weight: 100;
     padding: 10px ;
@@ -4485,7 +4485,7 @@ margin-left: -16px;
      top: 100%;
      right: -100%;
     display: none;
-     border: 1px solid #dddddd;
+     border: 0px solid #dddddd;
      position: absolute;
 }
 
@@ -4704,7 +4704,6 @@ text-transform: uppercase;
 margin-top: 1px;
 margin-left: 0px;
 font-family: 'Open Sans', sans-serif;
-font-weight: 600;
 }
 
 .icon-logoblanco {
@@ -4837,6 +4836,9 @@ color: #2F2F2F;
   .issuuembed {
   display: none;
 }
+.footer-holder,.section-footer .container{
+  display: none;
+}
 }
 
 
@@ -4862,6 +4864,7 @@ height: 50px;
 font-weight: 100;
 text-transform: uppercase;
 text-align: center;
+display: none;
 }
 .pdf p {
 color: #fff;
@@ -4899,6 +4902,9 @@ font-weight: 100;
 .catalogo1 p {
 min-width: 99.9%;
 width: 99.9%;
+}
+.pdf{
+  display: block;
 }
 .buttonS{
 margin-top: -13px!important;

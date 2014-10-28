@@ -9,7 +9,7 @@ class cbtheme {
  * PAGE HEADER
  * ================================================ */
 	
-	function page_header($show_title='yes',$type='default') {
+	function page_header($show_title='no',$type='default') {
 	global $post;
 	
 	if ( in_array('woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
@@ -20,14 +20,14 @@ class cbtheme {
 	$cb_header_options=cb_get_header_options($post->ID);
 
 	$cb_post_options=cb_get_post_options($post->ID);
-	if(is_single($post->ID)&&$cb_post_options['title']=='') $cb_post_options['title']='yes';
+	if(is_single($post->ID)&&$cb_post_options['title']=='') $cb_post_options['title']='no';
 	if($type!='shop'){
-	if($cb_post_options['title']=='yes'){ if ($cb_header_options['header_type'] != 'slider_head' && $cb_header_options['header_type'] != 'map' && $cb_post_options['title'] == 'yes') { ?>
+	if($cb_post_options['title']=='no'){ if ($cb_header_options['header_type'] != 'slider_head' && $cb_header_options['header_type'] != 'map' && $cb_post_options['title'] == 'no') { ?>
 	<div class="wrapme <?php echo 'head_title';?>">
-<?php if(($cb_post_options['title']=='yes'||$cb_post_options['title']=='')&&$cb_header_options['cb_type']!='home') {
-echo '<h1 class="title">';
+<?php if(($cb_post_options['title']=='no'||$cb_post_options['title']=='')&&$cb_header_options['cb_type']!='home') {
+echo '<div class="df">';
 if($type=='cat') { $catid=get_query_var('cat'); echo '<a href="'.get_category_link($catid).'">'.single_cat_title().'</a>'; }
-else if($type=='search') { _e('Search Results for','cb-modello'); echo ' ';  echo the_search_query(); }
+else if($type=='search') { _e('','cb-modello'); echo ' ';  echo the_search_query(); }
 else if($type=='tag') { $catid=get_query_var('cat'); echo '<a href="'.get_category_link($catid).'">'.single_cat_title().'</a>'; }
 else if($type=='author') { printf(__('Author Archives: %s','cb-modello'),"<span class='vcard'><a href='".get_author_posts_url(get_the_author_meta('ID'))."' title='".esc_attr(get_the_author())."' rel='me'>".get_the_author()."</a></span>");  }
 else if($type=='archive') { _e('Archives for:','cb-modello'); echo single_month_title(' '); }
@@ -39,7 +39,7 @@ else echo '<a href="'.get_permalink().'">'.get_the_title().'</a>';
 if($cb_header_options['show_bread']=='yes'&&$cb_post_options['show_bread']!='no'&&$cb_header_options['header_type']!='slider_head'){
 	if($type!='shop') { if(function_exists('yoast_breadcrumb')){ yoast_breadcrumb('<span class="bread_wrap"><span class="wrapme"><span id="breadcrumbs">','</span><span class="cl"></span></span></span>'); } }
 } 
-echo '</h1>';
+echo '</div>';
 } ?>
 <?php } }
 else {
@@ -268,7 +268,7 @@ echo '<a href="'.$hico['link'].'" data-title="'.$hico['name'].'" class="transi_b
 		$h=700; $w=960; $vh=500; if($side=='yes')$vh=380;
 	
 		if($columns==2) { $w=500; $h=400; $vh=350; if($global_side=='yes')$vh=300; }
-		if($columns==3) { $w=450; $h=320; $vh=250; if($global_side=='yes')$vh=200; }
+		if($columns==3) { $w=650; $h=880; $vh=550; if($global_side=='yes')$vh=500; }
 		if($columns==4) { $w=250; $h=200; $vh=190; if($global_side=='yes')$vh=150; }
         if($full=='yes'){ $h=700; $w=960; $vh=500; if($global_side=='yes')$vh=380;}
 
@@ -1027,7 +1027,7 @@ if($wid=='fixed')$windw="'#bg'";?>
 		if($class_old=='hidden') $class='bttn_big hidden roundy black no_transi';
 		if($class_old=='hidden') echo '<div class="hidden_out">';
 		echo '<a class="'.$class.'" href="'.get_permalink($post->ID).'">';
-		if($text=='')_e('read more','cb-modello'); else _e($text,'cb-modello');
+		if($text=='')_e('Ver Item','cb-modello'); else _e($text,'cb-modello');
 		echo '</a>';
 		if($class_old=='hidden') echo '</div>';
 	}

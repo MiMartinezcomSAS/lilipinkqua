@@ -97,7 +97,7 @@ if ( ( ! is_front_page() && ! ( is_post_type_archive() && get_option( 'page_on_f
 
 		if ( is_search() ) {
 
-			echo $before . '<a href="' . get_post_type_archive_link( 'product' ) . '">' . $_name . '</a>' . $delimiter . __( 'Search results for &ldquo;', 'woocommerce' ) . get_search_query() . '&rdquo;' . $after;
+			echo $before . '<a href="' . get_post_type_archive_link( 'product' ) . '">' . $_name . '</a>' . $delimiter . __( 'Secxvvxcarch results for &ldquo;', 'woocommerce' ) . get_search_query() . '&rdquo;' . $after;
 
 		} elseif ( is_paged() ) {
 

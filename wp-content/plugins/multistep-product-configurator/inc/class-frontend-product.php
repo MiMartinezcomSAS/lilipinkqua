@@ -87,7 +87,7 @@ if(!class_exists('MSPC_Frontend_Product')) {
 					<?php if( $module == 'accordion' ): ?>
 
 						<div class="spc-accordion">
-                            <div class="textoprod"><p>Seleccione color y talla de su preferencia</p></div>
+                            <div class="textoprod"><p>Selecciona color y talla de tu preferencia</p></div>
                             </br>
 							<?php foreach($attributes as $name => $options): $attribute_count++; ?>
 
