@@ -445,7 +445,11 @@ function wpautop($pee, $br = true) {
 
 	return $pee;
 }
+function deleteNumber($string){
+    $string = explode('-',$string);
 
+    return (count($string) > 1)?$string[1]:$string[0];
+}
 /**
  * Newline preservation help function for wpautop
  *
