@@ -34,9 +34,9 @@ jQuery('.zoomContainer').addClass('zoom');
         });
         capa.each(function(i){
             imgSrc = jQuery( this ).find('img').attr('src');
-            jQuery( this ).append( "<div class='imageHover'><img src='"+ imgSrc +"' data-zoom-image= 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image1.jpg' ></div>" )
+            jQuery( this ).append( "<div class='imageHover'><img src='"+ imgSrc +"' ></div>" )
 
-        }); 
+        });
     
     if (jQuery('.md-check').length > 0) {
         jQuery('.md-check').iCheck({
@@ -376,17 +376,18 @@ console.log(v);
                 event.preventDefault();
                 jQuery('.zoomContainer').each(function(){
                     jQuery(this).removeClass('zoom');
+
                 });
                 var alt = jQuery(this).attr('alt').split(" ");
                 tid = alt[0];
                 tidN = Number(tid);
                 targetSlide = jQuery(".single-product-gallery-item" + '#slide'+tidN);
                 jQuery(this).attr('data-zoom-image','#slide'+tidN)
-                console.log(tidN)
+
                 jQuery('.zoomContainer:eq('+tidN+')').addClass('zoom');
                 if (temp == 0){
                     jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
-                    console.log('asdasd')
+
                 }
                 temp = 1
             });
@@ -395,7 +396,7 @@ console.log(v);
             jQuery(".single-product-horizontal-gallery .horizontal-gallery-item").click(function (event) {
                 event.preventDefault();
                 tid = jQuery(this).attr('href');
-                console.log(tid)
+                //console.log(tid)
                 targetSlide = jQuery(".single-product-gallery-item" + tid);
                 jQuery(this).attr('data-zoom-image',tid)
                 singlePSlider.trigger('slideTo', targetSlide);

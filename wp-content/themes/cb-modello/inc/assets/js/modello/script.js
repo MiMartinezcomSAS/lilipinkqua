@@ -382,20 +382,12 @@ jQuery(document).ready(function () {
             });
 
 
-            jQuery(".single-product-horizontal-gallery .horizontal-gallery-item").click(function (event) {
-                event.preventDefault();
-                tid = jQuery(this).attr('href');
-                targetSlide = jQuery(".single-product-gallery-item" + tid);
-                console.log(targetSlide)
-                singlePSlider.trigger('slideTo', targetSlide);
-            });
 
             jQuery(".mspc-pa_colores .mspc-clearfix img").click(function (event) {
                 event.preventDefault();
                 var alt = jQuery(this).attr('alt').split(" ");
                 tid = '#slide' + alt[0];
                 targetSlide = jQuery(".single-product-gallery-item" + tid);
-                console.log(targetSlide)
                 singlePSlider.trigger('slideTo', targetSlide);
             });
         }

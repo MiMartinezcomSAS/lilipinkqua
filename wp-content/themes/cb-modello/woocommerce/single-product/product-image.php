@@ -142,7 +142,7 @@ if($cb_sidebars['sidebar_position'] == '' || $cb_sidebars['sidebar_position'] ==
                 $image_extra = wp_get_attachment_url($im_url);
                $attach_photos.='
                 <li>
-                    <a class="horizontal-gallery-item" href="#slide'.$i.'">
+                    <a class="horizontal-gallery-item unicoItem"  href="#slide'.$i.'">
                         <img class="lazy4" alt="product"
                              src="'.bfi_thumb($image_extra, array('width' => '113', 'height' => '146', 'crop' => true)) .'"
                              width="113" height="146"/>
