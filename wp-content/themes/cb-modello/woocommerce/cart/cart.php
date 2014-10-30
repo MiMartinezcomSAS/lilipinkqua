@@ -13,7 +13,7 @@ global $woocommerce;
 
 wc_print_notices();
 ?>
-<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
+<!--<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
 <div class="widget coupon-widget shopping-cart-summary">
 						<h4 class="md-bordered-title">¿Tienes un cupón promocional Lilipink?</h4>
 									<p><?php _e('Ingresa el codigo promocional en la casilla y recibe descuentos especiales, solo Lilipink te da mas.','cb-modello');?></p>
@@ -22,8 +22,8 @@ wc_print_notices();
 
 	<?php do_action('woocommerce_cart_coupon'); ?>
 								</div><?php } ?>
-<?php do_action( 'woocommerce_before_cart' ); ?>
-
+<?php do_action( 'woocommerce_before_cart' ); ?> 
+-->
 <form
 	action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>"
 	method="post">

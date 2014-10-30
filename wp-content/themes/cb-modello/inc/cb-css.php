@@ -182,6 +182,7 @@ border:2px solid  <?php echo $color_master;?>!important;
 }
 .woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info {
 border-top: 3px solid <?php echo $color_master;?>!important;
+display:none;
 }
 .section-contact-page .contact-info-holder .contact-info-holder p a,.content-holder.about-us p a,.content-holder.about-us p a {
 border-bottom:1px solid  <?php echo $color_master;?>!important;
@@ -200,7 +201,7 @@ background: url(<?php echo WP_THEME_URL; ?>/img/modello/paginations-btns-grey.pn
 background-image: url(<?php echo WP_THEME_URL; ?>/img/contactus-middle-holder-grey.png);
 }
 textarea:focus, input:focus {
-border: 0px solid #ccc!important;
+border: 1px solid #ccc!important;
 }
 .footer.black a i,.footer.green a i,.footer.red a i,.footer.blue a i{
 color:#FFF!important;

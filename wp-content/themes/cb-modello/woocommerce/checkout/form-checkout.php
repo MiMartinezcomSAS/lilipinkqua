@@ -33,8 +33,8 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 
 	<div class="checkout_actions">
 		<div class="woo_step address">
-			<h1 class="transi"><span><?php _e('1. Shipping &amp; Billing Address','cb-modello');?></span></h1>
-
+			<div class="checktitle"><span><?php _e('1. Detalles de facturación','cb-modello');?></span></div>
+            <div class="checksubt">Completa los campos requeridos para realizar tu solicitud</div>
 			<div class="woo_step_in" style="display: block;">
 				<div class="col2-set" id="customer_details">
 
@@ -49,7 +49,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 						<div class="step_buttons">
 						<?php /*?><a class="button submit step_back"><?php _e('Back','cb-modello');?></a>*/?>
-							<a class="button submit step_continue"><?php _e('Continue','cb-modello');?>
+							<a class="button submit step_continue"><?php _e('Continuar','cb-modello');?>
 							</a>
 						</div>
 					</div>
@@ -58,7 +58,8 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 			</div>
 		</div>
 		<div class="woo_step place_order">
-			<h1 class="transi"><span><?php _e('2. Pay &amp; Place Order','cb-modello');?></span></h1>
+			<div class="checktitle"><span><?php _e('2. Resumen de compra.','cb-modello');?></span></div>
+            <div class="checksubt">Verifica tu compra, metodo de envío y promociones aplicadas.</div>
 			<div class="woo_step_in">
 			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 			</div>
