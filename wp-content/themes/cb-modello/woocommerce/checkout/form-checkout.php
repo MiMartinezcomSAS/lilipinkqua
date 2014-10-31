@@ -33,7 +33,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 
 	<div class="checkout_actions">
 		<div class="woo_step address">
-			<div class="checktitle"><span><?php _e('1. Detalles de facturación','cb-modello');?></span></div>
+			<div class="checktitle"><span><?php _e('1. Detalles de facturación.','cb-modello');?></span></div>
             <div class="checksubt">Completa los campos requeridos para realizar tu solicitud</div>
 			<div class="woo_step_in" style="display: block;">
 				<div class="col2-set" id="customer_details">
@@ -47,7 +47,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 					<div class="col-2">
 
 					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-						<div class="step_buttons">
+						<div class="xxxp">
 						<?php /*?><a class="button submit step_back"><?php _e('Back','cb-modello');?></a>*/?>
 							<a class="button submit step_continue"><?php _e('Continuar','cb-modello');?>
 							</a>
@@ -65,7 +65,8 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 			</div>
 		</div>
         <div class="woo_step place_order">
-            <h1 class="transi"><span><?php _e('3. Pay &amp; Jajaj','cb-modello');?></span></h1>
+            <div class="checktitle"><span><?php _e('3. Finalizar compra.','cb-modello');?></span></div>
+            <div class="checksubt">Selecciona el metodo de pago para realizar tu pedido con exito.</div>
             <div class="woo_step_in">
                 <?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 
@@ -127,9 +128,9 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
                     <?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
                     <?php
-                    $order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', 'woocommerce' ) );
+                    $order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Finalizar compra', 'woocommerce' ) );
 
-                    echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
+                    echo apply_filters( 'woocommerce_order_button_html', '<input type="submit" class="button" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />' );
                     ?>
 
 
