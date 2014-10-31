@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<table class="shop_table">
 		<thead>
 			<tr>
-                <th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-                <th class="product-name"><?php _e( 'eso', 'woocommerce' ); ?></th>
-				<th class="product-qt"><?php _e( 'Qt.', 'woocommerce' ); ?></th>
-				<th class="product-total"><?php _e( 'Total', 'woocommerce' ); ?></th>
+                <th class="titlez"><?php _e( 'Articulo o producto.', 'woocommerce' ); ?></th>
+                <th class="titlex"><?php _e( 'Especificaciones.', 'woocommerce' ); ?></th>
+				<th class="titlex"><?php _e( 'Cantidad.', 'woocommerce' ); ?></th>
+				<th class="titley"><?php _e( 'Valor.', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						?>
 						<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-                            <td class="product-name">
+                            <td class="product-name2">
                                 <?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ); ?>
 
                             </td>

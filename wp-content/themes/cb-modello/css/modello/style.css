@@ -4951,7 +4951,7 @@ font-size: 15px;
     width: 100% !important;
 }
 .woo_step {
-    border: 1px solid red;
+    border: 1px solid rgb(213, 213, 213);
     padding: 30px;
     margin-bottom: 30px;
 }
@@ -5004,4 +5004,68 @@ font-size: 13px !important;
 
 .tg-031e:hover a{
   color: #000 !important;
+}
+.checktitle{
+  font-size: 20px;
+font-weight: bold;
+margin-top: -5px;
+}
+.checksubt{
+  font-size: 14px;
+padding-top: 6px;
+}
+.checktitlelo{
+font-size: 20px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: -17px;
+background: #F0F0F0;
+padding-left: 25px;
+padding-top: 19px;
+border: 1px solid #DFDFDF;
+border-bottom: 0px solid #DFDFDF;
+}
+.loginp{
+background: #F0F0F0;
+padding: 25px;
+margin-bottom: 35px;
+border: 1px solid #DFDFDF;
+border-top: 0px solid #DFDFDF;
+}
+.form-rowp label{
+text-transform: none !important;
+font-size: 14px !important;
+font-weight: lighter !important;
+color: #868686 !important;
+margin-bottom: -3px !important;
+}
+.form-rowp input{
+width: 100% !important;
+padding: 8px 19px !important;
+line-height: 15px;
+}
+.logggi{
+float: right;
+margin-top: -8px;
+}
+.checkout_coupon2{
+padding: 25px;
+background: #f9f9f9;
+border: 1px solid #DFDFDF;
+}
+.cuponli{
+padding-left: 3px;
+padding-bottom: 11px;
+font-size: 16px;
+font-weight: bold;
+}
+.ccoupon_code{ 
+  width: 20%;
+}
+.xxx{
+float: right;
+margin-top: -15px;
+}
+.xxx .button{
+  background-color: #919191 !important;
 }
