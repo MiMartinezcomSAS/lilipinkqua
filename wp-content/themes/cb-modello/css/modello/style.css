@@ -947,13 +947,13 @@ letter-spacing: 0px !important;
 .top-cart-holder .hover-holder ul{
 list-style:none;
 
-   margin:65px 0 0 0;
+   margin:65px 0 -10px 0;
 }
 .top-cart-holder .hover-holder ul li{
 margin:0 0 18px 0;
 }
 .top-cart-holder .hover-holder .body{
-padding:0 32px 0 28px;
+padding:0 15px 0 28px;
 
 }
 .top-cart-holder .hover-holder .remove-item{
@@ -962,6 +962,7 @@ right: 8px;
 top: 12px;
 color: #595959;
 font-size: 15px;
+display: none;
 }
 .top-cart-holder .hover-holder h5{
 font-size:12px;
