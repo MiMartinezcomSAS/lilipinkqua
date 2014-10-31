@@ -2020,6 +2020,12 @@ text-indent: 16px;
 }#place_order, #content #place_order, #content .form-row #place_order {
 display: inline-block!important;
 width: auto!important;
+display: inline-block!important;
+width: auto!important;
+margin-bottom: 10px;
+height: 40px;
+padding-top: 10px;
+font-size: 16px;
 }.thankyou h2 {
 font-size: 25px;
 font-weight: 600;
@@ -2279,7 +2285,7 @@ position: relative;
 float: none;
 position: absolute;
 right: auto;
-top: 3px;
+top: 0px;
 left: 137px;
 }
 .single-product-info-holder .yith-wcwl-add-to-wishlist {
@@ -2359,8 +2365,11 @@ width: 50%;
 width: 10%;
 }ul#shipping_method label {
 margin-left: 30px;
-margin-top: 6px;
-font-weight: bold;
+margin-top: 2px;
+font-weight: lighter;
+width: 210px;
+font-size: 13px;
+height: 10px;
 }div.cart_totals.calculated_shipping {
 text-transform: uppercase;
 }a.shipping-calculator-button {
@@ -2541,7 +2550,7 @@ background: none;
 -webkit-border-radius: 0;
 border-radius: 0;
 }.woocommerce #payment div.payment_box:active,.woocommerce #payment div.payment_box:focus,.woocommerce #payment div.payment_box:hover{
-box-shadow: 0px 0px 0px 2px #34a992;
+box-shadow: 0px 0px 0px 2px #E8E8E8;
 outline: none;
 }
 .woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
@@ -2570,7 +2579,6 @@ font-weight: bold;
 text-transform: uppercase;
 line-height: 1.428571429;
 font-size: 13px;
-vertical-align: top;
 padding-left: 15px;
 }div#order_review td.product-total {
 text-align: right;
@@ -2582,7 +2590,9 @@ text-transform: uppercase;
 padding: 10px 10px;
 border-bottom: 0px solid #DCDCDC!important; 
 }#order_review .tfoot .cart-subtotal td, #order_review .tfoot .cart-subtotal th {
-border-top:0px solid #DCDCDC!important;
+border-top: 0px solid #DCDCDC!important;
+text-transform: initial;
+padding-left: 15px;
 }#order_review .tfoot td, #order_review tfoot th {
 text-align: right;
 }.product-qt {
@@ -2619,11 +2629,14 @@ display: none;
 padding-top: 20px;
 }.woo_step_in label {cursor:pointer;}
 .tfoot {float:right;}
-.tfoot td,.tfoot th {background:none!important;border:0!important}
+.tfoot td,.tfoot th {background:none!important;border:0!important; background: none!important;
+border: 0!important;
+text-transform: initial;
+padding-left: 15px;vertical-align: top;}
 .tfoot_spacer {
 border-top: 1px solid #DCDCDC!important;
 }#payment {
-width: 62%;
+width: 100%;
 }
 table.tfoot {
 float: right;
@@ -2977,4 +2990,7 @@ float: right;
 .shop_table tbody tr .product-qt{
    text-align: center;
 }
-
+.order-total td .amount{
+ font-size: 23px;
+color: #e80e8a;
+}

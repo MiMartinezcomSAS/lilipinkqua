@@ -947,13 +947,13 @@ letter-spacing: 0px !important;
 .top-cart-holder .hover-holder ul{
 list-style:none;
 
-   margin:65px 0 0 0;
+   margin:65px 0 -10px 0;
 }
 .top-cart-holder .hover-holder ul li{
 margin:0 0 18px 0;
 }
 .top-cart-holder .hover-holder .body{
-padding:0 32px 0 28px;
+padding:0 15px 0 28px;
 
 }
 .top-cart-holder .hover-holder .remove-item{
@@ -962,6 +962,7 @@ right: 8px;
 top: 12px;
 color: #595959;
 font-size: 15px;
+display: none;
 }
 .top-cart-holder .hover-holder h5{
 font-size:12px;
@@ -1316,17 +1317,11 @@ position: absolute;
 z-index: 999;
 background: #FFF;
 }
-
 .top-menu .menu-item-has-children > a:after{
 content:"";
-    font-family: fontawesome;
-
-    margin-left: 5px;
+font-family: fontawesome;
+margin-left: 5px;
 }
-
-
-
-
 .homepage3 .section-banners {
 margin: 75px 0 0 0;
 }
@@ -4954,6 +4949,8 @@ font-size: 15px;
     border: 1px solid rgb(213, 213, 213);
     padding: 30px;
     margin-bottom: 30px;
+    padding-bottom: 10px;
+    min-height: 110px;
 }
 .variation .inline{
     vertical-align: top;
@@ -5067,5 +5064,12 @@ float: right;
 margin-top: -15px;
 }
 .xxx .button{
+  background-color: #919191 !important;
+}
+.xxxp{
+float: right;
+margin-top: 8px;
+}
+.xxxp .button{
   background-color: #919191 !important;
 }
