@@ -15,8 +15,8 @@ jQuery(window).bind("load", function () {
 jQuery(window).load(function () {
 
 //Checkbox custom CSS
-jQuery('#slide1 img').elevateZoom({zoomType:"inner"});
-jQuery('.single-product-slider:eq(1) img').elevateZoom({zoomType:"inner"});
+    jQuery("#slide1 img").elevateZoom({ zoomType : "inner", cursor: "crosshair" });
+
 
     jQuery("#selectMap").click(function() {
         if(jQuery("#selectMap").val() != 0){
@@ -373,44 +373,30 @@ console.log(v);
             });
 
             jQuery(".mspc-pa_colores .mspc-clearfix img").click(function (event) {
-                event.preventDefault();
-                jQuery('.zoomContainer').each(function(){
-                    jQuery(this).removeClass('zoom');
+                jQuery('.zoomContainer').remove();
+                jQuery.removeData(jQuery("#slide1 img"), 'elevateZoom');
 
-                });
+
                 var alt = jQuery(this).attr('alt').split(" ");
                 tid = alt[0];
                 tidN = Number(tid);
-                targetSlide = jQuery(".single-product-gallery-item" + '#slide'+tidN);
-                jQuery(this).attr('data-zoom-image','#slide'+tidN)
+                jQuery("#slide"+ tid +" img").elevateZoom({ zoomType : "inner", cursor: "crosshair" });
 
-                jQuery('.zoomContainer:eq('+tidN+')').addClass('zoom');
-                if (temp == 0){
-                    jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
-
-                }
-                temp = 1
             });
               ///single
 
             jQuery(".single-product-horizontal-gallery .horizontal-gallery-item").click(function (event) {
                 event.preventDefault();
-                tid = jQuery(this).attr('href');
-                //console.log(tid)
-                targetSlide = jQuery(".single-product-gallery-item" + tid);
-                jQuery(this).attr('data-zoom-image',tid)
-                singlePSlider.trigger('slideTo', targetSlide);
-                j = tid.split("slide");
-                jQuery('.zoomContainer').each(function(){
-                    jQuery(this).removeClass('zoom');
-                });
-                jQuery('.zoomContainer:eq('+j[1]+')').addClass('zoom');
-                if (temp == 0){
-                    jQuery('.single-product-slider img').elevateZoom({zoomType:"inner"});
-                }
-                temp = 1
 
-                
+                jQuery('.zoomContainer').remove();
+                jQuery.removeData(jQuery("#slide1 img"), 'elevateZoom');
+                tid = jQuery(this).attr('href');
+                targetSlide = jQuery(".single-product-gallery-item" + tid);
+                singlePSlider.trigger('slideTo', targetSlide);
+
+
+                tid = tid.split("slide");
+                jQuery("#slide"+ tid[1] +" img").elevateZoom({ zoomType : "inner", cursor: "crosshair" });
             });
 
         }
