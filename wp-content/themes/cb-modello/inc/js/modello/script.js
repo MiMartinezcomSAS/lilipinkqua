@@ -25,8 +25,15 @@ jQuery(window).load(function () {
 
 
     });
+    jQuery('.popUpErrorPay').on('click',function(){
+        jQuery('.errorMessagePay').remove();
+        jQuery('.popUpErrorPay').remove();
+    });
 
-
+    jQuery('.closePopUp').on('click',function(){
+        jQuery('.errorMessagePay').remove();
+        jQuery('.popUpErrorPay').remove();
+    });
 jQuery('.zoomContainer').addClass('zoom');
     capa = jQuery('.mspc-pa_colores .mspc-clearfix');
     jQuery('.mspc-clearfix').find('img').hover(function(){
