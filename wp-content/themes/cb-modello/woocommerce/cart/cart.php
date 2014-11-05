@@ -143,7 +143,6 @@ echo get_post_meta($values['product_id'], "pretitle", $single = true);
                 <?php woocommerce_cart_totals(); ?>
                 <div class="clearfix"></div>
                 <?php woocommerce_shipping_calculator(); ?>
-
             </div>
 
 

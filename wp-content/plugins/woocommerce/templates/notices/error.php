@@ -16,7 +16,8 @@ if ( ! $messages ) return;
 </div>
 <div class="errorMessagePay">
     <div class="closePopUp">x</div>
-    <div>aca va el contenido de Michael</div>
+    <div class="logoerror"><img src="http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/09/logo2.png"></div>
+    <div class="errortexto">Importante</div>
     <ul>
         <?php foreach ( $messages as $message ) : ?>
             <li><?php echo wp_kses_post( $message ); ?></li>

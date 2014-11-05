@@ -3763,11 +3763,13 @@ color:#e80e8a;
 .single-product-gallery
 .nav-holder .prev-btn{
 left: 21px;
+display: none;
 }
 .single-product-gallery
 .nav-holder .next-btn{
 right: 21px;
 text-align: right;
+display: none;
 }
 
 .section-single-product-page.sidebar-single-page .single-product-info-holder {
@@ -4437,9 +4439,9 @@ margin-left: -16px;
     padding-top: 2px;
     margin-left: 104px;
 }
-.contend-logos .icon-intima:hover {
+/*.contend-logos .icon-intima:hover {
     color: #fff;
-    background: #1b1c7c;
+    background: #1b1c7c;*/
 }
 .contend-logos  span{
     width: 0;
@@ -5089,14 +5091,14 @@ PopUp Error
 
 }
 .errorMessagePay{
-    background: rgb(215, 215, 215);
+    background: #dedede;
     box-shadow: none;
     border-left: 1px solid rgba(0,0,0,0.1);
     border-right: 1px solid rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(0,0,0,0.1);
     border-top: 1px solid rgba(0,0,0,0.1) !important;
     font-size: 12px;
-    height: 200px;
+    height: 150px;
     left: 50%;
     margin: -100px -200px;
     padding: 20px;
@@ -5105,15 +5107,28 @@ PopUp Error
     top:50%;
     width: 400px;
     z-index: 10000;
+    text-align: center;
 }
 .closePopUp{
-    border-radius: 50% ;
-    color: rgb(255, 118, 249);
-    cursor: pointer;
-    position: absolute;
-    right: -18px;
-    top: -10px;
-    padding: 10px;
-    font-size: 2em;
-    line-height: 0;
+color: rgb(255, 255, 255);
+cursor: pointer;
+position: absolute;
+right: -35px;
+top: 3px;
+padding: 10px;
+font-size: 2em;
+line-height: 0;
+background: #e80e8a;
+height: 34px;
+width: 34px;
+padding-top: 17px;
+}
+.logoerror{
+  padding-left: 46px;
+padding-bottom: 12px;
+}
+.errortexto{
+  font-size: 18px;
+font-weight: bold;
+padding-bottom: 2px;
 }
