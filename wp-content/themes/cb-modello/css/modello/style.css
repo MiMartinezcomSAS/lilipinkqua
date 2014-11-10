@@ -1316,6 +1316,7 @@ box-shadow: none;
 position: absolute;
 z-index: 999;
 background: #FFF;
+left: 210px
 }
 .top-menu .menu-item-has-children > a:after{
 content:"";
