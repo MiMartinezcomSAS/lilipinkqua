@@ -49,8 +49,8 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 						<div class="xxxp">
 						<?php /*?><a class="button submit step_back"><?php _e('Back','cb-modello');?></a>*/?>
-							<a class="button submit step_continue"><?php _e('Continuar','cb-modello');?>
-							</a>
+							<!--<a class="button submit step_continue"><?php _e('Continuar','cb-modello');?>
+							</a>-->
 						</div>
 					</div>
 
