@@ -1316,6 +1316,7 @@ box-shadow: none;
 position: absolute;
 z-index: 999;
 background: #FFF;
+left: 210px
 }
 .top-menu .menu-item-has-children > a:after{
 content:"";
@@ -4962,7 +4963,11 @@ font-size: 15px;
     display: block !important;
 }
 .menustar{
-  width: 750px;
+  width: 785px;
+}
+.menustar1{
+  width: 785px;
+  margin-right: -200px;
 }
 .menustar li {
   padding-top:12px;
@@ -4971,7 +4976,7 @@ font-size: 15px;
 }
 .menustar p{
 padding-left: 30px;
-padding-top: 16px;
+padding-top: 5px;
 }
 .menusito {
   float: right;
@@ -4985,9 +4990,9 @@ padding-top: 16px;
   font-weight: bold;
 }
 .tg-031e{
-  padding-top:10px;
-  padding-left:50px;
-  padding-bottom: 10px;
+padding-top: 14px;
+padding-left: 50px;
+padding-bottom: 5px;
 }
 .tg-031e a{
 display: initial !important;
