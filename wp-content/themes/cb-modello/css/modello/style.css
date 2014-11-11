@@ -1316,7 +1316,8 @@ box-shadow: none;
 position: absolute;
 z-index: 999;
 background: #FFF;
-left: 210px
+left: 0;
+    width: 100%;
 }
 .top-menu .menu-item-has-children > a:after{
 content:"";
@@ -4963,7 +4964,8 @@ font-size: 15px;
     display: block !important;
 }
 .menustar{
-  width: 785px;
+    width: 785px;
+    margin: 0 auto;
 }
 .menustar1{
   width: 785px;
