@@ -1086,6 +1086,11 @@ border:1px solid #ba087a !important;
 @media (max-width: 992px){
   .search-holder,.top-area #searchform {
 display: none;
+  }
+
+.checkout,.content-sidebar{
+  width: 100% !important;
+  }
 }
 
 .search-holder:after{
@@ -4941,6 +4946,7 @@ font-size: 15px;
     width: 33%;
     padding: 20px
 }
+
 .checkout{
     width: 67%;
 }
