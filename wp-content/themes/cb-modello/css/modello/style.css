@@ -4477,22 +4477,25 @@ margin-left: -16px;
     text-align: left;
 }
 #user-top li{
-    background: white;
-    border-bottom: 0px solid #e3e4e5;
-    font-size: .8rem;
-    font-weight: 100;
-    padding: 10px ;
-    width: 200px;
+background: white;
+border-bottom: 0px solid #e3e4e5;
+font-size: 12px;
+font-weight: bold;
+width: 127px;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 10px;
 }
 #user-top:hover{
     color:#e80e8a;
 }
  #user-top ul{
-     top: 100%;
-     right: -100%;
-    display: none;
-     border: 0px solid #dddddd;
-     position: absolute;
+top: 100%;
+right: -88px;
+display: none;
+border: 1px solid #dddddd;
+position: absolute;
+width: 130px;
 }
 
 #user-top:hover ul {
@@ -5152,4 +5155,72 @@ padding-bottom: 12px;
   font-size: 18px;
 font-weight: bold;
 padding-bottom: 2px;
+}
+.nemesis{
+  width: 54%;
+  display: inline-block;
+  background: #f9f9f9;
+border: 1px solid #DFDFDF;
+padding: 25px;
+padding-bottom: 2px;
+}
+.nemesis2{
+width: 45%;
+display: inline-block;
+vertical-align: top;
+padding-right: 25px;
+}
+.nemesisp{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.nemesis .facebook_login{
+  width: 40%;
+max-width: 300px;
+display: inline-block;
+vertical-align: top;
+}
+.nemesis .login{
+width: 55%;
+display: inline-block;
+margin-left: 16px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+.nemesis .rememberme-label{
+  margin-top: -16px !important;
+}
+.nemesis .lost_password_a{
+margin-bottom: 24px;
+color: rgba(157, 157, 157, 0.61);
+float: right !important;
+margin-left: 20px;
+}
+
+@media (max-width:1000px){
+.nemesis {
+  width: 100%;
+}
+.nemesis2 {
+  width: 100%;
+  padding-right: 0px;
+  padding-bottom: 15px;
+}
+}
+@media (max-width:600px){
+  .nemesis .facebook_login{
+padding-bottom: 15px;
+width: 100%;
+margin: 0 auto;
+display: block;
+text-align: center;
+max-width: 250px;
+  }
+.nemesis .login{
+  width: 100%;
+  margin-left: 0px !important;
+}
+.nemesis .lost_password_a{
+  margin-left: 175px;
+}
 }
