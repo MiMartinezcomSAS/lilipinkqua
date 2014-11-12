@@ -1310,7 +1310,7 @@ class cbwoolog extends WP_Widget {
  	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
  <?php } 
  else { ?>
- 	, <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a>
+ 	, <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Iniciar sesión o crear cuenta','woothemes'); ?>"><?php _e('Iniciar sesión o crear cuenta','woothemes'); ?></a>
  <?php } ?>
  
 </div>
