@@ -1307,7 +1307,7 @@ class cbwoolog extends WP_Widget {
 <?php if ( is_user_logged_in() ) {  global $current_user;
       get_currentuserinfo();
       echo $current_user->user_login.', ';?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Esta es tu cuenta Lilipink...','woothemes'); ?>"><?php _e('Esta es tu cuenta Lilipink...','woothemes'); ?></a>
  <?php } 
  else { ?>
  	, <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Iniciar sesión o crear cuenta','woothemes'); ?>"><?php _e('Iniciar sesión o crear cuenta','woothemes'); ?></a>
