@@ -1317,7 +1317,8 @@ position: absolute;
 z-index: 999;
 background: #FFF;
 left: 0;
-    width: 100%;
+width: 90%;
+margin-left: 5%;
 }
 .top-menu .menu-item-has-children > a:after{
 content:"";
@@ -4964,7 +4965,7 @@ font-size: 15px;
     display: block !important;
 }
 .menustar{
-    width: 785px;
+    width: 100%;
     margin: 0 auto;
 }
 .menustar1{
@@ -4992,7 +4993,7 @@ padding-top: 5px;
   font-weight: bold;
 }
 .tg-031e{
-padding-top: 14px;
+padding-top: 25px;
 padding-left: 50px;
 padding-bottom: 5px;
 }
@@ -5009,7 +5010,9 @@ font-size: 13px !important;
 }
 
 .tg-031e:hover a{
-  color: #000 !important;
+color: #e80e8a!important;
+font-size: 16px !important;
+font-weight: bold !important;
 }
 .checktitle{
   font-size: 20px;
