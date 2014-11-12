@@ -140,7 +140,7 @@ body {
     margin-right: 0;
 }
 textarea{
-text-transform: uppercase;
+text-transform: capitalize;
     letter-spacing: 1px;
     color:#A9A9A9;
     font-size: 13px;
