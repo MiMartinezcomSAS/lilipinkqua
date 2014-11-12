@@ -1322,7 +1322,8 @@ position: absolute;
 z-index: 999;
 background: #FFF;
 left: 0;
-    width: 100%;
+width: 90%;
+margin-left: 5%;
 }
 .top-menu .menu-item-has-children > a:after{
 content:"";
@@ -4526,6 +4527,7 @@ margin-left: -16px;
 
 .login-menu-holder {
     padding-top: 6px;
+    padding-right: 9px;
 }
 #bienv{
   padding-top: 12px;
@@ -4893,16 +4895,20 @@ text-indent: 20px;
 }
 
 .md-button.larger{
-padding: 12px 50px;
-font-size: 15px;
+padding: 12px 56px;
+font-size: 16px;
 line-height: 18px;
 width: 100% !important;
 vertical-align: -1px;
 min-width: 240px;
 letter-spacing: 0px;
-font-weight: 100;
+font-weight: bold;
 }
-
+@media (max-width: 1200px){
+.login-menu-holder{
+  display: none;
+}
+}
 @media (max-width: 860px){
 .catalogo1 p {
 min-width: 99.9%;
@@ -4914,7 +4920,6 @@ width: 99.9%;
 .buttonS{
 margin-top: -13px!important;
 margin-bottom: 16px;
-
 }
 }
 .footq{
@@ -4970,8 +4975,9 @@ font-size: 15px;
     display: block !important;
 }
 .menustar{
-    width: 785px;
+    width: 100%;
     margin: 0 auto;
+    height: 89px;
 }
 .menustar1{
   width: 785px;
@@ -4998,7 +5004,7 @@ padding-top: 5px;
   font-weight: bold;
 }
 .tg-031e{
-padding-top: 14px;
+padding-top: 25px;
 padding-left: 50px;
 padding-bottom: 5px;
 }
@@ -5015,7 +5021,9 @@ font-size: 13px !important;
 }
 
 .tg-031e:hover a{
-  color: #000 !important;
+color: #e80e8a!important;
+font-size: 16px !important;
+font-weight: bold !important;
 }
 .checktitle{
   font-size: 20px;
