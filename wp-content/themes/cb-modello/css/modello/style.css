@@ -5104,7 +5104,7 @@ PopUp Error
 */
 
 .popUpErrorPay{
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba(76, 76, 76, 0.65);
     cursor:pointer;
     height: 100%;
     left: 0;
@@ -5115,7 +5115,7 @@ PopUp Error
 
 }
 .errorMessagePay{
-    background: #dedede;
+    background: #fff;
     box-shadow: none;
     border-left: 1px solid rgba(0,0,0,0.1);
     border-right: 1px solid rgba(0,0,0,0.1);
@@ -5132,6 +5132,7 @@ PopUp Error
     width: 400px;
     z-index: 10000;
     text-align: center;
+    border-radius: 2px;
 }
 .closePopUp{
 color: rgb(255, 255, 255);
