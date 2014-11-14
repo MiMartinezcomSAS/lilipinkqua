@@ -38,6 +38,8 @@ if (($cb_footer_options['full_slider'] == 'yes' && ($cb_footer_options['home_sli
         <li><a href="#"target="_blank"><span class="iconmoon-googleplus"></span></a></li>
         <li><a href="https://twitter.com/LILI_PINK_col"target="_blank"><span class="iconmoon-twitter"></span></a></li>
         <li><a href="https://www.youtube.com/user/tiendasintimasecret?feature=watch"target="_blank"><span class="iconmoon-uniE603"></span></a></li>
+        <li><a href="http://www.pinterest.com/lilipinkCol/"target="_blank"><span class="icon-pinterest"></span></a></li>
+        <li><a href="http://instagram.com/intimasecret_lilipink"target="_blank"><span class="icons-instagram"></span></a></li>
     </nav>
 </div>
 
