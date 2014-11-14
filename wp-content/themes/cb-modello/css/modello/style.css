@@ -5206,6 +5206,9 @@ margin-left: 20px;
   padding-right: 0px;
   padding-bottom: 15px;
 }
+.single-product-horizontal-gallery .next-btn,.single-product-horizontal-gallery .prev-btn{
+    display: block;
+}
 }
 @media (max-width:600px){
   .nemesis .facebook_login{
