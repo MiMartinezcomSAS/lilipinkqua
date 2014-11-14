@@ -80,6 +80,41 @@ Content Tabel
 .iconmoon-mail2:before {
     content: "\e60d";
 }
+@font-face {
+    font-family: 'icomoon2';
+    src:url('fontsNet/icomoon.eot?-1v2wye');
+    src:url('fontsNet/icomoon.eot?#iefix-1v2wye') format('embedded-opentype'),
+    url('fontsNet/icomoon.woff?-1v2wye') format('woff'),
+    url('fontsNet/icomoon.ttf?-1v2wye') format('truetype'),
+    url('fontsNet/icomoon.svg?-1v2wye#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icons-"], [class*=" icon-"] {
+    font-family: 'icomoon2';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-insta:before {
+    content: "\e899";
+}
+.icons-instagram:before {
+    content: "\e1600";
+}
+.icon-pinterest:before {
+    content: "\e1601";
+}
+
 
 
 @font-face {
