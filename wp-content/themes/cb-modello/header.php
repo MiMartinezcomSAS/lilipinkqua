@@ -45,7 +45,7 @@ $cb_type = esc_attr(get_post_meta($post->ID, '_cb5_post_type', 'true'));
         <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>"/>
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>"/>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
-        <?php
+                <?php
         if ($cb_header_options['favi'] != '') {
             ?>
             <link rel="shortcut icon" type="image/png" href="<?php echo $cb_header_options['favi']; ?>" />
@@ -96,6 +96,13 @@ if (isset($cb_type)) {
                     </div>
                 </div>
             </div>
+            <div id="modal">
+   <a href="#cerrar"></a>
+   <div id="modalContent">
+      Por favor el contenido de contactenos
+      <a href="#cerrar">X</a>
+   </div>
+</div> 
         <?php } ?>
         <div class="container head_tope">
             <section class="style-one-header top-area"
