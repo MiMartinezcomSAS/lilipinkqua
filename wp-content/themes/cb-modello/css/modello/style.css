@@ -1336,7 +1336,7 @@ text-decoration: none;
 background-color: #fff;
 }
 .top-menu .menu-item-has-children  .sub-menu li{
-border-bottom: 1px solid  #D9D9D9;
+border-bottom: 0px solid  #D9D9D9;
 }
 .top-menu .menu-item-has-children  .sub-menu li:last-child{
 border-bottom:none;
@@ -1353,7 +1353,7 @@ border-radius: 0;
 border-top: 0;
 box-shadow: none;
 position: absolute;
-z-index: 999;
+z-index: 9999;
 background: #FFF;
 left: 0;
 width: 920px;
