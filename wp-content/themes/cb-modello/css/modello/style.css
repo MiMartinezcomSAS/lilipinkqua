@@ -5190,18 +5190,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
     border-radius: 2px;
 }
 .closePopUp{
-color: rgb(255, 255, 255);
 cursor: pointer;
 position: absolute;
-right: -35px;
-top: 3px;
-padding: 10px;
-font-size: 2em;
-line-height: 0;
+top: 10px;
+right: -13px;
+color: #fff;
+border-radius: 2px;
 background: #e80e8a;
-height: 34px;
-width: 34px;
-padding-top: 17px;
+padding: 7px;
+text-transform: uppercase;
+font-size: 13px;
 }
 .logoerror{
   padding-left: 46px;
@@ -5292,14 +5290,14 @@ max-width: 250px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     border-top: 1px solid rgba(0,0,0,0.1) !important;
     font-size: 12px;
-    height: 150px;
+    height: 400px;
     left: 50%;
-    margin: -100px -200px;
-    padding: 20px;
+    margin: -200px -350px;
+    padding:0px;
     position: fixed;
     text-transform: uppercase;
     top:50%;
-    width: 400px;
+    width: 700px;
     z-index: 9999;
     text-align: center;
     border-radius: 2px;
@@ -5341,13 +5339,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
 }
 /* Un botón de cerrar para no despistar al usuario */
 #modalContent > a{
-   position:absolute;
-   top:-4px;
-   right:-4px;
-   color:#00A6B6;
-   border-radius:2px;
-   background:#fff;
-   padding:4px;
+position: absolute;
+top: 10px;
+right: -13px;
+color: #fff;
+border-radius: 2px;
+background: #e80e8a;
+padding: 7px;
+text-transform: uppercase;
+font-size: 13px;
 }
 .menustar{
     width: 920px;
