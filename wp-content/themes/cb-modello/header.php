@@ -99,7 +99,7 @@ if (isset($cb_type)) {
             <div id="modal">
    <a href="#cerrar"></a>
    <div id="modalContent">
-      Por favor el contenido de contactenos
+      <iframe src="http://experimental.mi-martinez.com/lilipink/wp-content/contactenos/index.html"width="700px" height="400px" scrolling="no"></iframe>
       <a href="#cerrar">X</a>
    </div>
 </div> 
