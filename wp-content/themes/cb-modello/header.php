@@ -102,6 +102,12 @@ if (isset($cb_type)) {
       <iframe src="http://experimental.mi-martinez.com/lilipink/wp-content/contactenos/index.html"width="700px" height="400px" scrolling="no"></iframe>
       <a href="#cerrar">X</a>
    </div>
+<div id="modalsus">
+   <a href="#cerrar"></a>
+   <div id="modalContent">
+     Formulario suscripcion...
+      <a href="#cerrar">X</a>
+   </div>
 </div> 
         <?php } ?>
         <div class="container head_tope">
