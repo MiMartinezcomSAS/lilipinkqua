@@ -106,7 +106,41 @@ if (isset($cb_type)) {
             <div id="modalsus">
    <a href="#cerrar"></a>
    <div id="modalContent">
-  Juan...
+       <form method="post" class="register">
+
+
+
+           <p class="form-row form-row-wide">
+               <label for="reg_email">
+                   Dirección de correo electrónico                    <span class="required red">*</span>
+               </label>
+
+               <input type="email" class="input-text form-control" name="email" id="reg_email" value="">
+           </p>
+
+
+           <p class="form-row form-row-wide">
+               <label for="reg_password">
+                   Contraseña                        <span class="required red">*</span>
+               </label>
+
+               <input type="password" class="input-text form-control" name="password" id="reg_password" value="">
+           </p>
+
+
+           <!-- Spam Trap -->
+           <div style="left:-999em; position:absolute;">
+               <label for="trap">Anti-spam</label>
+               <input type="text" name="email_2" id="trap" tabindex="-1">
+           </div>
+
+
+           <p class="form-row">
+               <input type="hidden" id="register" name="register" value="0b279a87a3"><input type="hidden" name="_wp_http_referer" value="/">                <input type="submit" class="button btn-default btn full-width-btn up" name="register" value="Registrar">
+           </p>
+
+
+       </form>
       <a href="#cerrar">X</a>
    </div>
 </div> 
