@@ -4223,7 +4223,6 @@ position: absolute;
     height: 25px;
      color:#AFAFAF;
     z-index: 100;
-    display: none;
 }
 .single-product-horizontal-gallery .next-btn:hover,.single-product-horizontal-gallery .prev-btn:hover{
 color:#e80e8a;
