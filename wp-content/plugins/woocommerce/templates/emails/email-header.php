@@ -58,16 +58,16 @@ $body_content_inner = "
 	text-align:left;
 ";
 $header_content_h1 = "
-	color: " . esc_attr( $base_text ) . ";
-	margin:0;
-	padding: 28px 24px;
-	text-shadow: 0 1px 0 $base_lighter_20;
-	display:block;
-	font-family:Arial;
-	font-size:30px;
-	font-weight:bold;
-	text-align:left;
-	line-height: 150%;
+	color: #C0C0C0;
+margin: 0;
+padding: 3px 24px;
+text-shadow: 0 1px 0 #e5e5e5;
+display: block;
+font-family: Arial;
+font-size: 23px;
+font-weight: bold;
+text-align: center;
+line-height: 150%;
 ";
 ?>
 <!DOCTYPE html>

@@ -5176,7 +5176,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
     border-bottom: 1px solid rgba(0,0,0,0.1);
     border-top: 1px solid rgba(0,0,0,0.1) !important;
     font-size: 12px;
-    height: 150px;
+    height: auto;
     left: 50%;
     margin: -100px -200px;
     padding: 20px;

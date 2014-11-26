@@ -2007,7 +2007,7 @@ color: #8d8d8d;
 letter-spacing: 0px;
 padding: 8px 19px;
 outline: none;
-text-transform: capitalize;
+text-transform: none;
 }.form-row label, #content .form-row label {
 text-transform:uppercase;
 	

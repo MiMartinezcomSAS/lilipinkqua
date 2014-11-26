@@ -16,7 +16,7 @@ if ( ! $messages ) return;
 </div>
 <div class="errorMessagePay">
     <div class="closePopUp">x</div>
-    <div class="logoerror"><img src="http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/09/logo2.png"></div>
+    <div class="logoerror"><img src="http://lilipink.com/wp-content/uploads/2014/09/logo2.png"></div>
     <div class="errortexto">Importante</div>
     <ul>
         <?php foreach ( $messages as $message ) : ?>
