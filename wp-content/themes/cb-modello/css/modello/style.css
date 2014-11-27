@@ -5291,7 +5291,7 @@ max-width: 250px;
     font-size: 12px;
     height: 400px;
     left: 50%;
-    margin: -200px -350px;
+    margin: -200px -250px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
@@ -5446,10 +5446,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
    display:block!important;
    opacity:1!important;
 }
- .btn-mail{
+ .btn-mail-1{
      background-color: #919191 !important;
      border-radius: 0;
+     border:none !important;
+     font-size: 15px;
+     float: left;
  }
-.btn-mail:hover{
+.btn-mail-1:hover{
     background: #930035!important;
+}
+.float-submit{
+
+    float: right;
+    margin-right: 27px
 }
