@@ -62,7 +62,7 @@ $cb_type = esc_attr(get_post_meta($post->ID, '_cb5_post_type', 'true'));
         <?php
         wp_head();
         ?>
-        <link rel="shortcut icon" href="http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/10/favicon.ico">
+        <link rel="shortcut icon" href="http://lilipink.com/wp-content/uploads/2014/10/favicon.ico">
     </head>
 <?php $war = '';
 if (isset($cb_type)) {
@@ -99,7 +99,7 @@ if (isset($cb_type)) {
             <div id="modal">
    <a href="#cerrar"></a>
    <div id="modalContent">
-      <iframe src="http://experimental.mi-martinez.com/lilipink/wp-content/contactenos/index.html"width="700px" height="400px" scrolling="no"></iframe>
+      <iframe src="http://lilipink.com/wp-content/contactenos/index.html"width="700px" height="400px" scrolling="no"></iframe>
       <a href="#cerrar">X</a>
    </div>
 </div> 

@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var $marker_url = 'http://experimental.mi-martinez.com/lilipink/wp-content/uploads/2014/10/cd-icon-location_1.png';
+    var $marker_url = 'http://lilipink.com/wp-content/uploads/2014/10/cd-icon-location_1.png';
 
     //define the basic color of your map, plus a value for saturation and brightness
 
