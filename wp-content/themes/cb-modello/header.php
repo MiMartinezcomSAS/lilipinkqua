@@ -106,7 +106,7 @@ if (isset($cb_type)) {
             <div id="modalsus">
    <a href="#cerrar"></a>
    <div id="modalContent">
-       <form method="post" class="register">
+       <form method="post" class="login">
 
 
 
