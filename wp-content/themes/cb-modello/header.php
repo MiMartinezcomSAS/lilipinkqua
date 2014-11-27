@@ -106,41 +106,36 @@ if (isset($cb_type)) {
             <div id="modalsus">
    <a href="#cerrar"></a>
    <div id="modalContent">
-       <form method="post" class="login ">
+       <!-- Begin MailChimp Signup Form -->
+       <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+       <style type="text/css">
+           #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:400px;}
+           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+       </style>
+       <div id="mc_embed_signup">
+           <form action="//lilipink.us9.list-manage.com/subscribe/post?u=811b26cc0fbe5c4e316fe7d70&amp;id=0d1ade0c88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+               <div id="mc_embed_signup_scroll">
 
+                   <div class="mc-field-group">
+                       <label for="mce-EMAIL">Dirección de correo electrónico *</label>
+                       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                   </div>
+                   <div class="mc-field-group">
+                       <label for="mce-FNAME">Nombre </label>
+                       <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                   </div>
+                   <div id="mce-responses" class="clear">
+                       <div class="response" id="mce-error-response" style="display:none"></div>
+                       <div class="response" id="mce-success-response" style="display:none"></div>
+                   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                   <div style="position: absolute; left: -5000px;"><input type="text" name="b_811b26cc0fbe5c4e316fe7d70_0d1ade0c88" tabindex="-1" value=""></div>
+                   <div class="clear"><input type="submit" value="Registrar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+               </div>
+           </form>
+       </div>
 
-
-           <p class="form-row form-row-wide">
-               <label for="reg_email">
-                   Dirección de correo electrónico                    <span class="required red">*</span>
-               </label>
-
-               <input type="email" class="input-text form-control" name="email" id="reg_email" value="">
-           </p>
-
-
-           <p class="form-row form-row-wide">
-               <label for="reg_password">
-                   Contraseña                        <span class="required red">*</span>
-               </label>
-
-               <input type="password" class="input-text form-control" name="password" id="reg_password" value="">
-           </p>
-
-
-           <!-- Spam Trap -->
-           <div style="left:-999em; position:absolute;">
-               <label for="trap">Anti-spam</label>
-               <input type="text" name="email_2" id="trap" tabindex="-1">
-           </div>
-
-
-           <p class="form-row">
-               <input type="hidden" id="register" name="register" value="0b279a87a3"><input type="hidden" name="_wp_http_referer" value="/">                <input type="submit" class="button btn-default btn full-width-btn up" name="register" value="Registrar">
-           </p>
-
-
-       </form>
+       <!--End mc_embed_signup-->
       <a href="#cerrar">X</a>
    </div>
 </div> 
