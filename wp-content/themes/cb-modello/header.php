@@ -108,21 +108,18 @@ if (isset($cb_type)) {
    <div id="modalContent">
        <!-- Begin MailChimp Signup Form -->
        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-       <style type="text/css">
-           #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:400px;}
-           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-       </style>
+
        <div id="mc_embed_signup">
            <form action="//lilipink.us9.list-manage.com/subscribe/post?u=811b26cc0fbe5c4e316fe7d70&amp;id=0d1ade0c88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                <div id="mc_embed_signup_scroll">
-
+                   <h2>Suscríbete  ahora</h2>
+                   <p style="font-weight: 100; font-family: 'Open Sans', sans-serif">Ingrese sus datos para recibir mas información acerca de nuestros productos, o registrese para acceder a la tienda UNIQUE. </p>
                    <div class="mc-field-group">
-                       <label for="mce-EMAIL">Dirección de correo electrónico *</label>
+                       <label style="font-weight: 100; font-family: 'Open Sans', sans-serif" for="mce-EMAIL" >Dirección de correo electrónico *</label>
                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                    </div>
                    <div class="mc-field-group">
-                       <label for="mce-FNAME">Nombre </label>
+                       <label  style="font-weight: 100; font-family: 'Open Sans', sans-serif" for="mce-FNAME">Nombre </label>
                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
                    </div>
                    <div id="mce-responses" class="clear">
