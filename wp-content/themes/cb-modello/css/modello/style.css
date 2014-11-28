@@ -5289,9 +5289,9 @@ max-width: 250px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     border-top: 1px solid rgba(0,0,0,0.1) !important;
     font-size: 12px;
-    height: 400px;
+    height: 310px;
     left: 50%;
-    margin: -200px -250px;
+    margin: -180px -250px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
@@ -5459,5 +5459,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
 .float-submit{
 
     float: right;
-    margin-right: 27px
+    margin-right: 27px;
+    margin-top: -15px;
 }
+#mc-embedded-subscribe{
+  font-weight: 100 !important;
+  text-transform: capitalize !important;
+  background-color: #919191 !important;
+}
+
+#mc-embedded-subscribe:hover{
+  background-color: #e80e8a !important;
+}
+
+#mc_embed_signup form {
+display: block;
+position: relative;
+text-align: left;
+padding: 7px 10px 10px 26px !important;

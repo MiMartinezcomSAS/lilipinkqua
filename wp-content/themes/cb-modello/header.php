@@ -123,7 +123,7 @@ if (isset($cb_type)) {
            <form action="//lilipink.us9.list-manage.com/subscribe/post?u=811b26cc0fbe5c4e316fe7d70&amp;id=0d1ade0c88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                <div id="mc_embed_signup_scroll">
                    <h2>Suscríbete  ahora</h2>
-                   <p style="font-weight: 100; font-family: 'Open Sans', sans-serif">Ingrese sus datos para recibir mas información acerca de nuestros productos, o registrese para acceder a la tienda UNIQUE. </p>
+                   <p style="font-weight: 100; font-family: 'Open Sans', sans-serif; margin-top: -12px;">Ingrese sus datos para recibir mas información acerca de nuestros productos, o registrese para acceder a la tienda UNIQUE. </p>
                    <div class="mc-field-group">
                        <label style="font-weight: 100; font-family: 'Open Sans', sans-serif" for="mce-EMAIL" >Dirección de correo electrónico *</label>
                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
