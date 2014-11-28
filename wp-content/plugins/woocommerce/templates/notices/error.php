@@ -11,11 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if ( ! $messages ) return;
 ?>
-<div class="popUpErrorPay">
+<div class="popUpErrorPay" onclick="myFunction()">
 
 </div>
 <div class="errorMessagePay">
-    <div class="closePopUp">x</div>
+    <div class="closePopUp" onclick="myFunction()">x</div>
     <div class="logoerror"><img src="http://lilipink.com/wp-content/uploads/2014/09/logo2.png"></div>
     <div class="errortexto">Importante</div>
     <ul>
@@ -29,3 +29,10 @@ if ( ! $messages ) return;
 		<li><?php echo wp_kses_post( $message ); ?></li>
 	<?php endforeach; ?>
 </ul>
+
+<script>
+    function myFunction() {
+        jQuery('.errorMessagePay').remove();
+        jQuery('.popUpErrorPay').remove();
+    }
+</script>
