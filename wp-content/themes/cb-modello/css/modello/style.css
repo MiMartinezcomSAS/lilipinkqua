@@ -4985,7 +4985,7 @@ font-size: 15px;
     display: inline-block;
     vertical-align: top;
     width: 33%;
-    padding: 20px
+    padding: 20px;
 }
 
 .checkout{
@@ -5122,6 +5122,8 @@ margin-top: -8px;
 padding: 25px;
 background: #f9f9f9;
 border: 1px solid #DFDFDF;
+z-index: 99999;
+position: relative;
 }
 .cuponli{
 padding-left: 3px;
@@ -5477,3 +5479,37 @@ display: block;
 position: relative;
 text-align: left;
 padding: 7px 10px 10px 26px !important;
+}
+
+.cupolili{
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.37);
+z-index: 10000;
+position: fixed;
+top: 0px;
+display: block;
+left: 0px;
+}
+.textocuponli{
+top: 50%;
+left: 50%;
+position: absolute;
+background: url("http://lilipink.com/wp-content/uploads/2014/12/advertencia.png") no-repeat;
+width: 600px;
+height: 74px;
+margin-left: -114px;
+margin-top: -40px;
+}
+
+.hidden{
+  display: none;
+}
+
+.hidden1{
+  opacity: 0.5;
+}
+
+.hidden2{
+  opacity: 0.2;
+}

@@ -159,3 +159,44 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', $woocommerce-
 
 </form>
 	<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+
+<?php
+    if(empty($_POST)){
+
+?>
+    <div class="cupolili" id="cupolili">
+            <div class="textocuponli">     
+    </div>
+    </div>
+
+     <script>
+
+   var tmrReady1 = setInterval(isPageFullyLoaded1, 2300);
+
+      function isPageFullyLoaded1(){
+             var b=document.getElementById("cupolili");
+             b.classList.add('hidden1');
+             clearInterval(tmrReady1);
+      }
+       var tmrReady2 = setInterval(isPageFullyLoaded2, 2400);
+
+      function isPageFullyLoaded2(){
+             var b=document.getElementById("cupolili");
+             b.classList.add('hidden2');
+             clearInterval(tmrReady2);
+      }
+     var tmrReady = setInterval(isPageFullyLoaded, 2500);
+     
+    function isPageFullyLoaded() {
+        if (document.readyState == "loaded" || document.readyState == "interactive" || document.readyState == "complete") {
+  var b=document.getElementById("cupolili");
+   b.classList.add('hidden');
+         clearInterval(tmrReady);
+        
+            
+        }
+    }
+  </script>
+  <?php
+      }
+?>
