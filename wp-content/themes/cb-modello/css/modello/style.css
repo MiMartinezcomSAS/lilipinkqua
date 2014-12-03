@@ -5532,7 +5532,6 @@ margin-top: -40px;
     margin:50px auto;
     width:840px;
     background:white;
-    border:1px solid ;
 }
 #wraper-contact article{
     vertical-align:middle;
@@ -5555,7 +5554,7 @@ margin-top: -40px;
     width:150px;
     height:40px;
     float:right;
-    margin-right:8px;
+    margin-right:7px;
     margin-top:15px;
     color:white;
     background:#e80e8a;
