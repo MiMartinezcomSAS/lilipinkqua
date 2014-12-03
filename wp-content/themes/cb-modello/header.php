@@ -148,7 +148,7 @@ if (isset($cb_type)) {
             </div>
         </div>
         <div id="modalsus">
-            <a href="#cerrar"></a>
+            <a href="#cerrar">X</a>
 
             <div id="modalContent">
                 <!-- Begin MailChimp Signup Form -->
