@@ -5293,12 +5293,12 @@ max-width: 250px;
     font-size: 12px;
     height: 310px;
     left: 50%;
-    margin: -180px -250px;
+    margin: -180px -422px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
     top:50%;
-    width: 500px;
+    width: 843px;
     z-index: 9999;
     text-align: center;
     border-radius: 2px;
@@ -5525,19 +5525,20 @@ margin-top: -40px;
 }
 #wraper-contact form{
     margin-left:-5px;
-    padding:15px 30px;
+    padding:0px 30px;
+    margin-top:-10px;
 }
 #wraper-contact{
     margin:50px auto;
     width:840px;
     background:white;
+    border:1px solid ;
 }
 #wraper-contact article{
     vertical-align:middle;
     text-align:center;
     padding:30px 10px;
     height:300px;
-    margin-top:20px;
 }
 #wraper-contact label,#wraper-contact input{
     display:block;
@@ -5554,7 +5555,7 @@ margin-top: -40px;
     width:150px;
     height:40px;
     float:right;
-    margin-right:80px;
+    margin-right:8px;
     margin-top:15px;
     color:white;
     background:#e80e8a;
@@ -5568,6 +5569,7 @@ margin-top: -40px;
 
 #wraper-contact h2{
     font-size:30px;
+    margin-bottom:25px;
 }
 #wraper-contact p{
     margin-bottom:25px;
