@@ -5122,7 +5122,7 @@ margin-top: -8px;
 padding: 25px;
 background: #f9f9f9;
 border: 1px solid #DFDFDF;
-z-index: 99999;
+z-index: 9998;
 position: relative;
 }
 .cuponli{
@@ -5485,7 +5485,7 @@ padding: 7px 10px 10px 26px !important;
 height: 100%;
 width: 100%;
 background: rgba(0, 0, 0, 0.37);
-z-index: 10000;
+z-index: 9997;
 position: fixed;
 top: 0px;
 display: block;
