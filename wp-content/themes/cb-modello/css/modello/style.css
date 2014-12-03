@@ -5525,25 +5525,27 @@ margin-top: -40px;
 }
 #wraper-contact form{
     margin-left:-5px;
-    padding:15px 20px;
+    padding:15px 30px;
 }
 #wraper-contact{
     margin:50px auto;
     width:840px;
     background:white;
+    border: 1px solid;
 }
 #wraper-contact article{
     vertical-align:middle;
     text-align:center;
     padding:30px 10px;
-    height:320px;
+    height:300px;
+    margin-top:20px;
 }
 #wraper-contact label,#wraper-contact input{
     display:block;
 }
 
 #wraper-contact input, #wraper-contact textarea{
-    width:80%;
+    width:98%;
     height:30px;
 }
 #wraper-contact textarea{
@@ -5575,3 +5577,4 @@ margin-top: -40px;
 #wraper-contact input{
     margin-bottom:10px;
 }
+
