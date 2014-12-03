@@ -118,7 +118,7 @@ if (isset($cb_type)) {
         </div>
         <div id="modal">
             <a href="#cerrar"></a>
-
+            <div id="modalContent">
             <section id="wraper-contact" >
                 <article >
 
