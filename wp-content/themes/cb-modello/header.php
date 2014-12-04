@@ -117,9 +117,9 @@ if (isset($cb_type)) {
                 </div>
             </div>
         </div>
-        <div id="modal">
+        <div id="modalsus">
             <a href="#cerrar"></a>
-            <div id="modalContent">
+            <div id="modalsusContent">
             <section id="wraper-contact" >
                 <article >
 
