@@ -5584,7 +5584,11 @@ margin-top: -40px;
     margin-bottom:10px;
 }
 
-
-
+@media (max-width:600px){
+#modalContent {
+left: 80% !important;
+width: 76% !important;
+}
+}
 
 
