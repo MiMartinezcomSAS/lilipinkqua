@@ -5293,12 +5293,12 @@ max-width: 250px;
     font-size: 12px;
     height: 310px;
     left: 50%;
-    margin: -180px -422px;
+    margin: -180px -250px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
     top:50%;
-    width: 843px;
+    width: 543px;
     z-index: 9999;
     text-align: center;
     border-radius: 2px;
@@ -5514,8 +5514,8 @@ margin-top: -40px;
 }
 
 *{
-    box-sizing:border-box;
-    color:#696363;
+    
+    
 }
 #wraper-contact article,#wraper-contact form{
     display:inline-block;
@@ -5532,6 +5532,8 @@ margin-top: -40px;
     margin:50px auto;
     width:840px;
     background:white;
+    color:#696363;
+    box-sizing:border-box;
 }
 #wraper-contact article{
     vertical-align:middle;
@@ -5577,4 +5579,8 @@ margin-top: -40px;
 #wraper-contact input{
     margin-bottom:10px;
 }
+
+
+
+
 

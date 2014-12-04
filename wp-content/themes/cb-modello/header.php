@@ -8,6 +8,7 @@ global $post;
 $cb_type = esc_attr(get_post_meta($post->ID, '_cb5_post_type', 'true'));
 
 ?>
+
     <!DOCTYPE html>
 <html>
     <head>
@@ -123,20 +124,19 @@ if (isset($cb_type)) {
                 <article >
 
                     <h2>CONTÁCTENOS</h2>
-                    <p>ESCRÍBENOS, PRONTO ESTAREMOS EN
-                        <br>  CONTACTO CONTIGO.</P>
-                    <span>Comunícate con Servicio al Cliente al <b>(57) 6702400</b> en Bogotá o Escríbenos un <b>tiendavirtual@innova-quality.com.co</b> </span>
+                    <p>Escríbenos a, pronto estaremos en <br> contacto contigo.</P>
+                    <p>Comunícate con Servicio al Cliente al <b>(57) 6702400</b> en Bogotá o Escríbenos un <b>tiendavirtual@innova-quality.com.co</b> </p>
                 </article>
-                <form >
+                <form name="form1" method="post" action="">
 
                     <label>Nombre (requerido):</label>
-                    <input type="text"/>
+                    <input type="text" name="nombre"/>
                     <label>Correo electrónico (requerido):</label>
-                    <input type="text"/>
+                    <input type="text" name="correo"/>
                     <label>Ciudad (requerido):</label>
-                    <input type="text" />
+                    <input type="text" name="ciudad"/>
                     <label>Mensaje (requerido):</label>
-                    <textarea tapindex="4"></textarea>
+                    <textarea tapindex="4" name="mensaje"></textarea>
                     <input id="campo3" name="enviar" type="submit" value="Enviar" />
 
                 </form>
