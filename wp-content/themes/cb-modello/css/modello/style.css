@@ -4952,8 +4952,8 @@ min-width: 99.9%;
 width: 99.9%;
 }
 #modalContent {
-left: 40%;
-width: 85%;
+left: 40% !important;
+width: 85% !important;
 }
 .pdf{
   display: block;
