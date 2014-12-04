@@ -4951,6 +4951,10 @@ font-weight: bold;
 min-width: 99.9%;
 width: 99.9%;
 }
+#modalContent {
+left: 40%;
+width: 85%;
+}
 .pdf{
   display: block;
 }
