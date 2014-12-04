@@ -1537,7 +1537,13 @@ function showContentMap ($atts) {
     include ( TEMPLATEPATH ."/woocommerce/map/map.php");
     wp_enqueue_script( 'Mapas', get_template_directory_uri() . '/inc/js/modello/maps.js' );
 }
-add_shortcode ('contentMap', 'showContentMap');
 
+add_shortcode ('contentMap', 'showContentMap');
+remove_action( 'load-update-core.php', 'wp_update_plugins' );
+add_filter( 'pre_site_transient_update_plugins', create_function( '$a', "return null;" ) );
+add_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
+# WordPress 3.x:
+add_filter( 'pre_site_transient_update_core', create_function( '$a', "return null;" ) )
 
 
