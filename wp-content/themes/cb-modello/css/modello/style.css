@@ -5557,15 +5557,16 @@ margin-top: -40px;
     height:80px;
 }
 #wraper-contact input[type="submit"]{
-    width:150px;
-    height:40px;
-    float:right;
-    margin-right:7px;
-    margin-top:15px;
-    color:white;
-    background:#e80e8a;
-    border:0px;
-    font-size:20px;
+width: 150px;
+height: 31px;
+float: right;
+margin-right: 3px;
+margin-top: 15px;
+color: white;
+background: #e80e8a;
+border: 0px;
+font-size: 15px;
+font-weight: 100;
 }
 
 #wraper-contact article{
@@ -5631,14 +5632,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
     border-bottom: 1px solid rgba(0,0,0,0.1);
     border-top: 1px solid rgba(0,0,0,0.1) !important;
     font-size: 12px;
-    height: 400px;
+    height: 420px;
     left: 50%;
-    margin: -200px -350px;
+    margin: -174px -420px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
     top:50%;
-    width: 700px;
+    width: 840px;
     z-index: 9999;
     text-align: center;
     border-radius: 2px;
