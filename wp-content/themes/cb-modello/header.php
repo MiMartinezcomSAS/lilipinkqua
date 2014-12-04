@@ -117,30 +117,65 @@ if (isset($cb_type)) {
                 </div>
             </div>
         </div>
+        
         <div id="modal">
             <a href="#cerrar"></a>
             <div id="modalContent">
+
             <section id="wraper-contact" >
+                
                 <article >
 
                     <h2>CONTÁCTENOS</h2>
                     <p>Escríbenos a, pronto estaremos en <br> contacto contigo.</P>
                     <p>Comunícate con Servicio al Cliente al <b>(57) 6702400</b> en Bogotá o Escríbenos un <b>tiendavirtual@innova-quality.com.co</b> </p>
                 </article>
+                 <?php
+        include('enviar.php');
+       
+                ?>
+         
                 <form name="form1" method="post" action="">
-
+                    <input type="hidden" name="verificar" value="true"> </input>
                     <label>Nombre (requerido):</label>
-                    <input type="text" name="nombre"/>
+                    <input type="text" id="contact0" name="nombre" value="<?php if($nombre){echo $nombre;} ;?>" />
                     <label>Correo electrónico (requerido):</label>
-                    <input type="text" name="correo"/>
+                    <input type="text" id="contact1" name="correo" value="<?php if($correo){echo $correo;} ;?>"/>
                     <label>Ciudad (requerido):</label>
-                    <input type="text" name="ciudad"/>
+                    <input type="text" id="contact2" name="ciudad" value="<?php if($ciudad){echo $ciudad;} ;?>"/>
                     <label>Mensaje (requerido):</label>
-                    <textarea tapindex="4" name="mensaje"></textarea>
+                    <textarea tapindex="4" id="contact3" name="mensaje" ><?php if($mensaje){echo $mensaje;} ;?></textarea>
                     <input id="campo3" name="enviar" type="submit" value="Enviar" />
 
                 </form>
+           
+                <?php
+                     if(!empty($_POST["verificar"])){
+                       
+                if($error==true){
+                   
+                    for($i=0;$i<4;$i++){
+                        if ($errorMessage[$i]==true){
+                            ?>
+                            <style type="text/css">
+                            #contact<?php echo $i; ?>{
+                                border: 1px solid red;
+                            }
+                            </style>
+                           
+                            <?php
+                        }
+                        
+                    }
+                
+                }else{
+                    
+                    
+                }
+            }
+        ?>
             </section>
+
 
 
 
