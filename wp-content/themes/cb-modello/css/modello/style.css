@@ -5293,12 +5293,12 @@ max-width: 250px;
     font-size: 12px;
     height: 310px;
     left: 50%;
-    margin: -180px -250px;
+    margin: -180px -422px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
     top:50%;
-    width: 500px;
+    width: 843px;
     z-index: 9999;
     text-align: center;
     border-radius: 2px;
@@ -5512,3 +5512,69 @@ margin-top: -40px;
 .hidden2{
   opacity: 0.2;
 }
+
+*{
+    box-sizing:border-box;
+    color:#696363;
+}
+#wraper-contact article,#wraper-contact form{
+    display:inline-block;
+    vertical-align:top;
+    width:50%;
+
+}
+#wraper-contact form{
+    margin-left:-5px;
+    padding:0px 30px;
+    margin-top:-10px;
+}
+#wraper-contact{
+    margin:50px auto;
+    width:840px;
+    background:white;
+}
+#wraper-contact article{
+    vertical-align:middle;
+    text-align:center;
+    padding:30px 10px;
+    height:300px;
+}
+#wraper-contact label,#wraper-contact input{
+    display:block;
+}
+
+#wraper-contact input, #wraper-contact textarea{
+    width:98%;
+    height:30px;
+}
+#wraper-contact textarea{
+    height:80px;
+}
+#wraper-contact input[type="submit"]{
+    width:150px;
+    height:40px;
+    float:right;
+    margin-right:7px;
+    margin-top:15px;
+    color:white;
+    background:#e80e8a;
+    border:0px;
+    font-size:20px;
+}
+
+#wraper-contact article{
+    border-right: 1px solid #979191 ;
+}
+
+#wraper-contact h2{
+    font-size:30px;
+    margin-bottom:25px;
+}
+#wraper-contact p{
+    margin-bottom:25px;
+}
+
+#wraper-contact input{
+    margin-bottom:10px;
+}
+
