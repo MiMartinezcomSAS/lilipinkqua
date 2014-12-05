@@ -36,7 +36,7 @@
 
 
 	function enviar(){
-		$mensajeenviar= "nombre: ".$_POST["nombre"]."<br> correo: ".$_POST["correo"]."<br> ciudad: ".$_POST["ciudad"]."<br> mensaje: ".$_POST["mensaje"]."";
+		$mensajeenviar= "nombre: ".$_POST["nombre"]."\n correo: ".$_POST["correo"]."\n ciudad: ".$_POST["ciudad"]."\n mensaje: ".$_POST["mensaje"]."\n\n";
 		$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
