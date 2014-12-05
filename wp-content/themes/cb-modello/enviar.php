@@ -3,7 +3,7 @@
     $correo=$_POST["correo"];
     $ciudad=$_POST["ciudad"];
     $mensaje=$_POST["mensaje"];
-    $mensajeenviar="contactenos", "nombre: ".$nombre."\n correo: ".$correo."\n ciudad: ".$ciudad."\n mensaje: ".$mensaje.""
+    $mensajeenviar="contactenos", "nombre: ".$nombre."\n correo: ".$correo."\n ciudad: ".$ciudad."\n mensaje: ".$mensaje."";
     $mensajecorreo=false;
     $errorMessage= array( false,false,false,false,);
     $error=false;
