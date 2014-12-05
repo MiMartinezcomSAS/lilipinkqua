@@ -4951,6 +4951,10 @@ font-weight: bold;
 min-width: 99.9%;
 width: 99.9%;
 }
+#modalContent {
+left: 40% !important;
+width: 85% !important;
+}
 .pdf{
   display: block;
 }
@@ -5586,6 +5590,7 @@ margin-top: -40px;
     height:80px;
 }
 #wraper-contact input[type="submit"]{
+
     width:150px;
     height:40px;
     float:right;
@@ -5689,6 +5694,75 @@ margin-top: -40px;
       }
 }
 
+@media (max-width:600px){
+#modalContent {
+left: 80% !important;
+width: 76% !important;
+}
+}
+#modalcon{
+   position:fixed;
+   top:0px;
+   left:0px;
+   z-index:9999;
+   float:left;
+   width:100%;
+   height:100%;
+
+
+background: -moz-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%, rgba(186,186,186,0.2) 13%, rgba(110,110,110,0.34) 99%, rgba(109,109,109,0.34) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(198,198,198,0.2)), color-stop(13%,rgba(186,186,186,0.2)), color-stop(99%,rgba(110,110,110,0.34)), color-stop(100%,rgba(109,109,109,0.34))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', endColorstr='#576d6d6d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+   display:none;
+   opacity:0;
+}
+/* ... y un ‹a› transparente que ocupa todo el espacio para poder cerrar la modal desde cualquier punto */
+#modalcon > a{
+   position:fixed;
+   top:0px;
+   left:0px;
+   z-index:1;
+   float:left;
+   width:100%;
+   height:100%;
+ }
 
 
 
+#modalContentcon{
+    background: #fff;
+    box-shadow: none;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+    font-size: 12px;
+    height: 420px;
+    left: 50%;
+    margin: -174px -420px;
+    padding:0px;
+    position: fixed;
+    text-transform: uppercase;
+    top:50%;
+    width: 840px;
+    z-index: 9999;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#modalContentcon > a{
+position: absolute;
+top: 10px;
+right: -13px;
+color: #fff;
+border-radius: 2px;
+background: #e80e8a;
+padding: 7px;
+text-transform: uppercase;
+font-size: 13px;
+}

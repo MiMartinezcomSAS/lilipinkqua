@@ -117,6 +117,7 @@ if (isset($cb_type)) {
                 </div>
             </div>
         </div>
+
         
         <div id="modal">
             <a href="#cerrar"></a>
