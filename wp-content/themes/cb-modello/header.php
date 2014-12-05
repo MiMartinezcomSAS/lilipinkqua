@@ -120,7 +120,7 @@ if (isset($cb_type)) {
         
         <div id="modal">
             <a href="#cerrar"></a>
-            <div id="modalContent">
+            <div id="modalContent-contact">
 
             <section id="wraper-contact" >
                 
@@ -132,24 +132,48 @@ if (isset($cb_type)) {
                 </article>
                  <?php
         include('enviar.php');
-       
-                ?>
-         
-                <form name="form1" method="post" action="">
-                    <input type="hidden" name="verificar" value="true"> </input>
-                    <label>Nombre (requerido):</label>
-                    <input type="text" id="contact0" name="nombre" value="<?php if($nombre){echo $nombre;} ;?>" />
-                    <label>Correo electrónico (requerido):</label>
-                    <input type="text" id="contact1" name="correo" value="<?php if($correo){echo $correo;} ;?>"/>
-                    <label>Ciudad (requerido):</label>
-                    <input type="text" id="contact2" name="ciudad" value="<?php if($ciudad){echo $ciudad;} ;?>"/>
-                    <label>Mensaje (requerido):</label>
-                    <textarea tapindex="4" id="contact3" name="mensaje" ><?php if($mensaje){echo $mensaje;} ;?></textarea>
-                    <input id="campo3" name="enviar" type="submit" value="Enviar" />
 
-                </form>
-           
-                <?php
+                        if(!empty($_POST["verificar"])){
+                            if($error==true){
+                                ?>
+                                <form name="form1" method="post" action="">
+                                    <?php echo "<p id='contact-msn'>Revise los campos en rojo</p>"; ?>
+                                    <input type="hidden" name="verificar" value="true"> </input>
+                                    <label>Nombre (requerido):</label>
+                                    <input type="text" id="contact0" name="nombre" value="<?php if($nombre){echo $nombre;} ;?>" />
+                                    <label>Correo electrónico (requerido):</label>
+                                    <input type="text" id="contact1" name="correo" value="<?php if($correo){echo $correo;} ;?>"/>
+                                    <label>Ciudad (requerido):</label>
+                                    <input type="text" id="contact2" name="ciudad" value="<?php if($ciudad){echo $ciudad;} ;?>"/>
+                                    <label>Mensaje (requerido):</label>
+                                    <textarea tapindex="4" id="contact3" name="mensaje" ><?php if($mensaje){echo $mensaje;} ;?></textarea>
+                                    <input id="campo3" name="enviar" type="submit" value="Enviar" />
+
+                                </form>
+                                <?php
+                            
+                        }else{
+                            echo "<div id='contact-conten'><p id='contact-p'>Su mensaje fue enviado correctamente pronto estaresmos en contacto </p></div>";
+                        }
+                        }else{
+                            ?>
+                                <form name="form1" method="post" action="">
+                                    <input type="hidden" name="verificar" value="true"> </input>
+                                    <label>Nombre (requerido):</label>
+                                    <input type="text" id="contact0" name="nombre" value="<?php if($nombre){echo $nombre;} ;?>" />
+                                    <label>Correo electrónico (requerido):</label>
+                                    <input type="text" id="contact1" name="correo" value="<?php if($correo){echo $correo;} ;?>"/>
+                                    <label>Ciudad (requerido):</label>
+                                    <input type="text" id="contact2" name="ciudad" value="<?php if($ciudad){echo $ciudad;} ;?>"/>
+                                    <label>Mensaje (requerido):</label>
+                                    <textarea tapindex="4" id="contact3" name="mensaje" ><?php if($mensaje){echo $mensaje;} ;?></textarea>
+                                    <input id="campo3" name="enviar" type="submit" value="Enviar" />
+
+                                </form>
+                            <?php
+                        }
+                        
+                  
                      if(!empty($_POST["verificar"])){
                        
                 if($error==true){

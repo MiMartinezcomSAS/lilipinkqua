@@ -3,7 +3,7 @@
     $correo=$_POST["correo"];
     $ciudad=$_POST["ciudad"];
     $mensaje=$_POST["mensaje"];
-    $mensajecorreo="";
+    $mensajecorreo=false;
     $errorMessage= array( false,false,false,false,);
     $error=false;
 	if (empty($nombre)){
@@ -37,9 +37,9 @@
 
 	function enviar(){
 		$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
+		'Reply-To: '.$email_from."\r\n" .
+		'X-Mailer: PHP/' . phpversion();
 		mail("edwarddiaz92@gmail.com", "asunto", $error, $headers);
-		echo "correo enviado";
+		$mensajecorreo=true;
 	}
 ?>
