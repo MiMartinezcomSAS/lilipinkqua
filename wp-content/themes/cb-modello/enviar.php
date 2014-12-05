@@ -40,7 +40,7 @@
 		$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-		mail("edwarddiaz92@gmail.com","envio formulario contactenos", $mensajeenviar, $headers);
+		mail("tiendavirtual@innova-quality.com.co","envio formulario contactenos", $mensajeenviar, $headers);
 		$mensajecorreo=true;
 	}
 ?>
