@@ -3,8 +3,6 @@
     $correo=$_POST["correo"];
     $ciudad=$_POST["ciudad"];
     $mensaje=$_POST["mensaje"];
-    $mensajeenviar= "nombre: ".$nombre."<br> correo: ".$correo."<br> ciudad: ".$ciudad."<br> mensaje: ".$mensaje."";
-    $enviarcorreo=wordwrap($message, 300, "\n");
     $mensajecorreo=false;
     $errorMessage= array( false,false,false,false,);
     $error=false;
@@ -38,10 +36,11 @@
 
 
 	function enviar(){
+		$mensajeenviar= "nombre: ".$nombre."<br> correo: ".$correo."<br> ciudad: ".$ciudad."<br> mensaje: ".$mensaje."";
 		$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-		mail("edwarddiaz92@gmail.com","envio formulario contactenos", $enviarcorreo, $headers);
+		mail("edwarddiaz92@gmail.com","envio formulario contactenos", $mensajeenviar, $headers);
 		$mensajecorreo=true;
 	}
 ?>
