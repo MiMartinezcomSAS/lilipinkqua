@@ -39,7 +39,7 @@
 		$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-		mail("edwarddiaz92@gmail.com", "asunto", $error, $headers);
+		mail("edwarddiaz92@gmail.com", "asunto", "hola buenos dias", $headers);
 		$mensajecorreo=true;
 	}
 ?>
