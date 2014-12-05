@@ -41,7 +41,7 @@
 		$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-		mail("edwarddiaz92@gmail.com","envio formulario contactenos", $enviarcorreo, $headers);
+		mail("edwarddiaz92@gmail.com","envio formulario contactenos", "que mas", $headers);
 		$mensajecorreo=true;
 	}
 ?>
