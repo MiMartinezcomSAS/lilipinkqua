@@ -31,6 +31,9 @@
 <option value='5.0273519,-74.0096889,zipaquira' <?php if($_GET['ci'] == 'zipaquira'){echo('selected');} ?>>Zipaquira</option>
 <option value='7.103618,-73.847566,barrancabermeja'<?php if($_GET['ci'] == 'barrancabermeja'){echo('selected');} ?>>Barrancabermeja</option>
 <option value='5.026002999999999,-74.03001219999999,cundinamarca'<?php if($_GET['ci'] == 'cundinamarca'){echo('selected');} ?>>Cundinamarca</option>
+    <option value='4.301885,-74.8049836,girardot'<?php if($_GET['ci'] == 'girardot'){echo('selected');} ?>>Girardot</option>
+    <option value='4.7853096,-74.3665914,facatativa'<?php if($_GET['ci'] == 'facatativa'){echo('selected');} ?>>Facatativá</option>
+
 </select>
 <ul id="ciudades">
 <?php
