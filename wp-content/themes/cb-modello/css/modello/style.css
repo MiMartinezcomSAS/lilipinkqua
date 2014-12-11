@@ -4951,6 +4951,10 @@ font-weight: bold;
 min-width: 99.9%;
 width: 99.9%;
 }
+#modalContent {
+left: 40% !important;
+width: 85% !important;
+}
 .pdf{
   display: block;
 }
@@ -5293,7 +5297,27 @@ max-width: 250px;
     font-size: 12px;
     height: 310px;
     left: 50%;
-    margin: -180px -422px;
+    margin: -180px -250px;
+    padding:0px;
+    position: fixed;
+    text-transform: uppercase;
+    top:50%;
+    width: 543px;
+    z-index: 9999;
+    text-align: center;
+    border-radius: 2px;
+}
+#modalContent-contact{
+    background: #fff;
+    box-shadow: none;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+    font-size: 12px;
+    height: 310px;
+    left: 50%;
+    margin: -180px -450px;
     padding:0px;
     position: fixed;
     text-transform: uppercase;
@@ -5340,6 +5364,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', e
 }
 /* Un botón de cerrar para no despistar al usuario */
 #modalContent > a{
+position: absolute;
+top: 10px;
+right: -13px;
+color: #fff;
+border-radius: 2px;
+background: #e80e8a;
+padding: 7px;
+text-transform: uppercase;
+font-size: 13px;
+}
+#modalContent-contact > a{
 position: absolute;
 top: 10px;
 right: -13px;
@@ -5514,8 +5549,8 @@ margin-top: -40px;
 }
 
 *{
-    box-sizing:border-box;
-    color:#696363;
+    
+    
 }
 #wraper-contact article,#wraper-contact form{
     display:inline-block;
@@ -5529,15 +5564,19 @@ margin-top: -40px;
     margin-top:-10px;
 }
 #wraper-contact{
-    margin:50px auto;
+    margin:0 auto;
     width:840px;
     background:white;
+    color:#696363;
+    box-sizing:border-box;
+    padding: 63px 0 25px;
 }
 #wraper-contact article{
     vertical-align:middle;
     text-align:center;
-    padding:30px 10px;
-    height:300px;
+    padding:50px 10px;
+    height:350px;
+    margin: -11px;
 }
 #wraper-contact label,#wraper-contact input{
     display:block;
@@ -5551,6 +5590,7 @@ margin-top: -40px;
     height:80px;
 }
 #wraper-contact input[type="submit"]{
+
     width:150px;
     height:40px;
     float:right;
@@ -5559,22 +5599,170 @@ margin-top: -40px;
     color:white;
     background:#e80e8a;
     border:0px;
-    font-size:20px;
+    font-size:15px;
 }
 
 #wraper-contact article{
-    border-right: 1px solid #979191 ;
+    border-right: 1px solid rgba(0, 0, 0, 0.16) ;
 }
 
 #wraper-contact h2{
-    font-size:30px;
+    font-size:26px;
     margin-bottom:25px;
 }
 #wraper-contact p{
     margin-bottom:25px;
 }
+#wraper-contact article p{
+  font-size: 14px;
+}
+
+#wraper-contact article p:last-child{
+  font-size: 12px;
+}
+
 
 #wraper-contact input{
     margin-bottom:10px;
 }
 
+#contact-conten{
+  display:inline-block;
+  width:49%;
+  height: 208px;
+
+}
+
+#contact-conten p{
+  font-size: 16px;
+  margin: 39px 30px;
+}
+
+#contact-msn{
+  color: red;
+}
+#wraper-contact label{
+  font-size: 12px;
+  text-align: left;
+}
+#wraper-contact form p{
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  margin: 5px 0 10px;
+  padding: 0;
+}
+
+@media (max-width:800px){
+  #wraper-contact article,#wraper-contact form,#contact-conten{
+    display:block !important;
+    width: 100% !important;
+    
+  }
+  #modalContent-contact{
+    width: 437px !important;
+    top: 35% !important;
+    margin: -180px -200px !important;
+    padding: 0 !important;
+  }
+  #wraper-contact{
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding:14px 0 25px !important;
+
+  }
+  #wraper-contact article{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16) !important;
+    border-right: none !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+  #wraper-contact p{
+    padding: 0 40px !important;
+  }
+  #wraper-contact form{
+    margin-top: 22px !important;
+    margin-left: auto !important;
+  }
+  #wraper-contact input[type="submit"]{
+    float: none !important;
+    margin-left: 110px !important;
+    margin-right: 0 !important;
+      }
+}
+
+@media (max-width:600px){
+#modalContent {
+left: 80% !important;
+width: 76% !important;
+}
+}
+#modalcon{
+   position:fixed;
+   top:0px;
+   left:0px;
+   z-index:9999;
+   float:left;
+   width:100%;
+   height:100%;
+
+
+background: -moz-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%, rgba(186,186,186,0.2) 13%, rgba(110,110,110,0.34) 99%, rgba(109,109,109,0.34) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(198,198,198,0.2)), color-stop(13%,rgba(186,186,186,0.2)), color-stop(99%,rgba(110,110,110,0.34)), color-stop(100%,rgba(109,109,109,0.34))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(198,198,198,0.2) 0%,rgba(186,186,186,0.2) 13%,rgba(110,110,110,0.34) 99%,rgba(109,109,109,0.34) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c6c6c6', endColorstr='#576d6d6d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+   display:none;
+   opacity:0;
+}
+/* ... y un ‹a› transparente que ocupa todo el espacio para poder cerrar la modal desde cualquier punto */
+#modalcon > a{
+   position:fixed;
+   top:0px;
+   left:0px;
+   z-index:1;
+   float:left;
+   width:100%;
+   height:100%;
+ }
+
+
+
+#modalContentcon{
+    background: #fff;
+    box-shadow: none;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+    font-size: 12px;
+    height: 420px;
+    left: 50%;
+    margin: -174px -420px;
+    padding:0px;
+    position: fixed;
+    text-transform: uppercase;
+    top:50%;
+    width: 840px;
+    z-index: 9999;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#modalContentcon > a{
+position: absolute;
+top: 10px;
+right: -13px;
+color: #fff;
+border-radius: 2px;
+background: #e80e8a;
+padding: 7px;
+text-transform: uppercase;
+font-size: 13px;
+}
