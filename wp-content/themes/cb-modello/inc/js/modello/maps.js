@@ -186,8 +186,17 @@ jQuery(document).ready(function($){
         $('#ciudades > li').addClass('hideLi');
         $('#'+coordenadas[2]).removeClass('hideLi');
         map.setCenter(new google.maps.LatLng(coordenadas[0], coordenadas[1]));
-        console.log(this.options[this.selectedIndex].value);
-        map.setZoom(10);
+        
+        var sel = document.getElementById('select');
+        var selected = sel.options[sel.selectedIndex];
+        var extra = selected.getAttribute('data-zoom');
+     
+        if(extra == 'outlet'){
+            map.setZoom(5);
+        }else{
+            map.setZoom(10);
+        }
+        
         $('html, body').stop().animate({
             scrollTop: 250
         }, 500);

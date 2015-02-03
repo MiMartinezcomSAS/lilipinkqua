@@ -33,6 +33,7 @@
 <option value='5.026002999999999,-74.03001219999999,cundinamarca'<?php if($_GET['ci'] == 'cundinamarca'){echo('selected');} ?>>Cundinamarca</option>
     <option value='4.301885,-74.8049836,girardot'<?php if($_GET['ci'] == 'girardot'){echo('selected');} ?>>Girardot</option>
     <option value='4.7853096,-74.3665914,facatativa'<?php if($_GET['ci'] == 'facatativa'){echo('selected');} ?>>Facatativá</option>
+    <option data-zoom="outlet" value='4.598056000000001,-74.07583299999999,outlets'<?php if($_GET['ci'] == 'outlets'){echo('selected');} ?>>Outlets</option>
 
 </select>
 <ul id="ciudades">
